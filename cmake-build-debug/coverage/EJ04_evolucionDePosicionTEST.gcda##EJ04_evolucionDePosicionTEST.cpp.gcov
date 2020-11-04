@@ -1,0 +1,173 @@
+        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ04_evolucionDePosicionTEST.cpp
+        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.gcno
+        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.gcda
+        -:    0:Runs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        2:    6:TEST(evolucionDePosicionTEST, toroideDiagonalTresPorTres){
+        -:    7:    toroide t = { {true, false, false},
+        -:    8:                  {false, true, false},
+        7:    9:                  {false, false, true} };
+       1*:   10:    EXPECT_TRUE(evolucionDePosicion(t, make_pair(1,1)));
+        1:   11:}
+------------------
+_ZN55evolucionDePosicionTEST_toroideDiagonalTresPorTres_Test8TestBodyEv:
+        1:    6:TEST(evolucionDePosicionTEST, toroideDiagonalTresPorTres){
+        -:    7:    toroide t = { {true, false, false},
+        -:    8:                  {false, true, false},
+        7:    9:                  {false, false, true} };
+        1:    9-block  0
+        1:    9-block  1
+        1:    9-block  2
+        1:    9-block  3
+        3:    9-block  4
+        1:    9-block  5
+    $$$$$:    9-block  6
+    $$$$$:    9-block  7
+    $$$$$:    9-block  8
+    $$$$$:    9-block  9
+    $$$$$:    9-block 10
+    $$$$$:    9-block 11
+    $$$$$:    9-block 12
+    $$$$$:    9-block 13
+    $$$$$:    9-block 14
+    $$$$$:    9-block 15
+       1*:   10:    EXPECT_TRUE(evolucionDePosicion(t, make_pair(1,1)));
+        1:   10-block  0
+        1:   10-block  1
+        1:   10-block  2
+    %%%%%:   10-block  3
+    %%%%%:   10-block  4
+    %%%%%:   10-block  5
+    %%%%%:   10-block  6
+    %%%%%:   10-block  7
+        1:   10-block  8
+    $$$$$:   10-block  9
+    $$$$$:   10-block 10
+    $$$$$:   10-block 11
+    $$$$$:   10-block 12
+    $$$$$:   10-block 13
+    $$$$$:   10-block 14
+    $$$$$:   10-block 15
+    $$$$$:   10-block 16
+    $$$$$:   10-block 17
+    $$$$$:   10-block 18
+        1:   11:}
+------------------
+_ZN55evolucionDePosicionTEST_toroideDiagonalTresPorTres_TestC1Ev:
+        1:    6:TEST(evolucionDePosicionTEST, toroideDiagonalTresPorTres){
+        1:    6-block  0
+------------------
+        -:   12:
+        2:   13:TEST(evolucionDePosicionTEST, NoRevivePorCincoVecinosVivos){
+        -:   14:    toroide t = { {false, true, true},
+        -:   15:                  {false, true, false},
+        7:   16:                  {false, true, true}};
+       1*:   17:    EXPECT_FALSE(evolucionDePosicion(t, make_pair(1,0)));
+        1:   18:}
+------------------
+_ZN57evolucionDePosicionTEST_NoRevivePorCincoVecinosVivos_Test8TestBodyEv:
+        1:   13:TEST(evolucionDePosicionTEST, NoRevivePorCincoVecinosVivos){
+        -:   14:    toroide t = { {false, true, true},
+        -:   15:                  {false, true, false},
+        7:   16:                  {false, true, true}};
+        1:   16-block  0
+        1:   16-block  1
+        1:   16-block  2
+        1:   16-block  3
+        3:   16-block  4
+        1:   16-block  5
+    $$$$$:   16-block  6
+    $$$$$:   16-block  7
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+    $$$$$:   16-block 11
+    $$$$$:   16-block 12
+    $$$$$:   16-block 13
+    $$$$$:   16-block 14
+    $$$$$:   16-block 15
+       1*:   17:    EXPECT_FALSE(evolucionDePosicion(t, make_pair(1,0)));
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+    %%%%%:   17-block  3
+    %%%%%:   17-block  4
+    %%%%%:   17-block  5
+    %%%%%:   17-block  6
+    %%%%%:   17-block  7
+        1:   17-block  8
+    $$$$$:   17-block  9
+    $$$$$:   17-block 10
+    $$$$$:   17-block 11
+    $$$$$:   17-block 12
+    $$$$$:   17-block 13
+    $$$$$:   17-block 14
+    $$$$$:   17-block 15
+    $$$$$:   17-block 16
+    $$$$$:   17-block 17
+    $$$$$:   17-block 18
+        1:   18:}
+------------------
+_ZN57evolucionDePosicionTEST_NoRevivePorCincoVecinosVivos_TestC1Ev:
+        1:   13:TEST(evolucionDePosicionTEST, NoRevivePorCincoVecinosVivos){
+        1:   13-block  0
+------------------
+        -:   19:
+        2:   20:TEST(evolucionDePosicionTEST, muerePor6Vecinos){
+        -:   21:    toroide t = { {true, true, true},
+        -:   22:                  {true, true, true},
+        7:   23:                  {true, true, true}};
+       1*:   24:    EXPECT_FALSE(evolucionDePosicion(t, make_pair(0,0)));
+        1:   25:}
+------------------
+_ZN45evolucionDePosicionTEST_muerePor6Vecinos_Test8TestBodyEv:
+        1:   20:TEST(evolucionDePosicionTEST, muerePor6Vecinos){
+        -:   21:    toroide t = { {true, true, true},
+        -:   22:                  {true, true, true},
+        7:   23:                  {true, true, true}};
+        1:   23-block  0
+        1:   23-block  1
+        1:   23-block  2
+        1:   23-block  3
+        3:   23-block  4
+        1:   23-block  5
+    $$$$$:   23-block  6
+    $$$$$:   23-block  7
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+    $$$$$:   23-block 12
+    $$$$$:   23-block 13
+    $$$$$:   23-block 14
+    $$$$$:   23-block 15
+       1*:   24:    EXPECT_FALSE(evolucionDePosicion(t, make_pair(0,0)));
+        1:   24-block  0
+        1:   24-block  1
+        1:   24-block  2
+    %%%%%:   24-block  3
+    %%%%%:   24-block  4
+    %%%%%:   24-block  5
+    %%%%%:   24-block  6
+    %%%%%:   24-block  7
+        1:   24-block  8
+    $$$$$:   24-block  9
+    $$$$$:   24-block 10
+    $$$$$:   24-block 11
+    $$$$$:   24-block 12
+    $$$$$:   24-block 13
+    $$$$$:   24-block 14
+    $$$$$:   24-block 15
+    $$$$$:   24-block 16
+    $$$$$:   24-block 17
+    $$$$$:   24-block 18
+        1:   25:}
+------------------
+_ZN45evolucionDePosicionTEST_muerePor6Vecinos_TestC1Ev:
+        1:   20:TEST(evolucionDePosicionTEST, muerePor6Vecinos){
+        1:   20-block  0
+------------------

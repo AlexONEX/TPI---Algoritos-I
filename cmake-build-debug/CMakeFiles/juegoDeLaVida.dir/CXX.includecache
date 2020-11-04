@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/aschw/Downloads/tpi-template-alumnos/auxiliares.h
+definiciones.h
+C:/Users/aschw/Downloads/tpi-template-alumnos/definiciones.h
+
+C:/Users/aschw/Downloads/tpi-template-alumnos/definiciones.h
+vector
+-
+cmath
+-
+algorithm
+-
+
+C:/Users/aschw/Downloads/tpi-template-alumnos/ejercicios.cpp
+algorithm
+-
+ejercicios.h
+C:/Users/aschw/Downloads/tpi-template-alumnos/ejercicios.h
+auxiliares.h
+C:/Users/aschw/Downloads/tpi-template-alumnos/auxiliares.h
+
+C:/Users/aschw/Downloads/tpi-template-alumnos/ejercicios.h
+definiciones.h
+C:/Users/aschw/Downloads/tpi-template-alumnos/definiciones.h
+

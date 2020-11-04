@@ -1,0 +1,365 @@
+        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/auxiliares.cpp
+        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
+        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
+        -:    0:Runs:1
+        -:    1:#include "definiciones.h"
+        -:    2:#include "auxiliares.h"
+        -:    3:
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:// aqui se pueden ubicar todas las funciones auxiliares de soporte para la resolucion de los ejercicios
+       15:    7:pair<int,int> mp(int a, int b) {
+       15:    8:    return make_pair(a, b);
+       15:    8-block  0
+        -:    9:}
+        -:   10:
+        6:   11:vector<posicion> ordenar(vector<posicion> &v) {
+        6:   12:    sort(v.begin(), v.end());
+        6:   12-block  0
+        6:   13:    return v;
+        -:   14:}
+        -:   15:
+    32911:   16:int mod (int a, int b)
+        -:   17:{
+    32911:   18:    int res = a % b;
+    32911:   19:    if(res < 0)
+    32911:   19-block  0
+     2726:   20:        res+=b;
+     2726:   20-block  0
+    32911:   21:    return res;
+    32911:   21-block  0
+        -:   22:}
+        -:   23:
+       11:   24:int filas(vector<vector<bool>> const &t){
+       11:   25:    return t.size();
+       11:   25-block  0
+        -:   26:}
+        -:   27:
+        5:   28:int columnas(vector<vector<bool>> const &t){
+        5:   29:    if (filas(t) > 0){
+        5:   29-block  0
+        5:   30:        return t[0].size();
+        5:   30-block  0
+        -:   31:    }
+    #####:   32:    return 0;
+    %%%%%:   32-block  0
+        -:   33:}
+        -:   34:
+        5:   35:bool esRectangulo(toroide const &t){
+       17:   36:    for(int i = 0; i < t.size(); i++){
+        5:   36-block  0
+       17:   36-block  1
+       12:   36-block  2
+       13:   37:        if(t[i].size() != t[0].size()){
+       13:   37-block  0
+        1:   38:            return false;
+        1:   38-block  0
+        -:   39:        }
+        -:   40:    }
+        4:   41:    return filas(t) > 0 && columnas(t) > 0;
+        4:   41-block  0
+        4:   41-block  1
+        2:   41-block  2
+        2:   41-block  3
+        4:   41-block  4
+        -:   42:}
+        -:   43:
+        -:   44:
+        -:   45:
+        3:   46:int superficieTotal(toroide const &t){
+        3:   47:    return t.size() * t[0].size();
+        3:   47-block  0
+        -:   48:}
+        -:   49:
+        -:   50:
+        3:   51:int cantidadVivas(toroide const &t){
+        3:   52:    int total_vivas = 0;
+        -:   53:
+       18:   54:    for(int i = 0; i < t.size(); i++){
+        3:   54-block  0
+       18:   54-block  1
+       15:   54-block  2
+       75:   55:        for(int j = 0; j < t[0].size(); j++){
+       15:   55-block  0
+       75:   55-block  1
+       60:   55-block  2
+       60:   56:            if (t[i][j]){
+       60:   56-block  0
+       30:   57:                total_vivas ++;
+       30:   57-block  0
+        -:   58:            }
+        -:   59:        }
+        -:   60:    }
+        3:   61:    return total_vivas;
+        3:   61-block  0
+        -:   62:}
+        -:   63:
+      356:   64:bool sigueViva(toroide const &t, posicion x){
+      356:   65:    if(t[x.first][x.second] && (cantidadVecinos(t, x)<=3 && cantidadVecinos(t, x)>=2)){
+      356:   65-block  0
+      355:   65-block  1
+      271:   65-block  2
+      158:   65-block  3
+      198:   65-block  4
+      356:   65-block  5
+      158:   66:        return true;
+      158:   66-block  0
+        -:   67:    }
+      198:   68:    return false;
+      198:   68-block  0
+        -:   69:}
+        -:   70:
+     1359:   71:bool reproduccion(toroide const &t, posicion x){
+     1359:   72:    if(!(t[x.first][x.second]) && cantidadVecinos(t, x)==3){
+     1359:   72-block  0
+     1357:   72-block  1
+      133:   72-block  2
+     1226:   72-block  3
+     1359:   72-block  4
+      133:   73:        return true;
+      133:   73-block  0
+        -:   74:    }
+     1226:   75:    return false;
+     1226:   75-block  0
+        -:   76:}
+        -:   77:
+     1983:   78:int cantidadVecinos(toroide const &t, posicion x) {
+     1983:   79:    int vecinos = 0;
+     7932:   80:    for(int i = -1; i<=1; i++){
+     1983:   80-block  0
+     7932:   80-block  1
+     5949:   80-block  2
+    23796:   81:        for(int j = -1; j<=1; j++){
+     5949:   81-block  0
+    23796:   81-block  1
+    17847:   81-block  2
+    17847:   82:            if(i == 0 && j == 0){
+    17847:   82-block  0
+     5949:   82-block  1
+     1983:   83:                continue;
+     1983:   83-block  0
+        -:   84:            }else{
+    15864:   85:                vecinos += int(t[mod(x.first+j, t.size())][mod(x.second+i, t[0].size())]); //Chequear Bien q sume bool a int
+    15864:   85-block  0
+        -:   86:            }
+        -:   87:        }
+        -:   88:    }
+     1983:   89:    return vecinos;
+     1983:   89-block  0
+        -:   90:}
+        -:   91:
+        -:   92:
+       91:   93:bool toroideMuerto(toroide const &t){
+      230:   94:    for(int i =0; i<t.size(); i++){
+       91:   94-block  0
+      230:   94-block  1
+      139:   94-block  2
+      979:   95:        for(int j=0; j<t[0].size();j++){
+      208:   95-block  0
+      979:   95-block  1
+      771:   95-block  2
+      840:   96:            if(t[i][j]){
+      840:   96-block  0
+       69:   97:                return false;
+       69:   97-block  0
+        -:   98:            }
+        -:   99:        }
+        -:  100:    }
+       22:  101:    return true;
+       22:  101-block  0
+        -:  102:}
+        -:  103:
+       43:  104:void generarVistaColumnas(toroide &t){
+       86:  105:    toroide t0 = t;
+       43:  105-block  0
+       43:  105-block  1
+      205:  106:    for(int i = 0; i < t.size(); i++){
+       43:  106-block  0
+      205:  106-block  1
+      162:  106-block  2
+      776:  107:        for (int j = 0; j < t[0].size(); j++){
+      162:  107-block  0
+      776:  107-block  1
+      614:  108:            t[i][j] = t0[i][mod((j - 1), t[0].size())];
+      614:  108-block  0
+        -:  109:        }
+        -:  110:    }
+       43:  111:}
+        -:  112:
+       55:  113:void generarVistaFilas(toroide &t){
+      110:  114:    toroide t0 = t;
+       55:  114-block  0
+       55:  114-block  1
+      234:  115:    for(int i = 0; i < t.size(); i++){
+       55:  115-block  0
+      234:  115-block  1
+      179:  115-block  2
+      748:  116:        for (int j = 0; j < t[0].size(); j++){
+      179:  116-block  0
+      748:  116-block  1
+      569:  117:            t[i][j] = t0[mod((i - 1), t.size())][j];
+      569:  117-block  0
+        -:  118:        }
+        -:  119:    }
+       55:  120:}
+        -:  121:
+        1:  122:int indiceDelMaximo(vector<int> const &t){
+        1:  123:    int indice = 0;
+        1:  124:    int comparador = 0;
+        4:  125:    for(int i=0; i< t.size(); i++){
+        1:  125-block  0
+        4:  125-block  1
+        3:  125-block  2
+        3:  126:        if(comparador<=t[i]){
+        3:  126-block  0
+        1:  127:            comparador = t[i];
+        1:  127-block  0
+        1:  128:            indice = i;
+        -:  129:        }
+        -:  130:    }
+        1:  131:    return indice;
+        1:  131-block  0
+        -:  132:}
+        -:  133:
+        2:  134:vector<toroide> generarVistas(toroide const &t){
+        2:  135:    vector<toroide> vistas;
+        2:  135-block  0
+        4:  136:    toroide copiaT = t;
+        2:  136-block  0
+    $$$$$:  136-block  1
+        2:  137:    vistas.push_back(copiaT);
+        2:  137-block  0
+       10:  138:    for(int i = 0; i<t.size(); i++){
+        2:  138-block  0
+       10:  138-block  1
+        8:  138-block  2
+        8:  139:        generarVistaFilas(copiaT);
+        8:  139-block  0
+        8:  140:        vistas.push_back(copiaT);
+        8:  140-block  0
+       40:  141:        for(int j = 0; j<t[0].size(); j++){
+        8:  141-block  0
+       40:  141-block  1
+       32:  141-block  2
+       32:  142:            generarVistaColumnas(copiaT);
+       32:  142-block  0
+       32:  143:            vistas.push_back(copiaT);
+       32:  143-block  0
+        -:  144:        }
+        -:  145:    }
+        4:  146:    return vistas;
+        2:  146-block  0
+        2:  146-block  1
+        -:  147:}
+        -:  148:
+        -:  149:
+       48:  150:int filaMinima(toroide const &t){
+       48:  151:    int fila = 0;
+      240:  152:    for(int i = 0; i< t.size();i++){
+       48:  152-block  0
+      240:  152-block  1
+      192:  152-block  2
+      192:  153:        if(find(t[i].begin(), t[i].end(), true) != t[i].end() && fila >= i){
+      192:  153-block  0
+      192:  153-block  1
+       96:  153-block  2
+       27:  153-block  3
+      165:  153-block  4
+      192:  153-block  5
+    $$$$$:  153-block  6
+    $$$$$:  153-block  7
+       27:  154:            fila = i;
+       27:  154-block  0
+        -:  155:        }
+        -:  156:    }
+       48:  157:    return fila;
+       48:  157-block  0
+       48:  157-block  1
+        -:  158:}
+        -:  159:
+       48:  160:int filaMaxima(toroide const &t){
+       48:  161:    int fila = 0;
+      240:  162:    for(int i = 0; i< t.size();i++){
+       48:  162-block  0
+      240:  162-block  1
+      192:  162-block  2
+      192:  163:        if(find(t[i].begin(), t[i].end(), true) != t[i].end() && fila <= i){
+      192:  163-block  0
+      192:  163-block  1
+       96:  163-block  2
+       96:  163-block  3
+       96:  163-block  4
+      192:  163-block  5
+    $$$$$:  163-block  6
+    $$$$$:  163-block  7
+       96:  164:            fila = i;
+       96:  164-block  0
+        -:  165:        }
+        -:  166:    }
+       48:  167:    return fila;
+       48:  167-block  0
+       48:  167-block  1
+        -:  168:}
+        -:  169:
+       48:  170:int columnaMinima(toroide const &t){
+       48:  171:    int columna = 0;
+      240:  172:    for(int i = 0; i< t.size();i++){
+       48:  172-block  0
+      240:  172-block  1
+      192:  172-block  2
+      960:  173:        for(int j = 0; j< t[0].size(); j++){
+      192:  173-block  0
+      960:  173-block  1
+      768:  173-block  2
+      768:  174:            if(t[i][j] && j <= columna){
+      768:  174-block  0
+      168:  174-block  1
+       53:  174-block  2
+      715:  174-block  3
+      768:  174-block  4
+       53:  175:                columna = j;
+       53:  175-block  0
+        -:  176:            }
+        -:  177:        }
+        -:  178:    }
+       48:  179:    return columna;
+       48:  179-block  0
+        -:  180:}
+        -:  181:
+       48:  182:int columnaMaxima(toroide const &t){
+       48:  183:    int columna = 0;
+      240:  184:    for(int i = 0; i< t.size();i++){
+       48:  184-block  0
+      240:  184-block  1
+      192:  184-block  2
+      960:  185:        for(int j = 0; j< t[0].size(); j++){
+      192:  185-block  0
+      960:  185-block  1
+      768:  185-block  2
+      768:  186:            if(t[i][j] && j >= columna){
+      768:  186-block  0
+      168:  186-block  1
+      122:  186-block  2
+      646:  186-block  3
+      768:  186-block  4
+      122:  187:                columna = j;
+      122:  187-block  0
+        -:  188:            }
+        -:  189:        }
+        -:  190:    }
+       48:  191:    return columna;
+       48:  191-block  0
+        -:  192:}
+        -:  193:
+       48:  194:int areaPosicionesVivas(toroide const &t){
+       48:  195:    int fMin = filaMinima(t);
+       48:  195-block  0
+       48:  196:    int fMax = filaMaxima(t);
+       48:  197:    int cMin = columnaMinima(t);
+       48:  198:    int cMax = columnaMaxima(t);
+       48:  199:    return (fMax+1-fMin)*(cMax+1-cMin);
+        -:  200:}
+        -:  201:
+        -:  202:
+        -:  203:
+        -:  204:

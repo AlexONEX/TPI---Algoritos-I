@@ -1,0 +1,1 @@
+-IC:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googlemock -IC:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest -isystem C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googlemock/include -isystem C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest/include 

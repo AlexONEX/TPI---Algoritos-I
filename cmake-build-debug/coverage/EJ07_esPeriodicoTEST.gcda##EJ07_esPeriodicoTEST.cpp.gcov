@@ -1,0 +1,256 @@
+        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ07_esPeriodicoTEST.cpp
+        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcno
+        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcda
+        -:    0:Runs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:#include <algorithm>
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:
+        2:    7:TEST(esPeriodicoTEST, toroideHorizontalPeriodico2){
+        -:    8:    toroide t = { 
+        -:    9:                  {false, false, false, false, false}, 
+        -:   10:                  {false, false, false, false, false}, 
+        -:   11:                  {false, true, true, true, false},
+        -:   12:                  {false, false, false, false, false}, 
+        9:   13:                  {false, false,false, false, false} };
+        -:   14:    int p;
+        1:   15:    bool res = esPeriodico(t, p);
+       1*:   16:    EXPECT_TRUE(res);
+       1*:   17:    EXPECT_EQ(p, 2);
+        1:   18:}
+------------------
+_ZN48esPeriodicoTEST_toroideHorizontalPeriodico2_Test8TestBodyEv:
+        1:    7:TEST(esPeriodicoTEST, toroideHorizontalPeriodico2){
+        -:    8:    toroide t = { 
+        -:    9:                  {false, false, false, false, false}, 
+        -:   10:                  {false, false, false, false, false}, 
+        -:   11:                  {false, true, true, true, false},
+        -:   12:                  {false, false, false, false, false}, 
+        9:   13:                  {false, false,false, false, false} };
+        1:   13-block  0
+        1:   13-block  1
+        1:   13-block  2
+        1:   13-block  3
+        1:   13-block  4
+        1:   13-block  5
+        5:   13-block  6
+        1:   13-block  7
+    $$$$$:   13-block  8
+    $$$$$:   13-block  9
+    $$$$$:   13-block 10
+    $$$$$:   13-block 11
+    $$$$$:   13-block 12
+    $$$$$:   13-block 13
+    $$$$$:   13-block 14
+    $$$$$:   13-block 15
+    $$$$$:   13-block 16
+    $$$$$:   13-block 17
+    $$$$$:   13-block 18
+    $$$$$:   13-block 19
+    $$$$$:   13-block 20
+    $$$$$:   13-block 21
+        -:   14:    int p;
+        1:   15:    bool res = esPeriodico(t, p);
+       1*:   16:    EXPECT_TRUE(res);
+        1:   16-block  0
+        1:   16-block  1
+    %%%%%:   16-block  2
+    %%%%%:   16-block  3
+    %%%%%:   16-block  4
+    %%%%%:   16-block  5
+    %%%%%:   16-block  6
+        1:   16-block  7
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+    $$$$$:   16-block 11
+    $$$$$:   16-block 12
+    $$$$$:   16-block 13
+    $$$$$:   16-block 14
+       1*:   17:    EXPECT_EQ(p, 2);
+        1:   17-block  0
+    %%%%%:   17-block  1
+    %%%%%:   17-block  2
+    %%%%%:   17-block  3
+    %%%%%:   17-block  4
+    %%%%%:   17-block  5
+        1:   17-block  6
+    $$$$$:   17-block  7
+    $$$$$:   17-block  8
+    $$$$$:   17-block  9
+    $$$$$:   17-block 10
+    $$$$$:   17-block 11
+    $$$$$:   17-block 12
+        1:   18:}
+------------------
+_ZN48esPeriodicoTEST_toroideHorizontalPeriodico2_TestC1Ev:
+        1:    7:TEST(esPeriodicoTEST, toroideHorizontalPeriodico2){
+        1:    7-block  0
+------------------
+        -:   19:
+        2:   20:TEST(esPeriodicoTEST, periodicoCuadrado){
+        -:   21:    toroide t = {
+        -:   22:            {false, false, false, false, false},
+        -:   23:            {false, false, false, false, false},
+        -:   24:            {false, false, true, true, false},
+        -:   25:            {false, false, true, true, false},
+        9:   26:            {false, false,false, false, false} };
+        -:   27:    int p;
+        1:   28:    bool res = esPeriodico(t, p);
+       1*:   29:    EXPECT_TRUE(res);
+       1*:   30:    EXPECT_EQ(p, 1);
+        1:   31:}
+------------------
+_ZN38esPeriodicoTEST_periodicoCuadrado_Test8TestBodyEv:
+        1:   20:TEST(esPeriodicoTEST, periodicoCuadrado){
+        -:   21:    toroide t = {
+        -:   22:            {false, false, false, false, false},
+        -:   23:            {false, false, false, false, false},
+        -:   24:            {false, false, true, true, false},
+        -:   25:            {false, false, true, true, false},
+        9:   26:            {false, false,false, false, false} };
+        1:   26-block  0
+        1:   26-block  1
+        1:   26-block  2
+        1:   26-block  3
+        1:   26-block  4
+        1:   26-block  5
+        5:   26-block  6
+        1:   26-block  7
+    $$$$$:   26-block  8
+    $$$$$:   26-block  9
+    $$$$$:   26-block 10
+    $$$$$:   26-block 11
+    $$$$$:   26-block 12
+    $$$$$:   26-block 13
+    $$$$$:   26-block 14
+    $$$$$:   26-block 15
+    $$$$$:   26-block 16
+    $$$$$:   26-block 17
+    $$$$$:   26-block 18
+    $$$$$:   26-block 19
+    $$$$$:   26-block 20
+    $$$$$:   26-block 21
+        -:   27:    int p;
+        1:   28:    bool res = esPeriodico(t, p);
+       1*:   29:    EXPECT_TRUE(res);
+        1:   29-block  0
+        1:   29-block  1
+    %%%%%:   29-block  2
+    %%%%%:   29-block  3
+    %%%%%:   29-block  4
+    %%%%%:   29-block  5
+    %%%%%:   29-block  6
+        1:   29-block  7
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+    $$$$$:   29-block 11
+    $$$$$:   29-block 12
+    $$$$$:   29-block 13
+    $$$$$:   29-block 14
+       1*:   30:    EXPECT_EQ(p, 1);
+        1:   30-block  0
+    %%%%%:   30-block  1
+    %%%%%:   30-block  2
+    %%%%%:   30-block  3
+    %%%%%:   30-block  4
+    %%%%%:   30-block  5
+        1:   30-block  6
+    $$$$$:   30-block  7
+    $$$$$:   30-block  8
+    $$$$$:   30-block  9
+    $$$$$:   30-block 10
+    $$$$$:   30-block 11
+    $$$$$:   30-block 12
+        1:   31:}
+------------------
+_ZN38esPeriodicoTEST_periodicoCuadrado_TestC1Ev:
+        1:   20:TEST(esPeriodicoTEST, periodicoCuadrado){
+        1:   20-block  0
+------------------
+        -:   32:
+        2:   33:TEST(esPeriodicoTEST, noPeriodico){
+        -:   34:    toroide t = {
+        -:   35:            {true, false, false, false, false},
+        -:   36:            {false, false, false, false, false},
+        -:   37:            {false, true, false, true, false},
+        -:   38:            {false, false, false, false, false},
+        9:   39:            {false, true,false, false, false} };
+        -:   40:    int p;
+        1:   41:    bool res = esPeriodico(t, p);
+       1*:   42:    EXPECT_FALSE(res);
+       1*:   43:    EXPECT_EQ(p, 0);
+        1:   44:}
+------------------
+_ZN32esPeriodicoTEST_noPeriodico_Test8TestBodyEv:
+        1:   33:TEST(esPeriodicoTEST, noPeriodico){
+        -:   34:    toroide t = {
+        -:   35:            {true, false, false, false, false},
+        -:   36:            {false, false, false, false, false},
+        -:   37:            {false, true, false, true, false},
+        -:   38:            {false, false, false, false, false},
+        9:   39:            {false, true,false, false, false} };
+        1:   39-block  0
+        1:   39-block  1
+        1:   39-block  2
+        1:   39-block  3
+        1:   39-block  4
+        1:   39-block  5
+        5:   39-block  6
+        1:   39-block  7
+    $$$$$:   39-block  8
+    $$$$$:   39-block  9
+    $$$$$:   39-block 10
+    $$$$$:   39-block 11
+    $$$$$:   39-block 12
+    $$$$$:   39-block 13
+    $$$$$:   39-block 14
+    $$$$$:   39-block 15
+    $$$$$:   39-block 16
+    $$$$$:   39-block 17
+    $$$$$:   39-block 18
+    $$$$$:   39-block 19
+    $$$$$:   39-block 20
+    $$$$$:   39-block 21
+        -:   40:    int p;
+        1:   41:    bool res = esPeriodico(t, p);
+       1*:   42:    EXPECT_FALSE(res);
+        1:   42-block  0
+        1:   42-block  1
+    %%%%%:   42-block  2
+    %%%%%:   42-block  3
+    %%%%%:   42-block  4
+    %%%%%:   42-block  5
+    %%%%%:   42-block  6
+        1:   42-block  7
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+    $$$$$:   42-block 10
+    $$$$$:   42-block 11
+    $$$$$:   42-block 12
+    $$$$$:   42-block 13
+    $$$$$:   42-block 14
+    $$$$$:   42-block 15
+       1*:   43:    EXPECT_EQ(p, 0);
+        1:   43-block  0
+    %%%%%:   43-block  1
+    %%%%%:   43-block  2
+    %%%%%:   43-block  3
+    %%%%%:   43-block  4
+    %%%%%:   43-block  5
+        1:   43-block  6
+    $$$$$:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+    $$$$$:   43-block 11
+    $$$$$:   43-block 12
+        1:   44:}
+------------------
+_ZN32esPeriodicoTEST_noPeriodico_TestC1Ev:
+        1:   33:TEST(esPeriodicoTEST, noPeriodico){
+        1:   33-block  0
+------------------
