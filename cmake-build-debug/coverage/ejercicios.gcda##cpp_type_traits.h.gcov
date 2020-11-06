@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/cpp_type_traits.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
         -:    0:Runs:1
         -:    1:// The  -*- C++ -*- type traits classes for internal use in libstdc++
         -:    2:
@@ -429,8 +429,8 @@
         -:  425:  // remove the move_iterator wrapper.
         -:  426:  template<typename _Iterator>
         -:  427:    inline _Iterator
-    6180*:  428:    __miter_base(_Iterator __it)
-    6180*:  429:    { return __it; }
+  200068*:  428:    __miter_base(_Iterator __it)
+  200068*:  429:    { return __it; }
 ------------------
 _ZSt12__miter_baseIPiET_S1_:
     #####:  428:    __miter_base(_Iterator __it)
@@ -438,14 +438,14 @@ _ZSt12__miter_baseIPiET_S1_:
     %%%%%:  429-block  0
 ------------------
 _ZSt12__miter_baseISt19_Bit_const_iteratorET_S1_:
-     3090:  428:    __miter_base(_Iterator __it)
-     3090:  429:    { return __it; }
-     3090:  429-block  0
+   100034:  428:    __miter_base(_Iterator __it)
+   100034:  429:    { return __it; }
+   100034:  429-block  0
 ------------------
 _ZSt12__miter_baseIPmET_S1_:
-     3090:  428:    __miter_base(_Iterator __it)
-     3090:  429:    { return __it; }
-     3090:  429-block  0
+   100034:  428:    __miter_base(_Iterator __it)
+   100034:  429:    { return __it; }
+   100034:  429-block  0
 ------------------
         -:  430:
         -:  431:_GLIBCXX_END_NAMESPACE_VERSION

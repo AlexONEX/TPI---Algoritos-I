@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ01_toroideValidoTEST.cpp
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ01_toroideValidoTEST.cpp
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
         -:    0:Runs:1
         -:    1:#include "../ejercicios.h"
         -:    2:#include "gtest/gtest.h"

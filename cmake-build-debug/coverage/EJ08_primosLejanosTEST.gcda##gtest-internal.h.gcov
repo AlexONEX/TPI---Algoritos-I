@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.gcda
         -:    0:Runs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -467,7 +467,7 @@
         -:  463:template <class TestClass>
         -:  464:class TestFactoryImpl : public TestFactoryBase {
         -:  465: public:
-        3:  466:  virtual Test* CreateTest() { return new TestClass; }
+        4:  466:  virtual Test* CreateTest() { return new TestClass; }
 ------------------
 _ZN7testing8internal15TestFactoryImplI50primosLejanosTEST_toroideHorizontalPeriodico2_TestE10CreateTestEv:
         1:  466:  virtual Test* CreateTest() { return new TestClass; }
@@ -484,6 +484,13 @@ _ZN7testing8internal15TestFactoryImplI29primosLejanosTEST_random_TestE10CreateTe
     $$$$$:  466-block  3
 ------------------
 _ZN7testing8internal15TestFactoryImplI37primosLejanosTEST_NingunoPrimoDe_TestE10CreateTestEv:
+        1:  466:  virtual Test* CreateTest() { return new TestClass; }
+        1:  466-block  0
+        1:  466-block  1
+        1:  466-block  2
+    $$$$$:  466-block  3
+------------------
+_ZN7testing8internal15TestFactoryImplI29primosLejanosTEST_glider_TestE10CreateTestEv:
         1:  466:  virtual Test* CreateTest() { return new TestClass; }
         1:  466-block  0
         1:  466-block  1

@@ -10,8 +10,7 @@ using namespace std;
 // definir aqui las funciones
 pair<int,int> mp(int a, int b);
 vector<posicion> ordenar(vector<posicion> &v);
-int filas(vector<vector<bool>> const &t);
-int columnas(vector<vector<bool>> const &t);
+
 bool esRectangulo(vector<vector<bool>> const &t);
 int superficieTotal(vector<vector<bool>> const &t);
 int cantidadVivas(vector<vector<bool>> const &t);

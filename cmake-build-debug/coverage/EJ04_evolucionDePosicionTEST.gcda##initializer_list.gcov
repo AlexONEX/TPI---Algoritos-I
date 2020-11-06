@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/initializer_list
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.gcda
         -:    0:Runs:1
         -:    1:// std::initializer_list support -*- C++ -*-
         -:    2:

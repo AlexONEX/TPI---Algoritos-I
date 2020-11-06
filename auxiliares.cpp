@@ -21,24 +21,18 @@ int mod (int a, int b)
     return res;
 }
 
-int filas(vector<vector<bool>> const &t){
-    return t.size();
-}
 
-int columnas(vector<vector<bool>> const &t){
-    if (filas(t) > 0){
-        return t[0].size();
-    }
-    return 0;
-}
 
 bool esRectangulo(toroide const &t){
-    for(int i = 0; i < t.size(); i++){
-        if(t[i].size() != t[0].size()){
+    int filas = t.size();
+    int columnas = t[0].size();
+
+    for(int i = 0; i < filas; i++){
+        if(t[i].size() != columnas){
             return false;
         }
     }
-    return filas(t) > 0 && columnas(t) > 0;
+    return filas > 0 && columnas > 0;
 }
 
 
@@ -50,9 +44,11 @@ int superficieTotal(toroide const &t){
 
 int cantidadVivas(toroide const &t){
     int total_vivas = 0;
+    int filas = t.size();
+    int columnas = t[0].size();
 
-    for(int i = 0; i < t.size(); i++){
-        for(int j = 0; j < t[0].size(); j++){
+    for(int i = 0; i < filas; i++){
+        for(int j = 0; j < columnas; j++){
             if (t[i][j]){
                 total_vivas ++;
             }
@@ -76,13 +72,16 @@ bool reproduccion(toroide const &t, posicion x){
 }
 
 int cantidadVecinos(toroide const &t, posicion x) {
+    int filas = t.size();
+    int columnas = t[0].size();
+
     int vecinos = 0;
     for(int i = -1; i<=1; i++){
         for(int j = -1; j<=1; j++){
             if(i == 0 && j == 0){
                 continue;
             }else{
-                vecinos += int(t[mod(x.first+j, t.size())][mod(x.second+i, t[0].size())]); //Chequear Bien q sume bool a int
+                vecinos += int(t[mod(x.first+j, filas)][mod(x.second+i, columnas)]); //Chequear Bien q sume bool a int
             }
         }
     }
@@ -91,8 +90,11 @@ int cantidadVecinos(toroide const &t, posicion x) {
 
 
 bool toroideMuerto(toroide const &t){
-    for(int i =0; i<t.size(); i++){
-        for(int j=0; j<t[0].size();j++){
+    int filas = t.size();
+    int columnas = t[0].size();
+    
+    for(int i =0; i < filas; i++){
+        for(int j=0; j < columnas;j++){
             if(t[i][j]){
                 return false;
             }
@@ -103,18 +105,24 @@ bool toroideMuerto(toroide const &t){
 
 void generarVistaColumnas(toroide &t){
     toroide t0 = t;
-    for(int i = 0; i < t.size(); i++){
-        for (int j = 0; j < t[0].size(); j++){
-            t[i][j] = t0[i][mod((j - 1), t[0].size())];
+    int filas = t0.size();
+    int columnas = t0[0].size();
+    
+    for(int i = 0; i < filas; i++){
+        for (int j = 0; j < columnas; j++){
+            t[i][j] = t0[i][mod((j - 1), columnas)];
         }
     }
 }
 
 void generarVistaFilas(toroide &t){
     toroide t0 = t;
-    for(int i = 0; i < t.size(); i++){
-        for (int j = 0; j < t[0].size(); j++){
-            t[i][j] = t0[mod((i - 1), t.size())][j];
+    int filas = t0.size();
+    int columnas = t0[0].size();
+    
+    for(int i = 0; i < filas; i++){
+        for (int j = 0; j < columnas; j++){
+            t[i][j] = t0[mod((i - 1), filas)][j];
         }
     }
 }
@@ -122,7 +130,8 @@ void generarVistaFilas(toroide &t){
 int indiceDelMaximo(vector<int> const &t){
     int indice = 0;
     int comparador = 0;
-    for(int i=0; i< t.size(); i++){
+    int filas = t.size();
+    for(int i=0; i < filas; i++){
         if(comparador<=t[i]){
             comparador = t[i];
             indice = i;
@@ -135,10 +144,13 @@ vector<toroide> generarVistas(toroide const &t){
     vector<toroide> vistas;
     toroide copiaT = t;
     vistas.push_back(copiaT);
-    for(int i = 0; i<t.size(); i++){
+    int filas = t.size();
+    int columnas = t[0].size();
+    
+    for(int i = 0; i < filas; i++){
         generarVistaFilas(copiaT);
         vistas.push_back(copiaT);
-        for(int j = 0; j<t[0].size(); j++){
+        for(int j = 0; j < columnas; j++){
             generarVistaColumnas(copiaT);
             vistas.push_back(copiaT);
         }
@@ -149,7 +161,9 @@ vector<toroide> generarVistas(toroide const &t){
 
 int filaMinima(toroide const &t){
     int fila = 0;
-    for(int i = 0; i< t.size();i++){
+    int filas = t.size();
+    
+    for(int i = 0; i < filas;i++){
         if(find(t[i].begin(), t[i].end(), true) != t[i].end() && fila >= i){
             fila = i;
         }
@@ -159,7 +173,9 @@ int filaMinima(toroide const &t){
 
 int filaMaxima(toroide const &t){
     int fila = 0;
-    for(int i = 0; i< t.size();i++){
+    int filas = t.size();
+    
+    for(int i = 0; i < filas;i++){
         if(find(t[i].begin(), t[i].end(), true) != t[i].end() && fila <= i){
             fila = i;
         }
@@ -169,8 +185,11 @@ int filaMaxima(toroide const &t){
 
 int columnaMinima(toroide const &t){
     int columna = 0;
-    for(int i = 0; i< t.size();i++){
-        for(int j = 0; j< t[0].size(); j++){
+    int filas = t.size();
+    int columnas = t[0].size();
+    
+    for(int i = 0; i < filas;i++){
+        for(int j = 0; j < columnas; j++){
             if(t[i][j] && j <= columna){
                 columna = j;
             }
@@ -181,8 +200,11 @@ int columnaMinima(toroide const &t){
 
 int columnaMaxima(toroide const &t){
     int columna = 0;
-    for(int i = 0; i< t.size();i++){
-        for(int j = 0; j< t[0].size(); j++){
+    int filas = t.size();
+    int columnas = t[0].size();
+    
+    for(int i = 0; i < filas;i++){
+        for(int j = 0; j < columnas; j++){
             if(t[i][j] && j >= columna){
                 columna = j;
             }

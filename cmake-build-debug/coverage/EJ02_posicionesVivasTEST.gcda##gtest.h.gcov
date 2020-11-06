@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest/include/gtest/gtest.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/lib/googletest-master/googletest/include/gtest/gtest.h
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.gcda
         -:    0:Runs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -315,12 +315,12 @@
         -:  310:  // use it when they fail (i.e., the predicate's outcome doesn't match the
         -:  311:  // assertion's expectation). When nothing has been streamed into the
         -:  312:  // object, returns an empty string.
-    #####:  313:  const char* message() const {
-    #####:  314:    return message_.get() != NULL ?  message_->c_str() : "";
-    %%%%%:  314-block  0
+        2:  313:  const char* message() const {
+       2*:  314:    return message_.get() != NULL ?  message_->c_str() : "";
+        2:  314-block  0
     %%%%%:  314-block  1
-    %%%%%:  314-block  2
-    %%%%%:  314-block  3
+        2:  314-block  2
+        2:  314-block  3
         -:  315:  }
         -:  316:  // TODO(vladl@google.com): Remove this after making sure no clients use it.
         -:  317:  // Deprecated; please use message() instead.

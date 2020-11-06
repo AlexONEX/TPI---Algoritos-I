@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_pair.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
         -:    0:Runs:1
         -:    1:// Pair implementation -*- C++ -*-
         -:    2:
@@ -342,9 +342,9 @@
         -:  338:			  && _PCCP::template
         -:  339:			   _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
         -:  340:                         bool>::type=true>
-     1739:  341:	constexpr pair(_U1&& __x, _U2&& __y)
-     1739:  342:	: first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
-     1739:  342-block  0
+   362957:  341:	constexpr pair(_U1&& __x, _U2&& __y)
+   362957:  342:	: first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
+   362957:  342-block  0
         -:  343:
         -:  344:      template<typename _U1, typename _U2, typename
         -:  345:	       enable_if<_PCCP::template
@@ -526,13 +526,13 @@
         -:  521:  template<typename _T1, typename _T2>
         -:  522:    constexpr pair<typename __decay_and_strip<_T1>::__type,
         -:  523:                   typename __decay_and_strip<_T2>::__type>
-     1724:  524:    make_pair(_T1&& __x, _T2&& __y)
+   362942:  524:    make_pair(_T1&& __x, _T2&& __y)
         -:  525:    {
         -:  526:      typedef typename __decay_and_strip<_T1>::__type __ds_type1;
         -:  527:      typedef typename __decay_and_strip<_T2>::__type __ds_type2;
         -:  528:      typedef pair<__ds_type1, __ds_type2> 	      __pair_type;
-     1724:  529:      return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
-     1724:  529-block  0
+   362942:  529:      return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
+   362942:  529-block  0
         -:  530:    }
         -:  531:#else
         -:  532:  template<typename _T1, typename _T2>

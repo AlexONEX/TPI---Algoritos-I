@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/allocator.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
         -:    0:Runs:1
         -:    1:// Allocators -*- C++ -*-
         -:    2:
@@ -139,19 +139,19 @@
         -:  135:      // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  136:      // 3035. std::allocator's constructors should be constexpr
         -:  137:      _GLIBCXX20_CONSTEXPR
-      236:  138:      allocator() _GLIBCXX_NOTHROW { }
+      313:  138:      allocator() _GLIBCXX_NOTHROW { }
 ------------------
 _ZNSaImEC2Ev:
         3:  138:      allocator() _GLIBCXX_NOTHROW { }
         3:  138-block  0
 ------------------
 _ZNSaIbEC1Ev:
-      179:  138:      allocator() _GLIBCXX_NOTHROW { }
-      179:  138-block  0
+      250:  138:      allocator() _GLIBCXX_NOTHROW { }
+      250:  138-block  0
 ------------------
 _ZNSaISt6vectorIbSaIbEEEC1Ev:
-       54:  138:      allocator() _GLIBCXX_NOTHROW { }
-       54:  138-block  0
+       60:  138:      allocator() _GLIBCXX_NOTHROW { }
+       60:  138-block  0
 ------------------
         -:  139:
         -:  140:      _GLIBCXX20_CONSTEXPR

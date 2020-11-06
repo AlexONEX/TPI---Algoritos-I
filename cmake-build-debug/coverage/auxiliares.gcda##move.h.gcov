@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/move.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
         -:    0:Runs:1
         -:    1:// Move, forward and identity for C++11 + swap -*- C++ -*-
         -:    2:
@@ -96,8 +96,8 @@ _ZSt11__addressofISt4pairIiiEEPT_RS2_:
         -:   71:   */
         -:   72:  template<typename _Tp>
         -:   73:    constexpr _Tp&&
-     288*:   74:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-     288*:   75:    { return static_cast<_Tp&&>(__t); }
+     302*:   74:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+     302*:   75:    { return static_cast<_Tp&&>(__t); }
 ------------------
 _ZSt7forwardISt6vectorIS0_IbSaIbEESaIS2_EEEOT_RNSt16remove_referenceIS5_E4typeE:
     #####:   74:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
@@ -115,9 +115,9 @@ _ZSt7forwardIRKSt4pairIiiEEOT_RNSt16remove_referenceIS4_E4typeE:
        45:   75-block  0
 ------------------
 _ZSt7forwardIiEOT_RNSt16remove_referenceIS0_E4typeE:
-      243:   74:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-      243:   75:    { return static_cast<_Tp&&>(__t); }
-      243:   75-block  0
+      257:   74:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+      257:   75:    { return static_cast<_Tp&&>(__t); }
+      257:   75-block  0
 ------------------
 _ZSt7forwardIRKSt6vectorIS0_IbSaIbEESaIS2_EEEOT_RNSt16remove_referenceIS7_E4typeE:
     #####:   74:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
@@ -152,8 +152,8 @@ _ZSt7forwardIRiEOT_RNSt16remove_referenceIS1_E4typeE:
         -:   96:  */
         -:   97:  template<typename _Tp>
         -:   98:    constexpr typename std::remove_reference<_Tp>::type&&
-      47*:   99:    move(_Tp&& __t) noexcept
-      47*:  100:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+      51*:   99:    move(_Tp&& __t) noexcept
+      51*:  100:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
 ------------------
 _ZSt4moveIRNSt12_Vector_baseISt6vectorIbSaIbEESaIS3_EE12_Vector_implEEONSt16remove_referenceIT_E4typeEOS9_:
     #####:   99:    move(_Tp&& __t) noexcept
@@ -161,9 +161,9 @@ _ZSt4moveIRNSt12_Vector_baseISt6vectorIbSaIbEESaIS3_EE12_Vector_implEEONSt16remo
     %%%%%:  100-block  0
 ------------------
 _ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_:
-       47:   99:    move(_Tp&& __t) noexcept
-       47:  100:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
-       47:  100-block  0
+       51:   99:    move(_Tp&& __t) noexcept
+       51:  100:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+       51:  100-block  0
 ------------------
 _ZSt4moveIRSt6vectorIS0_IbSaIbEESaIS2_EEEONSt16remove_referenceIT_E4typeEOS7_:
     #####:   99:    move(_Tp&& __t) noexcept

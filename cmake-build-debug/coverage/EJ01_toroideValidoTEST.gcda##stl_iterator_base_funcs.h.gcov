@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_iterator_base_funcs.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
         -:    0:Runs:1
         -:    1:// Functions used by iterators -*- C++ -*-
         -:    2:
@@ -99,13 +99,13 @@
         -:   95:  template<typename _RandomAccessIterator>
         -:   96:    inline _GLIBCXX14_CONSTEXPR
         -:   97:    typename iterator_traits<_RandomAccessIterator>::difference_type
-     233*:   98:    __distance(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     310*:   98:    __distance(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -:   99:               random_access_iterator_tag)
         -:  100:    {
         -:  101:      // concept requirements
         -:  102:      __glibcxx_function_requires(_RandomAccessIteratorConcept<
         -:  103:				  _RandomAccessIterator>)
-     233*:  104:      return __last - __first;
+     310*:  104:      return __last - __first;
         -:  105:    }
 ------------------
 _ZSt10__distanceIPcENSt15iterator_traitsIT_E15difference_typeES2_S2_St26random_access_iterator_tag:
@@ -131,25 +131,25 @@ _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_
         -:  105:    }
 ------------------
 _ZSt10__distanceIPKbENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag:
-      179:   98:    __distance(_RandomAccessIterator __first, _RandomAccessIterator __last,
+      250:   98:    __distance(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -:   99:               random_access_iterator_tag)
         -:  100:    {
         -:  101:      // concept requirements
         -:  102:      __glibcxx_function_requires(_RandomAccessIteratorConcept<
         -:  103:				  _RandomAccessIterator>)
-      179:  104:      return __last - __first;
-      179:  104-block  0
+      250:  104:      return __last - __first;
+      250:  104-block  0
         -:  105:    }
 ------------------
 _ZSt10__distanceIPKSt6vectorIbSaIbEEENSt15iterator_traitsIT_E15difference_typeES6_S6_St26random_access_iterator_tag:
-       54:   98:    __distance(_RandomAccessIterator __first, _RandomAccessIterator __last,
+       60:   98:    __distance(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -:   99:               random_access_iterator_tag)
         -:  100:    {
         -:  101:      // concept requirements
         -:  102:      __glibcxx_function_requires(_RandomAccessIteratorConcept<
         -:  103:				  _RandomAccessIterator>)
-       54:  104:      return __last - __first;
-       54:  104-block  0
+       60:  104:      return __last - __first;
+       60:  104-block  0
         -:  105:    }
 ------------------
         -:  106:
@@ -184,11 +184,11 @@ _ZSt10__distanceIPKSt6vectorIbSaIbEEENSt15iterator_traitsIT_E15difference_typeES
         -:  135:  template<typename _InputIterator>
         -:  136:    inline _GLIBCXX17_CONSTEXPR
         -:  137:    typename iterator_traits<_InputIterator>::difference_type
-     233*:  138:    distance(_InputIterator __first, _InputIterator __last)
+     310*:  138:    distance(_InputIterator __first, _InputIterator __last)
         -:  139:    {
         -:  140:      // concept requirements -- taken care of in __distance
-     233*:  141:      return std::__distance(__first, __last,
-     466*:  142:			     std::__iterator_category(__first));
+     310*:  141:      return std::__distance(__first, __last,
+     620*:  142:			     std::__iterator_category(__first));
         -:  143:    }
         -:  144:
         -:  145:  template<typename _InputIterator, typename _Distance>

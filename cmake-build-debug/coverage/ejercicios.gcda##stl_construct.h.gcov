@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
         -:    0:Runs:1
         -:    1:// nonstandard construct and destroy functions -*- C++ -*-
         -:    2:
@@ -75,8 +75,8 @@
         -:   71:#if __cplusplus >= 201103L
         -:   72:  template<typename _T1, typename... _Args>
         -:   73:    inline void
-    1531*:   74:    _Construct(_T1* __p, _Args&&... __args)
-    1531*:   75:    { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+   50009*:   74:    _Construct(_T1* __p, _Args&&... __args)
+   50009*:   75:    { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
 ------------------
 _ZSt10_ConstructISt6vectorIS0_IbSaIbEESaIS2_EEJS4_EEvPT_DpOT0_:
     #####:   74:    _Construct(_T1* __p, _Args&&... __args)
@@ -89,17 +89,17 @@ _ZSt10_ConstructISt4pairIiiEJS1_EEvPT_DpOT0_:
     %%%%%:   75-block  0
 ------------------
 _ZSt10_ConstructISt6vectorIS0_IbSaIbEESaIS2_EEJRKS4_EEvPT_DpOT0_:
-        6:   74:    _Construct(_T1* __p, _Args&&... __args)
-        6:   75:    { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
-        6:   75-block  0
-        6:   75-block  1
+       12:   74:    _Construct(_T1* __p, _Args&&... __args)
+       12:   75:    { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+       12:   75-block  0
+       12:   75-block  1
     $$$$$:   75-block  2
 ------------------
 _ZSt10_ConstructISt6vectorIbSaIbEEJRKS2_EEvPT_DpOT0_:
-     1525:   74:    _Construct(_T1* __p, _Args&&... __args)
-     1525:   75:    { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
-     1525:   75-block  0
-     1525:   75-block  1
+    49997:   74:    _Construct(_T1* __p, _Args&&... __args)
+    49997:   75:    { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+    49997:   75-block  0
+    49997:   75-block  1
     $$$$$:   75-block  2
 ------------------
         -:   76:#else
@@ -123,18 +123,18 @@ _ZSt10_ConstructISt6vectorIbSaIbEEJRKS2_EEvPT_DpOT0_:
         -:   94:   */
         -:   95:  template<typename _Tp>
         -:   96:    inline void
-     1617:   97:    _Destroy(_Tp* __pointer)
-     1617:   98:    { __pointer->~_Tp(); }
+    51314:   97:    _Destroy(_Tp* __pointer)
+    51314:   98:    { __pointer->~_Tp(); }
 ------------------
 _ZSt8_DestroyISt6vectorIS0_IbSaIbEESaIS2_EEEvPT_:
-       92:   97:    _Destroy(_Tp* __pointer)
-       92:   98:    { __pointer->~_Tp(); }
-       92:   98-block  0
+     1317:   97:    _Destroy(_Tp* __pointer)
+     1317:   98:    { __pointer->~_Tp(); }
+     1317:   98-block  0
 ------------------
 _ZSt8_DestroyISt6vectorIbSaIbEEEvPT_:
-     1525:   97:    _Destroy(_Tp* __pointer)
-     1525:   98:    { __pointer->~_Tp(); }
-     1525:   98-block  0
+    49997:   97:    _Destroy(_Tp* __pointer)
+    49997:   98:    { __pointer->~_Tp(); }
+    49997:   98-block  0
 ------------------
         -:   99:
         -:  100:  template<bool>
@@ -142,29 +142,29 @@ _ZSt8_DestroyISt6vectorIbSaIbEEEvPT_:
         -:  102:    {
         -:  103:      template<typename _ForwardIterator>
         -:  104:        static void
-     2101:  105:        __destroy(_ForwardIterator __first, _ForwardIterator __last)
+    55562:  105:        __destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  106:	{
-     2101:  107:	  for (; __first != __last; ++__first)
-     1617:  108:	    std::_Destroy(std::__addressof(*__first));
-      484:  109:	}
+    55562:  107:	  for (; __first != __last; ++__first)
+    51314:  108:	    std::_Destroy(std::__addressof(*__first));
+     4248:  109:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt6vectorIS2_IbSaIbEESaIS4_EEEEvT_S8_:
-      122:  105:        __destroy(_ForwardIterator __first, _ForwardIterator __last)
+     1356:  105:        __destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  106:	{
-      122:  107:	  for (; __first != __last; ++__first)
-      122:  107-block  0
-       92:  108:	    std::_Destroy(std::__addressof(*__first));
-       92:  108-block  0
-       30:  109:	}
+     1356:  107:	  for (; __first != __last; ++__first)
+     1356:  107-block  0
+     1317:  108:	    std::_Destroy(std::__addressof(*__first));
+     1317:  108-block  0
+       39:  109:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt6vectorIbSaIbEEEEvT_S6_:
-     1979:  105:        __destroy(_ForwardIterator __first, _ForwardIterator __last)
+    54206:  105:        __destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  106:	{
-     1979:  107:	  for (; __first != __last; ++__first)
-     1979:  107-block  0
-     1525:  108:	    std::_Destroy(std::__addressof(*__first));
-     1525:  108-block  0
-      454:  109:	}
+    54206:  107:	  for (; __first != __last; ++__first)
+    54206:  107-block  0
+    49997:  108:	    std::_Destroy(std::__addressof(*__first));
+    49997:  108-block  0
+     4209:  109:	}
 ------------------
         -:  110:    };
         -:  111:
@@ -173,10 +173,10 @@ _ZNSt12_Destroy_auxILb0EE9__destroyIPSt6vectorIbSaIbEEEEvT_S6_:
         -:  114:    {
         -:  115:      template<typename _ForwardIterator>
         -:  116:        static void
-       13:  117:        __destroy(_ForwardIterator, _ForwardIterator) { }
+       14:  117:        __destroy(_ForwardIterator, _ForwardIterator) { }
 ------------------
 _ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_:
-        1:  117:        __destroy(_ForwardIterator, _ForwardIterator) { }
+        2:  117:        __destroy(_ForwardIterator, _ForwardIterator) { }
 ------------------
 _ZNSt12_Destroy_auxILb1EE9__destroyIPSt4pairIiiEEEvT_S5_:
        12:  117:        __destroy(_ForwardIterator, _ForwardIterator) { }
@@ -190,7 +190,7 @@ _ZNSt12_Destroy_auxILb1EE9__destroyIPSt4pairIiiEEEvT_S5_:
         -:  124:   */
         -:  125:  template<typename _ForwardIterator>
         -:  126:    inline void
-      497:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+     4262:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  128:    {
         -:  129:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  130:                       _Value_type;
@@ -200,11 +200,11 @@ _ZNSt12_Destroy_auxILb1EE9__destroyIPSt4pairIiiEEEvT_S5_:
         -:  134:		    "value type is destructible");
         -:  135:#endif
         -:  136:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-      497:  137:	__destroy(__first, __last);
-      497:  138:    }
+     4262:  137:	__destroy(__first, __last);
+     4262:  138:    }
 ------------------
 _ZSt8_DestroyIPiEvT_S1_:
-        1:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+        2:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  128:    {
         -:  129:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  130:                       _Value_type;
@@ -214,12 +214,12 @@ _ZSt8_DestroyIPiEvT_S1_:
         -:  134:		    "value type is destructible");
         -:  135:#endif
         -:  136:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-        1:  137:	__destroy(__first, __last);
-        1:  137-block  0
-        1:  138:    }
+        2:  137:	__destroy(__first, __last);
+        2:  137-block  0
+        2:  138:    }
 ------------------
 _ZSt8_DestroyIPSt6vectorIS0_IbSaIbEESaIS2_EEEvT_S6_:
-       30:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+       39:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  128:    {
         -:  129:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  130:                       _Value_type;
@@ -229,12 +229,12 @@ _ZSt8_DestroyIPSt6vectorIS0_IbSaIbEESaIS2_EEEvT_S6_:
         -:  134:		    "value type is destructible");
         -:  135:#endif
         -:  136:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-       30:  137:	__destroy(__first, __last);
-       30:  137-block  0
-       30:  138:    }
+       39:  137:	__destroy(__first, __last);
+       39:  137-block  0
+       39:  138:    }
 ------------------
 _ZSt8_DestroyIPSt6vectorIbSaIbEEEvT_S4_:
-      454:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+     4209:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  128:    {
         -:  129:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  130:                       _Value_type;
@@ -244,9 +244,9 @@ _ZSt8_DestroyIPSt6vectorIbSaIbEEEvT_S4_:
         -:  134:		    "value type is destructible");
         -:  135:#endif
         -:  136:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-      454:  137:	__destroy(__first, __last);
-      454:  137-block  0
-      454:  138:    }
+     4209:  137:	__destroy(__first, __last);
+     4209:  137-block  0
+     4209:  138:    }
 ------------------
 _ZSt8_DestroyIPSt4pairIiiEEvT_S3_:
        12:  127:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
@@ -327,35 +327,35 @@ _ZSt8_DestroyIPSt4pairIiiEEvT_S3_:
         -:  200:
         -:  201:  template<typename _ForwardIterator, typename _Tp>
         -:  202:    inline void
-      497:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
+     4262:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
         -:  204:	     allocator<_Tp>&)
         -:  205:    {
-      497:  206:      _Destroy(__first, __last);
-      497:  207:    }
+     4262:  206:      _Destroy(__first, __last);
+     4262:  207:    }
 ------------------
 _ZSt8_DestroyIPiiEvT_S1_RSaIT0_E:
-        1:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
+        2:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
         -:  204:	     allocator<_Tp>&)
         -:  205:    {
-        1:  206:      _Destroy(__first, __last);
-        1:  206-block  0
-        1:  207:    }
+        2:  206:      _Destroy(__first, __last);
+        2:  206-block  0
+        2:  207:    }
 ------------------
 _ZSt8_DestroyIPSt6vectorIS0_IbSaIbEESaIS2_EES4_EvT_S6_RSaIT0_E:
-       30:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
+       39:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
         -:  204:	     allocator<_Tp>&)
         -:  205:    {
-       30:  206:      _Destroy(__first, __last);
-       30:  206-block  0
-       30:  207:    }
+       39:  206:      _Destroy(__first, __last);
+       39:  206-block  0
+       39:  207:    }
 ------------------
 _ZSt8_DestroyIPSt6vectorIbSaIbEES2_EvT_S4_RSaIT0_E:
-      454:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
+     4209:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
         -:  204:	     allocator<_Tp>&)
         -:  205:    {
-      454:  206:      _Destroy(__first, __last);
-      454:  206-block  0
-      454:  207:    }
+     4209:  206:      _Destroy(__first, __last);
+     4209:  206-block  0
+     4209:  207:    }
 ------------------
 _ZSt8_DestroyIPSt4pairIiiES1_EvT_S3_RSaIT0_E:
        12:  203:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,

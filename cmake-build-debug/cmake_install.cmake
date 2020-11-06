@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/aschw/Downloads/tpi-template-alumnos
+# Install script for directory: C:/Users/Usuario/CLionProjects/TPI---Algoritos-I
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
+  include("C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

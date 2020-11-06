@@ -42,3 +42,33 @@ TEST(esPeriodicoTEST, noPeriodico){
     EXPECT_FALSE(res);
     EXPECT_EQ(p, 0);
 }
+
+
+TEST(esPeriodicoTEST, periodicoGlider){
+    toroide t = {
+            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
+            {true, true, true, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+    };
+    int p;
+    bool res = esPeriodico(t, p);
+    EXPECT_TRUE(res);
+    EXPECT_EQ(p, 240);
+}

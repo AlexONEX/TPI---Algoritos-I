@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.gcda
         -:    0:Runs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -1200,8 +1200,8 @@ _ZN7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_trait
         -: 1187:  T& operator*() const { return *ptr_; }
     #####: 1188:  T* operator->() const { return ptr_; }
     %%%%%: 1188-block  0
-    #####: 1189:  T* get() const { return ptr_; }
-    %%%%%: 1189-block  0
+        2: 1189:  T* get() const { return ptr_; }
+        2: 1189-block  0
         -: 1190:
         -: 1191:  T* release() {
         -: 1192:    T* const ptr = ptr_;

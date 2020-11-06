@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ07_esPeriodicoTEST.cpp
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ07_esPeriodicoTEST.cpp
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcda
         -:    0:Runs:1
         -:    1:#include "../ejercicios.h"
         -:    2:#include "gtest/gtest.h"
@@ -253,4 +253,164 @@ _ZN32esPeriodicoTEST_noPeriodico_Test8TestBodyEv:
 _ZN32esPeriodicoTEST_noPeriodico_TestC1Ev:
         1:   33:TEST(esPeriodicoTEST, noPeriodico){
         1:   33-block  0
+------------------
+        -:   45:
+        -:   46:
+        2:   47:TEST(esPeriodicoTEST, periodicoGlider){
+        -:   48:    toroide t = {
+        -:   49:            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   50:            {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   51:            {true, true, true, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   52:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   53:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   54:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   55:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   56:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   57:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   58:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   59:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   60:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   61:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   62:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   63:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   64:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   65:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   66:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   67:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   68:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+       24:   69:    };
+        -:   70:    int p;
+        1:   71:    bool res = esPeriodico(t, p);
+       1*:   72:    EXPECT_TRUE(res);
+       1*:   73:    EXPECT_EQ(p, 240);
+        1:   74:}
+------------------
+_ZN36esPeriodicoTEST_periodicoGlider_Test8TestBodyEv:
+        1:   47:TEST(esPeriodicoTEST, periodicoGlider){
+        -:   48:    toroide t = {
+        -:   49:            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   50:            {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   51:            {true, true, true, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   52:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   53:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   54:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   55:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   56:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   57:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   58:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   59:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   60:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   61:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   62:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   63:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   64:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   65:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   66:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   67:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   68:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+       24:   69:    };
+        1:   69-block  0
+        1:   69-block  1
+        1:   69-block  2
+        1:   69-block  3
+        1:   69-block  4
+        1:   69-block  5
+        1:   69-block  6
+        1:   69-block  7
+        1:   69-block  8
+        1:   69-block  9
+        1:   69-block 10
+        1:   69-block 11
+        1:   69-block 12
+        1:   69-block 13
+        1:   69-block 14
+        1:   69-block 15
+        1:   69-block 16
+        1:   69-block 17
+        1:   69-block 18
+        1:   69-block 19
+        1:   69-block 20
+       20:   69-block 21
+        1:   69-block 22
+    $$$$$:   69-block 23
+    $$$$$:   69-block 24
+    $$$$$:   69-block 25
+    $$$$$:   69-block 26
+    $$$$$:   69-block 27
+    $$$$$:   69-block 28
+    $$$$$:   69-block 29
+    $$$$$:   69-block 30
+    $$$$$:   69-block 31
+    $$$$$:   69-block 32
+    $$$$$:   69-block 33
+    $$$$$:   69-block 34
+    $$$$$:   69-block 35
+    $$$$$:   69-block 36
+    $$$$$:   69-block 37
+    $$$$$:   69-block 38
+    $$$$$:   69-block 39
+    $$$$$:   69-block 40
+    $$$$$:   69-block 41
+    $$$$$:   69-block 42
+    $$$$$:   69-block 43
+    $$$$$:   69-block 44
+    $$$$$:   69-block 45
+    $$$$$:   69-block 46
+    $$$$$:   69-block 47
+    $$$$$:   69-block 48
+    $$$$$:   69-block 49
+    $$$$$:   69-block 50
+    $$$$$:   69-block 51
+    $$$$$:   69-block 52
+    $$$$$:   69-block 53
+    $$$$$:   69-block 54
+    $$$$$:   69-block 55
+    $$$$$:   69-block 56
+    $$$$$:   69-block 57
+    $$$$$:   69-block 58
+    $$$$$:   69-block 59
+    $$$$$:   69-block 60
+    $$$$$:   69-block 61
+    $$$$$:   69-block 62
+    $$$$$:   69-block 63
+    $$$$$:   69-block 64
+    $$$$$:   69-block 65
+    $$$$$:   69-block 66
+        -:   70:    int p;
+        1:   71:    bool res = esPeriodico(t, p);
+       1*:   72:    EXPECT_TRUE(res);
+        1:   72-block  0
+        1:   72-block  1
+    %%%%%:   72-block  2
+    %%%%%:   72-block  3
+    %%%%%:   72-block  4
+    %%%%%:   72-block  5
+    %%%%%:   72-block  6
+        1:   72-block  7
+    $$$$$:   72-block  8
+    $$$$$:   72-block  9
+    $$$$$:   72-block 10
+    $$$$$:   72-block 11
+    $$$$$:   72-block 12
+    $$$$$:   72-block 13
+    $$$$$:   72-block 14
+       1*:   73:    EXPECT_EQ(p, 240);
+        1:   73-block  0
+    %%%%%:   73-block  1
+    %%%%%:   73-block  2
+    %%%%%:   73-block  3
+    %%%%%:   73-block  4
+    %%%%%:   73-block  5
+        1:   73-block  6
+    $$$$$:   73-block  7
+    $$$$$:   73-block  8
+    $$$$$:   73-block  9
+    $$$$$:   73-block 10
+    $$$$$:   73-block 11
+    $$$$$:   73-block 12
+        1:   74:}
+------------------
+_ZN36esPeriodicoTEST_periodicoGlider_TestC1Ev:
+        1:   47:TEST(esPeriodicoTEST, periodicoGlider){
+        1:   47-block  0
 ------------------

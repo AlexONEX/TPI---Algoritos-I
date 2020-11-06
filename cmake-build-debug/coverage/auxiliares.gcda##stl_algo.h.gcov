@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_algo.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
         -:    0:Runs:1
         -:    1:// Algorithm implementation -*- C++ -*-
         -:    2:
@@ -124,44 +124,44 @@
         -:  109:  /// This is an overload used by find algos for the RAI case.
         -:  110:  template<typename _RandomAccessIterator, typename _Predicate>
         -:  111:    _RandomAccessIterator
-      384:  112:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
+      504:  112:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -:  113:	      _Predicate __pred, random_access_iterator_tag)
         -:  114:    {
         -:  115:      typename iterator_traits<_RandomAccessIterator>::difference_type
-      384:  116:	__trip_count = (__last - __first) >> 2;
-      384:  116-block  0
+      504:  116:	__trip_count = (__last - __first) >> 2;
+      504:  116-block  0
         -:  117:
-      576:  118:      for (; __trip_count > 0; --__trip_count)
-      576:  118-block  0
+      736:  118:      for (; __trip_count > 0; --__trip_count)
+      736:  118-block  0
         -:  119:	{
-      384:  120:	  if (__pred(__first))
-      384:  120-block  0
-      106:  121:	    return __first;
-      106:  121-block  0
-      278:  122:	  ++__first;
-      278:  122-block  0
+      504:  120:	  if (__pred(__first))
+      504:  120-block  0
+      148:  121:	    return __first;
+      148:  121-block  0
+      356:  122:	  ++__first;
+      356:  122-block  0
         -:  123:
-      278:  124:	  if (__pred(__first))
-       34:  125:	    return __first;
-       34:  125-block  0
-      244:  126:	  ++__first;
-      244:  126-block  0
+      356:  124:	  if (__pred(__first))
+       48:  125:	    return __first;
+       48:  125-block  0
+      308:  126:	  ++__first;
+      308:  126-block  0
         -:  127:
-      244:  128:	  if (__pred(__first))
-       32:  129:	    return __first;
-       32:  129-block  0
-      212:  130:	  ++__first;
-      212:  130-block  0
+      308:  128:	  if (__pred(__first))
+       56:  129:	    return __first;
+       56:  129-block  0
+      252:  130:	  ++__first;
+      252:  130-block  0
         -:  131:
-      212:  132:	  if (__pred(__first))
+      252:  132:	  if (__pred(__first))
        20:  133:	    return __first;
        20:  133-block  0
-      192:  134:	  ++__first;
-      192:  134-block  0
+      232:  134:	  ++__first;
+      232:  134-block  0
         -:  135:	}
         -:  136:
-      192:  137:      switch (__last - __first)
-      192:  137-block  0
+      232:  137:      switch (__last - __first)
+      232:  137-block  0
         -:  138:	{
     #####:  139:	case 3:
     #####:  140:	  if (__pred(__first))
@@ -184,23 +184,23 @@
     %%%%%:  149-block  0
     #####:  150:	  ++__first;
     %%%%%:  150-block  0
-      192:  151:	case 0:
+      232:  151:	case 0:
         -:  152:	default:
-      192:  153:	  return __last;
-      192:  153-block  0
+      232:  153:	  return __last;
+      232:  153-block  0
         -:  154:	}
         -:  155:    }
         -:  156:
         -:  157:  template<typename _Iterator, typename _Predicate>
         -:  158:    inline _Iterator
-      384:  159:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
+      504:  159:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
         -:  160:    {
-      384:  161:      return __find_if(__first, __last, __pred,
-      768:  162:		       std::__iterator_category(__first));
-      384:  162-block  0
-      384:  162-block  1
-      384:  162-block  2
-      384:  162-block  3
+      504:  161:      return __find_if(__first, __last, __pred,
+     1008:  162:		       std::__iterator_category(__first));
+      504:  162-block  0
+      504:  162-block  1
+      504:  162-block  2
+      504:  162-block  3
         -:  163:    }
         -:  164:
         -:  165:  /// Provided for stable_partition to use.
@@ -3983,7 +3983,7 @@
         -: 3888:  */
         -: 3889:  template<typename _InputIterator, typename _Tp>
         -: 3890:    inline _InputIterator
-      384: 3891:    find(_InputIterator __first, _InputIterator __last,
+      504: 3891:    find(_InputIterator __first, _InputIterator __last,
         -: 3892:	 const _Tp& __val)
         -: 3893:    {
         -: 3894:      // concept requirements
@@ -3991,9 +3991,9 @@
         -: 3896:      __glibcxx_function_requires(_EqualOpConcept<
         -: 3897:		typename iterator_traits<_InputIterator>::value_type, _Tp>)
         -: 3898:      __glibcxx_requires_valid_range(__first, __last);
-      384: 3899:      return std::__find_if(__first, __last,
-      384: 3899-block  0
-      384: 3900:			    __gnu_cxx::__ops::__iter_equals_val(__val));
+      504: 3899:      return std::__find_if(__first, __last,
+      504: 3899-block  0
+      504: 3900:			    __gnu_cxx::__ops::__iter_equals_val(__val));
         -: 3901:    }
         -: 3902:
         -: 3903:  /**

@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/predefined_ops.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
         -:    0:Runs:1
         -:    1:// Default predicates for internal use -*- C++ -*-
         -:    2:
@@ -235,22 +235,22 @@
         -:  231:      _Value& _M_value;
         -:  232:
         -:  233:      explicit
-       35:  234:      _Iter_equals_val(_Value& __value)
-       35:  235:	: _M_value(__value)
-       35:  236:      { }
+     1230:  234:      _Iter_equals_val(_Value& __value)
+     1230:  235:	: _M_value(__value)
+     1230:  236:      { }
         -:  237:
         -:  238:      template<typename _Iterator>
         -:  239:	bool
-       64:  240:	operator()(_Iterator __it)
-       64:  241:	{ return *__it == _M_value; }
-       64:  241-block  0
+   143464:  240:	operator()(_Iterator __it)
+   143464:  241:	{ return *__it == _M_value; }
+   143464:  241-block  0
         -:  242:    };
         -:  243:
         -:  244:  template<typename _Value>
         -:  245:    inline _Iter_equals_val<_Value>
-       35:  246:    __iter_equals_val(_Value& __val)
-       35:  247:    { return _Iter_equals_val<_Value>(__val); }
-       35:  247-block  0
+     1230:  246:    __iter_equals_val(_Value& __val)
+     1230:  247:    { return _Iter_equals_val<_Value>(__val); }
+     1230:  247-block  0
         -:  248:
         -:  249:  template<typename _Iterator1>
         -:  250:    struct _Iter_equals_iter

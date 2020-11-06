@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\aschw\Downloads\tpi-template-alumnos
+CMAKE_SOURCE_DIR = C:\Users\Usuario\CLionProjects\TPI---Algoritos-I
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/juegoDeLaVida.dir/depend.make
@@ -79,212 +79,212 @@ include CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/main.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/main.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/main.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/juegoDeLaVida.dir/main.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\main.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/juegoDeLaVida.dir/main.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\main.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\main.cpp
 
 CMakeFiles/juegoDeLaVida.dir/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/main.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\main.cpp > CMakeFiles\juegoDeLaVida.dir\main.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\main.cpp > CMakeFiles\juegoDeLaVida.dir\main.i
 
 CMakeFiles/juegoDeLaVida.dir/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/main.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\main.cpp -o CMakeFiles\juegoDeLaVida.dir\main.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\main.cpp -o CMakeFiles\juegoDeLaVida.dir\main.s
 
 CMakeFiles/juegoDeLaVida.dir/ejercicios.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/ejercicios.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/ejercicios.obj: ../ejercicios.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/juegoDeLaVida.dir/ejercicios.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\ejercicios.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\ejercicios.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/juegoDeLaVida.dir/ejercicios.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\ejercicios.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\ejercicios.cpp
 
 CMakeFiles/juegoDeLaVida.dir/ejercicios.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/ejercicios.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\ejercicios.cpp > CMakeFiles\juegoDeLaVida.dir\ejercicios.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\ejercicios.cpp > CMakeFiles\juegoDeLaVida.dir\ejercicios.i
 
 CMakeFiles/juegoDeLaVida.dir/ejercicios.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/ejercicios.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\ejercicios.cpp -o CMakeFiles\juegoDeLaVida.dir\ejercicios.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\ejercicios.cpp -o CMakeFiles\juegoDeLaVida.dir\ejercicios.s
 
 CMakeFiles/juegoDeLaVida.dir/auxiliares.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/auxiliares.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/auxiliares.obj: ../auxiliares.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/juegoDeLaVida.dir/auxiliares.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\auxiliares.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\auxiliares.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/juegoDeLaVida.dir/auxiliares.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\auxiliares.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\auxiliares.cpp
 
 CMakeFiles/juegoDeLaVida.dir/auxiliares.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/auxiliares.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\auxiliares.cpp > CMakeFiles\juegoDeLaVida.dir\auxiliares.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\auxiliares.cpp > CMakeFiles\juegoDeLaVida.dir\auxiliares.i
 
 CMakeFiles/juegoDeLaVida.dir/auxiliares.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/auxiliares.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\auxiliares.cpp -o CMakeFiles\juegoDeLaVida.dir\auxiliares.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\auxiliares.cpp -o CMakeFiles\juegoDeLaVida.dir\auxiliares.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.obj: ../tests/EJ01_toroideValidoTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ01_toroideValidoTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ01_toroideValidoTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ01_toroideValidoTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ01_toroideValidoTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ01_toroideValidoTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ01_toroideValidoTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.obj: ../tests/EJ02_posicionesVivasTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ02_posicionesVivasTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ02_posicionesVivasTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ02_posicionesVivasTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ02_posicionesVivasTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ02_posicionesVivasTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ02_posicionesVivasTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ02_posicionesVivasTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../tests/EJ03_densidadPoblacionTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ03_densidadPoblacionTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ03_densidadPoblacionTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ03_densidadPoblacionTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ03_densidadPoblacionTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ03_densidadPoblacionTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ03_densidadPoblacionTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ03_densidadPoblacionTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ03_densidadPoblacionTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ03_densidadPoblacionTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ03_densidadPoblacionTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ03_densidadPoblacionTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ03_densidadPoblacionTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.obj: ../tests/EJ04_evolucionDePosicionTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ04_evolucionDePosicionTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ04_evolucionDePosicionTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ04_evolucionDePosicionTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ04_evolucionDePosicionTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ04_evolucionDePosicionTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ04_evolucionDePosicionTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ04_evolucionDePosicionTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../tests/EJ05_evolucionToroideTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ05_evolucionToroideTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ05_evolucionToroideTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ05_evolucionToroideTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ05_evolucionToroideTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ05_evolucionToroideTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ05_evolucionToroideTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ05_evolucionToroideTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ05_evolucionToroideTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ05_evolucionToroideTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ05_evolucionToroideTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ05_evolucionToroideTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ05_evolucionToroideTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.obj: ../tests/EJ06_evolucionMultipleTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ06_evolucionMultipleTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ06_evolucionMultipleTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ06_evolucionMultipleTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ06_evolucionMultipleTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ06_evolucionMultipleTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ06_evolucionMultipleTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ06_evolucionMultipleTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ06_evolucionMultipleTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ06_evolucionMultipleTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ06_evolucionMultipleTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ06_evolucionMultipleTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ06_evolucionMultipleTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.obj: ../tests/EJ07_esPeriodicoTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ07_esPeriodicoTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ07_esPeriodicoTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ07_esPeriodicoTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ07_esPeriodicoTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ07_esPeriodicoTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ07_esPeriodicoTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.obj: ../tests/EJ08_primosLejanosTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ08_primosLejanosTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ08_primosLejanosTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ08_primosLejanosTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ08_primosLejanosTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ08_primosLejanosTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ08_primosLejanosTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.obj: ../tests/EJ09_seleccionNaturalTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ09_seleccionNaturalTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ09_seleccionNaturalTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ09_seleccionNaturalTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ09_seleccionNaturalTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ09_seleccionNaturalTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ09_seleccionNaturalTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.obj: ../tests/EJ10_fusionarTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ10_fusionarTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ10_fusionarTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ10_fusionarTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ10_fusionarTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ10_fusionarTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ10_fusionarTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ10_fusionarTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ10_fusionarTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ10_fusionarTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ10_fusionarTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ10_fusionarTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ10_fusionarTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.obj: ../tests/EJ11_vistaTrasladadaTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ11_vistaTrasladadaTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ11_vistaTrasladadaTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ11_vistaTrasladadaTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ11_vistaTrasladadaTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ11_vistaTrasladadaTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ11_vistaTrasladadaTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ11_vistaTrasladadaTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ11_vistaTrasladadaTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ11_vistaTrasladadaTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ11_vistaTrasladadaTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ11_vistaTrasladadaTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ11_vistaTrasladadaTEST.s
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj: CMakeFiles/juegoDeLaVida.dir/flags.make
 CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj: CMakeFiles/juegoDeLaVida.dir/includes_CXX.rsp
 CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj: ../tests/EJ12_menorSuperficieVivaTEST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ12_menorSuperficieVivaTEST.obj -c C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ12_menorSuperficieVivaTEST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\juegoDeLaVida.dir\tests\EJ12_menorSuperficieVivaTEST.obj -c C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ12_menorSuperficieVivaTEST.cpp
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ12_menorSuperficieVivaTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ12_menorSuperficieVivaTEST.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ12_menorSuperficieVivaTEST.cpp > CMakeFiles\juegoDeLaVida.dir\tests\EJ12_menorSuperficieVivaTEST.i
 
 CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\aschw\Downloads\tpi-template-alumnos\tests\EJ12_menorSuperficieVivaTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ12_menorSuperficieVivaTEST.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\tests\EJ12_menorSuperficieVivaTEST.cpp -o CMakeFiles\juegoDeLaVida.dir\tests\EJ12_menorSuperficieVivaTEST.s
 
 # Object files for target juegoDeLaVida
 juegoDeLaVida_OBJECTS = \
@@ -329,7 +329,7 @@ juegoDeLaVida_EXTERNAL_OBJECTS =
 ../juegoDeLaVida.exe: CMakeFiles/juegoDeLaVida.dir/linklibs.rsp
 ../juegoDeLaVida.exe: CMakeFiles/juegoDeLaVida.dir/objects1.rsp
 ../juegoDeLaVida.exe: CMakeFiles/juegoDeLaVida.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable ..\juegoDeLaVida.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable ..\juegoDeLaVida.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\juegoDeLaVida.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -342,6 +342,6 @@ CMakeFiles/juegoDeLaVida.dir/clean:
 .PHONY : CMakeFiles/juegoDeLaVida.dir/clean
 
 CMakeFiles/juegoDeLaVida.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\aschw\Downloads\tpi-template-alumnos C:\Users\aschw\Downloads\tpi-template-alumnos C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Usuario\CLionProjects\TPI---Algoritos-I C:\Users\Usuario\CLionProjects\TPI---Algoritos-I C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/juegoDeLaVida.dir/depend
 

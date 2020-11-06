@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest/include/gtest/gtest.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/lib/googletest-master/googletest/include/gtest/gtest.h
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ07_esPeriodicoTEST.gcda
         -:    0:Runs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -1442,14 +1442,14 @@
         -: 1423:
         -: 1424:// The helper function for {ASSERT|EXPECT}_EQ.
         -: 1425:template <typename T1, typename T2>
-        6: 1426:AssertionResult CmpHelperEQ(const char* lhs_expression,
+        9: 1426:AssertionResult CmpHelperEQ(const char* lhs_expression,
         -: 1427:                            const char* rhs_expression,
         -: 1428:                            const T1& lhs,
         -: 1429:                            const T2& rhs) {
-        6: 1430:  if (lhs == rhs) {
-        6: 1430-block  0
-        6: 1431:    return AssertionSuccess();
-        6: 1431-block  0
+        9: 1430:  if (lhs == rhs) {
+        9: 1430-block  0
+        9: 1431:    return AssertionSuccess();
+        9: 1431-block  0
         -: 1432:  }
         -: 1433:
     #####: 1434:  return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
@@ -1473,12 +1473,12 @@
         -: 1451: public:
         -: 1452:  // This templatized version is for the general case.
         -: 1453:  template <typename T1, typename T2>
-        6: 1454:  static AssertionResult Compare(const char* lhs_expression,
+        9: 1454:  static AssertionResult Compare(const char* lhs_expression,
         -: 1455:                                 const char* rhs_expression,
         -: 1456:                                 const T1& lhs,
         -: 1457:                                 const T2& rhs) {
-        6: 1458:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
-        6: 1458-block  0
+        9: 1458:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+        9: 1458-block  0
         -: 1459:  }
         -: 1460:
         -: 1461:  // With this overloaded version, we allow anonymous enums to be used

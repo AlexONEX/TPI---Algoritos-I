@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
         -:    0:Runs:1
         -:    1:// vector<bool> specialization -*- C++ -*-
         -:    2:
@@ -728,17 +728,17 @@
         -:  684:	_M_copy_aligned(__x.begin(), __x.end(), this->_M_impl._M_start);
         -:  685:      }
         -:  686:
-      179:  687:      vector(initializer_list<bool> __l,
+      250:  687:      vector(initializer_list<bool> __l,
         -:  688:	     const allocator_type& __a = allocator_type())
-      179:  689:      : _Base(__a)
-      179:  689-block  0
+      250:  689:      : _Base(__a)
+      250:  689-block  0
     $$$$$:  689-block  1
         -:  690:      {
-      179:  691:	_M_initialize_range(__l.begin(), __l.end(),
+      250:  691:	_M_initialize_range(__l.begin(), __l.end(),
     $$$$$:  691-block  0
         -:  692:			    random_access_iterator_tag());
-      179:  693:      }
-      179:  693-block  0
+      250:  693:      }
+      250:  693-block  0
         -:  694:#endif
         -:  695:
         -:  696:#if __cplusplus >= 201103L
@@ -1242,14 +1242,14 @@
         -: 1181:
         -: 1182:      template<typename _ForwardIterator>
         -: 1183:	void
-      179: 1184:	_M_initialize_range(_ForwardIterator __first, _ForwardIterator __last,
+      250: 1184:	_M_initialize_range(_ForwardIterator __first, _ForwardIterator __last,
         -: 1185:			    std::forward_iterator_tag)
         -: 1186:	{
-      179: 1187:	  const size_type __n = std::distance(__first, __last);
-      179: 1187-block  0
-      179: 1188:	  _M_initialize(__n);
-      179: 1189:	  std::copy(__first, __last, this->_M_impl._M_start);
-      179: 1190:	}
+      250: 1187:	  const size_type __n = std::distance(__first, __last);
+      250: 1187-block  0
+      250: 1188:	  _M_initialize(__n);
+      250: 1189:	  std::copy(__first, __last, this->_M_impl._M_start);
+      250: 1190:	}
         -: 1191:
         -: 1192:#if __cplusplus < 201103L
         -: 1193:      // _GLIBCXX_RESOLVE_LIB_DEFECTS

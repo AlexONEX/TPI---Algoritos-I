@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/auxiliares.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/ejercicios.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/main.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ01_toroideValidoTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ02_posicionesVivasTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ03_densidadPoblacionTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ04_evolucionDePosicionTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ05_evolucionToroideTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ06_evolucionMultipleTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ07_esPeriodicoTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ08_primosLejanosTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ09_seleccionNaturalTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ10_fusionarTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ11_vistaTrasladadaTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.obj"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ12_menorSuperficieVivaTEST.cpp" "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/auxiliares.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/ejercicios.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/main.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ01_toroideValidoTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ02_posicionesVivasTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ03_densidadPoblacionTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ04_evolucionDePosicionTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ05_evolucionToroideTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ06_evolucionMultipleTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ07_esPeriodicoTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ08_primosLejanosTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ09_seleccionNaturalTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ10_fusionarTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ11_vistaTrasladadaTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.obj"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ12_menorSuperficieVivaTEST.cpp" "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -29,8 +29,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master
+# Install script for directory: C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/lib/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/aschw/Downloads/tpi-template-alumnos/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+  include("C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 

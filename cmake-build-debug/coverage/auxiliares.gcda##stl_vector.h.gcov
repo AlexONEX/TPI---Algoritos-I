@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
         -:    0:Runs:1
         -:    1:// Vector implementation -*- C++ -*-
         -:    2:
@@ -1377,18 +1377,18 @@ _ZNKSt6vectorIS_IbSaIbEESaIS1_EE4sizeEv:
         -: 1055:       *  see at().)
         -: 1056:       */
         -: 1057:      const_reference
-      51*: 1058:      operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+      75*: 1058:      operator[](size_type __n) const _GLIBCXX_NOEXCEPT
         -: 1059:      {
         -: 1060:	__glibcxx_requires_subscript(__n);
-      51*: 1061:	return *(this->_M_impl._M_start + __n);
+      75*: 1061:	return *(this->_M_impl._M_start + __n);
         -: 1062:      }
 ------------------
 _ZNKSt6vectorIiSaIiEEixEj:
-       51: 1058:      operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+       75: 1058:      operator[](size_type __n) const _GLIBCXX_NOEXCEPT
         -: 1059:      {
         -: 1060:	__glibcxx_requires_subscript(__n);
-       51: 1061:	return *(this->_M_impl._M_start + __n);
-       51: 1061-block  0
+       75: 1061:	return *(this->_M_impl._M_start + __n);
+       75: 1061-block  0
         -: 1062:      }
 ------------------
 _ZNKSt6vectorIS_IbSaIbEESaIS1_EEixEj:

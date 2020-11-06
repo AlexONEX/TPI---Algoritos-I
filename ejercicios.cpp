@@ -6,14 +6,21 @@
 bool toroideValido(vector<vector<bool>> const &t) {
     // este valor puede ser cambiado de acuerdo a la propia implementacion
     // Implementacion
-    return esRectangulo(t) && filas(t) >= 3 && columnas(t) >= 3 ;
+    int filas = t.size();
+    int columnas = t[0].size();
+
+    return esRectangulo(t) && filas >= 3 && columnas >= 3 ;
 }
+
 
 // EJERCICIO 2
 vector<posicion> posicionesVivas(toroide const &t) {
+    int filas = t.size();
+    int columnas = t[0].size();
+
     vector<posicion> vivos;
-    for(int i = 0; i < t.size(); i++){
-        for(int j = 0; j < t[0].size(); j++){
+    for(int i = 0; i < filas; i++){
+        for(int j = 0; j < columnas; j++){
             if(t[i][j]){
                 vivos.emplace_back(i,j); //vivos.push_back
             }
@@ -40,8 +47,11 @@ bool evolucionDePosicion(toroide const &t, posicion x) {
 // EJERCICIO 5
 void evolucionToroide(toroide &t){
     vector<vector<bool>> t0 = t;
-    for(int i = 0; i < t0.size(); i++ ){
-        for(int j = 0; j < t0[0].size(); j++){
+    int filas = t0.size();
+    int columnas = t0[0].size();
+
+    for(int i = 0; i < filas; i++ ){
+        for(int j = 0; j < columnas; j++){
             if(t0[i][j]){
                 t[i][j] = sigueViva(t0,make_pair(i, j));
             }else{
@@ -86,7 +96,6 @@ bool esPeriodico(toroide const &t, int &p){ // No hara falta copiar p? Mantenerl
 }
 
 // EJERCICIO 8
-
 bool primosLejanos(toroide const &t, toroide const &u) {
     toroide t1 = t;
     toroide u1 = u;
@@ -132,8 +141,11 @@ int seleccionNatural(vector <toroide> ts) {
 // EJERCICIO 10
 toroide fusionar(toroide const &t, toroide const &u) {
     toroide out = t;
-    for(int i = 0; i<t.size(); i++){
-        for(int j = 0; j<t[0].size(); j++){
+    int filas = t.size();
+    int columnas = t[0].size();
+
+    for(int i = 0; i < filas; i++){
+        for(int j = 0; j < columnas; j++){
             out[i][j] = t[i][j] && u[i][j];
         }
     }
@@ -143,9 +155,11 @@ toroide fusionar(toroide const &t, toroide const &u) {
 // EJERCICIO 11
 bool vistaTrasladada(toroide const &t, toroide const &u){
 	toroide t0 = t;
-    // Implementacion
-    for(int i = 0; i <= t.size(); i++){
-        for(int j = 0; j <= t[0].size(); j++){
+    int filas = t0.size();
+    int columnas = t0[0].size();
+
+    for(int i = 0; i <= filas; i++){
+        for(int j = 0; j <= columnas; j++){
             if(t0 == u){
                 return true;
             }

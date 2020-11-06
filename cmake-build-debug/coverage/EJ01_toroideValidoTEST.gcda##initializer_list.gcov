@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/initializer_list
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
         -:    0:Runs:1
         -:    1:// std::initializer_list support -*- C++ -*-
         -:    2:
@@ -72,41 +72,41 @@
         -:   68:
         -:   69:      // Number of elements.
         -:   70:      constexpr size_type
-      233:   71:      size() const noexcept { return _M_len; }
+      310:   71:      size() const noexcept { return _M_len; }
 ------------------
 _ZNKSt16initializer_listIbE4sizeEv:
-      179:   71:      size() const noexcept { return _M_len; }
-      179:   71-block  0
+      250:   71:      size() const noexcept { return _M_len; }
+      250:   71-block  0
 ------------------
 _ZNKSt16initializer_listISt6vectorIbSaIbEEE4sizeEv:
-       54:   71:      size() const noexcept { return _M_len; }
-       54:   71-block  0
+       60:   71:      size() const noexcept { return _M_len; }
+       60:   71-block  0
 ------------------
         -:   72:
         -:   73:      // First element.
         -:   74:      constexpr const_iterator
-      466:   75:      begin() const noexcept { return _M_array; }
+      620:   75:      begin() const noexcept { return _M_array; }
 ------------------
 _ZNKSt16initializer_listIbE5beginEv:
-      358:   75:      begin() const noexcept { return _M_array; }
-      358:   75-block  0
+      500:   75:      begin() const noexcept { return _M_array; }
+      500:   75-block  0
 ------------------
 _ZNKSt16initializer_listISt6vectorIbSaIbEEE5beginEv:
-      108:   75:      begin() const noexcept { return _M_array; }
-      108:   75-block  0
+      120:   75:      begin() const noexcept { return _M_array; }
+      120:   75-block  0
 ------------------
         -:   76:
         -:   77:      // One past the last element.
         -:   78:      constexpr const_iterator
-      233:   79:      end() const noexcept { return begin() + size(); }
+      310:   79:      end() const noexcept { return begin() + size(); }
 ------------------
 _ZNKSt16initializer_listIbE3endEv:
-      179:   79:      end() const noexcept { return begin() + size(); }
-      179:   79-block  0
+      250:   79:      end() const noexcept { return begin() + size(); }
+      250:   79-block  0
 ------------------
 _ZNKSt16initializer_listISt6vectorIbSaIbEEE3endEv:
-       54:   79:      end() const noexcept { return begin() + size(); }
-       54:   79-block  0
+       60:   79:      end() const noexcept { return begin() + size(); }
+       60:   79-block  0
 ------------------
         -:   80:    };
         -:   81:

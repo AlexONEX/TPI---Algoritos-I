@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ09_seleccionNaturalTEST.gcda
         -:    0:Runs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -467,11 +467,22 @@
         -:  463:template <class TestClass>
         -:  464:class TestFactoryImpl : public TestFactoryBase {
         -:  465: public:
+        2:  466:  virtual Test* CreateTest() { return new TestClass; }
+------------------
+_ZN7testing8internal15TestFactoryImplI50seleccionNaturalTEST_toroideDiagonalVsUnoVivo_TestE10CreateTestEv:
         1:  466:  virtual Test* CreateTest() { return new TestClass; }
         1:  466-block  0
         1:  466-block  1
         1:  466-block  2
     $$$$$:  466-block  3
+------------------
+_ZN7testing8internal15TestFactoryImplI35seleccionNaturalTEST_unoMuerto_TestE10CreateTestEv:
+        1:  466:  virtual Test* CreateTest() { return new TestClass; }
+        1:  466-block  0
+        1:  466-block  1
+        1:  466-block  2
+    $$$$$:  466-block  3
+------------------
         -:  467:};
         -:  468:
         -:  469:#if GTEST_OS_WINDOWS

@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/tests/EJ08_primosLejanosTEST.cpp
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ08_primosLejanosTEST.cpp
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ08_primosLejanosTEST.gcda
         -:    0:Runs:1
         -:    1:#include "../ejercicios.h"
         -:    2:#include "gtest/gtest.h"
@@ -366,3 +366,275 @@ _ZN37primosLejanosTEST_NingunoPrimoDe_TestC1Ev:
         1:   46-block  0
 ------------------
         -:   65:
+        2:   66:TEST(primosLejanosTEST, glider){
+        -:   67:    toroide t1 = {
+        -:   68:            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   69:            {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   70:            {true, true, true, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   71:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   72:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   73:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   74:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   75:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   76:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   77:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   78:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   79:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   80:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   81:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   82:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   83:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   84:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   85:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   86:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   87:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+       24:   88:            };
+        -:   89:
+        -:   90:    toroide t2 = {
+        -:   91:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   92:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   93:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   94:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   95:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   96:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   97:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   98:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   99:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  100:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  101:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  102:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  103:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  104:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  105:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  106:            {false, false, false, false, false,false,true,false,false,false,false,false,false,false,false},
+        -:  107:            {false, false, false, false, false,false,false,true,false,false,false,false,false,false,false},
+        -:  108:            {false, false, false, false, false,true,true,true,false,false,false,false,false,false,false},
+        -:  109:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  110:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+       24:  111:    };
+        1:  112:    bool res = primosLejanos(t1, t2);
+        1:  113:    EXPECT_TRUE(res);
+        1:  114:    res = primosLejanos(t2, t1);
+        1:  115:    EXPECT_TRUE(res);
+        1:  116:}
+------------------
+_ZN29primosLejanosTEST_glider_Test8TestBodyEv:
+        1:   66:TEST(primosLejanosTEST, glider){
+        -:   67:    toroide t1 = {
+        -:   68:            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   69:            {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   70:            {true, true, true, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   71:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   72:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   73:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   74:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   75:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   76:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   77:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   78:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   79:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   80:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   81:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   82:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   83:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   84:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   85:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   86:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   87:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+       24:   88:            };
+        1:   88-block  0
+        1:   88-block  1
+        1:   88-block  2
+        1:   88-block  3
+        1:   88-block  4
+        1:   88-block  5
+        1:   88-block  6
+        1:   88-block  7
+        1:   88-block  8
+        1:   88-block  9
+        1:   88-block 10
+        1:   88-block 11
+        1:   88-block 12
+        1:   88-block 13
+        1:   88-block 14
+        1:   88-block 15
+        1:   88-block 16
+        1:   88-block 17
+        1:   88-block 18
+        1:   88-block 19
+        1:   88-block 20
+       20:   88-block 21
+        1:   88-block 22
+    $$$$$:   88-block 23
+    $$$$$:   88-block 24
+    $$$$$:   88-block 25
+    $$$$$:   88-block 26
+    $$$$$:   88-block 27
+    $$$$$:   88-block 28
+    $$$$$:   88-block 29
+    $$$$$:   88-block 30
+    $$$$$:   88-block 31
+    $$$$$:   88-block 32
+    $$$$$:   88-block 33
+    $$$$$:   88-block 34
+    $$$$$:   88-block 35
+    $$$$$:   88-block 36
+    $$$$$:   88-block 37
+    $$$$$:   88-block 38
+    $$$$$:   88-block 39
+    $$$$$:   88-block 40
+    $$$$$:   88-block 41
+    $$$$$:   88-block 42
+    $$$$$:   88-block 43
+    $$$$$:   88-block 44
+    $$$$$:   88-block 45
+    $$$$$:   88-block 46
+    $$$$$:   88-block 47
+    $$$$$:   88-block 48
+    $$$$$:   88-block 49
+    $$$$$:   88-block 50
+    $$$$$:   88-block 51
+    $$$$$:   88-block 52
+    $$$$$:   88-block 53
+    $$$$$:   88-block 54
+    $$$$$:   88-block 55
+    $$$$$:   88-block 56
+    $$$$$:   88-block 57
+    $$$$$:   88-block 58
+    $$$$$:   88-block 59
+    $$$$$:   88-block 60
+    $$$$$:   88-block 61
+    $$$$$:   88-block 62
+    $$$$$:   88-block 63
+    $$$$$:   88-block 64
+    $$$$$:   88-block 65
+    $$$$$:   88-block 66
+        -:   89:
+        -:   90:    toroide t2 = {
+        -:   91:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   92:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   93:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   94:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   95:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   96:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   97:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   98:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:   99:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  100:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  101:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  102:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  103:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  104:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  105:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  106:            {false, false, false, false, false,false,true,false,false,false,false,false,false,false,false},
+        -:  107:            {false, false, false, false, false,false,false,true,false,false,false,false,false,false,false},
+        -:  108:            {false, false, false, false, false,true,true,true,false,false,false,false,false,false,false},
+        -:  109:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+        -:  110:            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+       24:  111:    };
+        1:  111-block  0
+        1:  111-block  1
+        1:  111-block  2
+        1:  111-block  3
+        1:  111-block  4
+        1:  111-block  5
+        1:  111-block  6
+        1:  111-block  7
+        1:  111-block  8
+        1:  111-block  9
+        1:  111-block 10
+        1:  111-block 11
+        1:  111-block 12
+        1:  111-block 13
+        1:  111-block 14
+        1:  111-block 15
+        1:  111-block 16
+        1:  111-block 17
+        1:  111-block 18
+        1:  111-block 19
+       20:  111-block 20
+        1:  111-block 21
+    $$$$$:  111-block 22
+    $$$$$:  111-block 23
+    $$$$$:  111-block 24
+    $$$$$:  111-block 25
+    $$$$$:  111-block 26
+    $$$$$:  111-block 27
+    $$$$$:  111-block 28
+    $$$$$:  111-block 29
+    $$$$$:  111-block 30
+    $$$$$:  111-block 31
+    $$$$$:  111-block 32
+    $$$$$:  111-block 33
+    $$$$$:  111-block 34
+    $$$$$:  111-block 35
+    $$$$$:  111-block 36
+    $$$$$:  111-block 37
+    $$$$$:  111-block 38
+    $$$$$:  111-block 39
+    $$$$$:  111-block 40
+    $$$$$:  111-block 41
+    $$$$$:  111-block 42
+    $$$$$:  111-block 43
+    $$$$$:  111-block 44
+    $$$$$:  111-block 45
+    $$$$$:  111-block 46
+    $$$$$:  111-block 47
+    $$$$$:  111-block 48
+    $$$$$:  111-block 49
+    $$$$$:  111-block 50
+    $$$$$:  111-block 51
+    $$$$$:  111-block 52
+    $$$$$:  111-block 53
+    $$$$$:  111-block 54
+    $$$$$:  111-block 55
+    $$$$$:  111-block 56
+    $$$$$:  111-block 57
+    $$$$$:  111-block 58
+    $$$$$:  111-block 59
+    $$$$$:  111-block 60
+    $$$$$:  111-block 61
+    $$$$$:  111-block 62
+    $$$$$:  111-block 63
+    $$$$$:  111-block 64
+    $$$$$:  111-block 65
+        1:  112:    bool res = primosLejanos(t1, t2);
+        1:  113:    EXPECT_TRUE(res);
+        1:  113-block  0
+        1:  113-block  1
+        1:  113-block  2
+        1:  113-block  3
+        1:  113-block  4
+        1:  113-block  5
+        1:  113-block  6
+        1:  113-block  7
+    $$$$$:  113-block  8
+    $$$$$:  113-block  9
+    $$$$$:  113-block 10
+    $$$$$:  113-block 11
+    $$$$$:  113-block 12
+    $$$$$:  113-block 13
+    $$$$$:  113-block 14
+        1:  114:    res = primosLejanos(t2, t1);
+        1:  115:    EXPECT_TRUE(res);
+        1:  115-block  0
+        1:  115-block  1
+        1:  115-block  2
+        1:  115-block  3
+        1:  115-block  4
+        1:  115-block  5
+        1:  115-block  6
+        1:  115-block  7
+    $$$$$:  115-block  8
+    $$$$$:  115-block  9
+    $$$$$:  115-block 10
+    $$$$$:  115-block 11
+    $$$$$:  115-block 12
+    $$$$$:  115-block 13
+    $$$$$:  115-block 14
+        1:  116:}
+------------------
+_ZN29primosLejanosTEST_glider_TestC1Ev:
+        1:   66:TEST(primosLejanosTEST, glider){
+        1:   66-block  0
+------------------

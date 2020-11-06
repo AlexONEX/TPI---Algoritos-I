@@ -1,6 +1,6 @@
         -:    0:Source:c:/mingw/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\ejercicios.gcda
         -:    0:Runs:1
         -:    1:// Vector implementation -*- C++ -*-
         -:    2:
@@ -95,24 +95,24 @@
         -:   91:	pointer _M_finish;
         -:   92:	pointer _M_end_of_storage;
         -:   93:
-      421:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
-      421:   95:	: _M_start(), _M_finish(), _M_end_of_storage()
-      421:   96:	{ }
+     2893:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+     2893:   95:	: _M_start(), _M_finish(), _M_end_of_storage()
+     2893:   96:	{ }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE17_Vector_impl_dataC2Ev:
-      365:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
-      365:   95:	: _M_start(), _M_finish(), _M_end_of_storage()
-      365:   96:	{ }
+     2827:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+     2827:   95:	: _M_start(), _M_finish(), _M_end_of_storage()
+     2827:   96:	{ }
 ------------------
 _ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev:
-       14:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
-       14:   95:	: _M_start(), _M_finish(), _M_end_of_storage()
-       14:   96:	{ }
+       15:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+       15:   95:	: _M_start(), _M_finish(), _M_end_of_storage()
+       15:   96:	{ }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EE17_Vector_impl_dataC2Ev:
-       30:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
-       30:   95:	: _M_start(), _M_finish(), _M_end_of_storage()
-       30:   96:	{ }
+       39:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+       39:   95:	: _M_start(), _M_finish(), _M_end_of_storage()
+       39:   96:	{ }
 ------------------
 _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE17_Vector_impl_dataC2Ev:
        12:   94:	_Vector_impl_data() _GLIBCXX_NOEXCEPT
@@ -121,10 +121,10 @@ _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE17_Vector_impl_dataC2Ev:
 ------------------
         -:   97:
         -:   98:#if __cplusplus >= 201103L
-       89:   99:	_Vector_impl_data(_Vector_impl_data&& __x) noexcept
-       89:  100:	: _M_start(__x._M_start), _M_finish(__x._M_finish),
-       89:  101:	  _M_end_of_storage(__x._M_end_of_storage)
-       89:  102:	{ __x._M_start = __x._M_finish = __x._M_end_of_storage = pointer(); }
+     1382:   99:	_Vector_impl_data(_Vector_impl_data&& __x) noexcept
+     1382:  100:	: _M_start(__x._M_start), _M_finish(__x._M_finish),
+     1382:  101:	  _M_end_of_storage(__x._M_end_of_storage)
+     1382:  102:	{ __x._M_start = __x._M_finish = __x._M_end_of_storage = pointer(); }
         -:  103:#endif
         -:  104:
         -:  105:	void
@@ -150,24 +150,24 @@ _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE17_Vector_impl_dataC2Ev:
         -:  125:      struct _Vector_impl
         -:  126:	: public _Tp_alloc_type, public _Vector_impl_data
         -:  127:      {
-       46:  128:	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
+       54:  128:	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
         -:  129:	    is_nothrow_default_constructible<_Tp_alloc_type>::value)
-       46:  130:	: _Tp_alloc_type()
-       46:  131:	{ }
+       54:  130:	: _Tp_alloc_type()
+       54:  131:	{ }
 ------------------
 _ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1Ev:
-       14:  128:	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
+       15:  128:	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
         -:  129:	    is_nothrow_default_constructible<_Tp_alloc_type>::value)
-       14:  130:	: _Tp_alloc_type()
-       14:  130-block  0
-       14:  131:	{ }
+       15:  130:	: _Tp_alloc_type()
+       15:  130-block  0
+       15:  131:	{ }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EE12_Vector_implC1Ev:
-       28:  128:	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
+       35:  128:	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
         -:  129:	    is_nothrow_default_constructible<_Tp_alloc_type>::value)
-       28:  130:	: _Tp_alloc_type()
-       28:  130-block  0
-       28:  131:	{ }
+       35:  130:	: _Tp_alloc_type()
+       35:  130-block  0
+       35:  131:	{ }
 ------------------
 _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE12_Vector_implC1Ev:
         4:  128:	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
@@ -177,30 +177,30 @@ _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE12_Vector_implC1Ev:
         4:  131:	{ }
 ------------------
         -:  132:
-      367:  133:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
-      367:  134:	: _Tp_alloc_type(__a)
-      367:  135:	{ }
+     2831:  133:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+     2831:  134:	: _Tp_alloc_type(__a)
+     2831:  135:	{ }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EE12_Vector_implC1ERKS5_:
-        2:  133:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
-        2:  134:	: _Tp_alloc_type(__a)
-        2:  134-block  0
-        2:  135:	{ }
+        4:  133:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+        4:  134:	: _Tp_alloc_type(__a)
+        4:  134-block  0
+        4:  135:	{ }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE12_Vector_implC1ERKS3_:
-      365:  133:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
-      365:  134:	: _Tp_alloc_type(__a)
-      365:  134-block  0
-      365:  135:	{ }
+     2827:  133:	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+     2827:  134:	: _Tp_alloc_type(__a)
+     2827:  134-block  0
+     2827:  135:	{ }
 ------------------
         -:  136:
         -:  137:#if __cplusplus >= 201103L
         -:  138:	// Not defaulted, to enforce noexcept(true) even when
         -:  139:	// !is_nothrow_move_constructible<_Tp_alloc_type>.
-       89:  140:	_Vector_impl(_Vector_impl&& __x) noexcept
-       89:  141:	: _Tp_alloc_type(std::move(__x)), _Vector_impl_data(std::move(__x))
-       89:  141-block  0
-       89:  142:	{ }
+     1382:  140:	_Vector_impl(_Vector_impl&& __x) noexcept
+     1382:  141:	: _Tp_alloc_type(std::move(__x)), _Vector_impl_data(std::move(__x))
+     1382:  141-block  0
+     1382:  142:	{ }
         -:  143:
         -:  144:	_Vector_impl(_Tp_alloc_type&& __a) noexcept
         -:  145:	: _Tp_alloc_type(std::move(__a))
@@ -331,23 +331,23 @@ _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE12_Vector_implC1ERKS3_:
         -:  270:      typedef _Alloc allocator_type;
         -:  271:
         -:  272:      _Tp_alloc_type&
-     1136:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-     1136:  274:      { return this->_M_impl; }
+     7487:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+     7487:  274:      { return this->_M_impl; }
 ------------------
 _ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv:
-       83:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-       83:  274:      { return this->_M_impl; }
-       83:  274-block  0
+       94:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+       94:  274:      { return this->_M_impl; }
+       94:  274-block  0
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EE19_M_get_Tp_allocatorEv:
-      140:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-      140:  274:      { return this->_M_impl; }
-      140:  274-block  0
+      257:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+      257:  274:      { return this->_M_impl; }
+      257:  274-block  0
 ------------------
 _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE19_M_get_Tp_allocatorEv:
-      873:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-      873:  274:      { return this->_M_impl; }
-      873:  274-block  0
+     7096:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+     7096:  274:      { return this->_M_impl; }
+     7096:  274-block  0
 ------------------
 _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE19_M_get_Tp_allocatorEv:
        40:  273:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
@@ -356,13 +356,13 @@ _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE19_M_get_Tp_allocatorEv:
 ------------------
         -:  275:
         -:  276:      const _Tp_alloc_type&
-      527:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
-      527:  278:      { return this->_M_impl; }
+     3101:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
+     3101:  278:      { return this->_M_impl; }
 ------------------
 _ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv:
-       82:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
-       82:  278:      { return this->_M_impl; }
-       82:  278-block  0
+       92:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
+       92:  278:      { return this->_M_impl; }
+       92:  278-block  0
 ------------------
 _ZNKSt12_Vector_baseISt4pairIiiESaIS1_EE19_M_get_Tp_allocatorEv:
        24:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
@@ -370,14 +370,14 @@ _ZNKSt12_Vector_baseISt4pairIiiESaIS1_EE19_M_get_Tp_allocatorEv:
        24:  278-block  0
 ------------------
 _ZNKSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EE19_M_get_Tp_allocatorEv:
-      110:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
-      110:  278:      { return this->_M_impl; }
-      110:  278-block  0
+      218:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
+      218:  278:      { return this->_M_impl; }
+      218:  278-block  0
 ------------------
 _ZNKSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE19_M_get_Tp_allocatorEv:
-      311:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
-      311:  278:      { return this->_M_impl; }
-      311:  278-block  0
+     2767:  277:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
+     2767:  278:      { return this->_M_impl; }
+     2767:  278-block  0
 ------------------
         -:  279:
         -:  280:      allocator_type
@@ -385,15 +385,15 @@ _ZNKSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE19_M_get_Tp_allocatorEv:
         -:  282:      { return allocator_type(_M_get_Tp_allocator()); }
         -:  283:
         -:  284:#if __cplusplus >= 201103L
-       46:  285:      _Vector_base() = default;
+       54:  285:      _Vector_base() = default;
 ------------------
 _ZNSt12_Vector_baseIiSaIiEEC2Ev:
-       14:  285:      _Vector_base() = default;
-       14:  285-block  0
+       15:  285:      _Vector_base() = default;
+       15:  285-block  0
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EEC2Ev:
-       28:  285:      _Vector_base() = default;
-       28:  285-block  0
+       35:  285:      _Vector_base() = default;
+       35:  285-block  0
 ------------------
 _ZNSt12_Vector_baseISt4pairIiiESaIS1_EEC2Ev:
         4:  285:      _Vector_base() = default;
@@ -413,30 +413,30 @@ _ZNSt12_Vector_baseISt4pairIiiESaIS1_EEC2Ev:
         -:  297:      { _M_create_storage(__n); }
         -:  298:#endif
         -:  299:
-      313:  300:      _Vector_base(size_t __n, const allocator_type& __a)
-      313:  301:      : _M_impl(__a)
-      313:  302:      { _M_create_storage(__n); }
+     2771:  300:      _Vector_base(size_t __n, const allocator_type& __a)
+     2771:  301:      : _M_impl(__a)
+     2771:  302:      { _M_create_storage(__n); }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EEC2EjRKS5_:
-        2:  300:      _Vector_base(size_t __n, const allocator_type& __a)
-        2:  301:      : _M_impl(__a)
-        2:  301-block  0
+        4:  300:      _Vector_base(size_t __n, const allocator_type& __a)
+        4:  301:      : _M_impl(__a)
+        4:  301-block  0
     $$$$$:  301-block  1
-        2:  302:      { _M_create_storage(__n); }
-        2:  302-block  0
+        4:  302:      { _M_create_storage(__n); }
+        4:  302-block  0
 ------------------
 _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EEC2EjRKS3_:
-      311:  300:      _Vector_base(size_t __n, const allocator_type& __a)
-      311:  301:      : _M_impl(__a)
-      311:  301-block  0
+     2767:  300:      _Vector_base(size_t __n, const allocator_type& __a)
+     2767:  301:      : _M_impl(__a)
+     2767:  301-block  0
     $$$$$:  301-block  1
-      311:  302:      { _M_create_storage(__n); }
-      311:  302-block  0
+     2767:  302:      { _M_create_storage(__n); }
+     2767:  302-block  0
 ------------------
         -:  303:
         -:  304:#if __cplusplus >= 201103L
-       89:  305:      _Vector_base(_Vector_base&&) = default;
-       89:  305-block  0
+     1382:  305:      _Vector_base(_Vector_base&&) = default;
+     1382:  305-block  0
         -:  306:
         -:  307:      // Kept for ABI compatibility.
         -:  308:# if !_GLIBCXX_INLINE_VERSION
@@ -461,35 +461,35 @@ _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EEC2EjRKS3_:
         -:  327:      { }
         -:  328:#endif
         -:  329:
-      497:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
+     4262:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
         -:  331:      {
-      497:  332:	_M_deallocate(_M_impl._M_start,
-      497:  333:		      _M_impl._M_end_of_storage - _M_impl._M_start);
-      497:  334:      }
+     4262:  332:	_M_deallocate(_M_impl._M_start,
+     4262:  333:		      _M_impl._M_end_of_storage - _M_impl._M_start);
+     4262:  334:      }
 ------------------
 _ZNSt12_Vector_baseIiSaIiEED2Ev:
-        1:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
+        2:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
         -:  331:      {
-        1:  332:	_M_deallocate(_M_impl._M_start,
-        1:  333:		      _M_impl._M_end_of_storage - _M_impl._M_start);
-        1:  333-block  0
-        1:  334:      }
+        2:  332:	_M_deallocate(_M_impl._M_start,
+        2:  333:		      _M_impl._M_end_of_storage - _M_impl._M_start);
+        2:  333-block  0
+        2:  334:      }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EED2Ev:
-       30:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
+       39:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
         -:  331:      {
-       30:  332:	_M_deallocate(_M_impl._M_start,
-       30:  333:		      _M_impl._M_end_of_storage - _M_impl._M_start);
-       30:  333-block  0
-       30:  334:      }
+       39:  332:	_M_deallocate(_M_impl._M_start,
+       39:  333:		      _M_impl._M_end_of_storage - _M_impl._M_start);
+       39:  333-block  0
+       39:  334:      }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EED2Ev:
-      454:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
+     4209:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
         -:  331:      {
-      454:  332:	_M_deallocate(_M_impl._M_start,
-      454:  333:		      _M_impl._M_end_of_storage - _M_impl._M_start);
-      454:  333-block  0
-      454:  334:      }
+     4209:  332:	_M_deallocate(_M_impl._M_start,
+     4209:  333:		      _M_impl._M_end_of_storage - _M_impl._M_start);
+     4209:  333-block  0
+     4209:  334:      }
 ------------------
 _ZNSt12_Vector_baseISt4pairIiiESaIS1_EED2Ev:
        12:  330:      ~_Vector_base() _GLIBCXX_NOEXCEPT
@@ -504,43 +504,43 @@ _ZNSt12_Vector_baseISt4pairIiiESaIS1_EED2Ev:
         -:  337:      _Vector_impl _M_impl;
         -:  338:
         -:  339:      pointer
-      479:  340:      _M_allocate(size_t __n)
+     3001:  340:      _M_allocate(size_t __n)
         -:  341:      {
         -:  342:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-     479*:  343:	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+    3001*:  343:	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
         -:  344:      }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE11_M_allocateEj:
-      365:  340:      _M_allocate(size_t __n)
+     2827:  340:      _M_allocate(size_t __n)
         -:  341:      {
         -:  342:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-     365*:  343:	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
-      365:  343-block  0
-      365:  343-block  1
+    2827*:  343:	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+     2827:  343-block  0
+     2827:  343-block  1
     %%%%%:  343-block  2
-      365:  343-block  3
+     2827:  343-block  3
         -:  344:      }
 ------------------
 _ZNSt12_Vector_baseIiSaIiEE11_M_allocateEj:
-       41:  340:      _M_allocate(size_t __n)
+       46:  340:      _M_allocate(size_t __n)
         -:  341:      {
         -:  342:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-      41*:  343:	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
-       41:  343-block  0
-       41:  343-block  1
+      46*:  343:	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+       46:  343-block  0
+       46:  343-block  1
     %%%%%:  343-block  2
-       41:  343-block  3
+       46:  343-block  3
         -:  344:      }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EE11_M_allocateEj:
-       56:  340:      _M_allocate(size_t __n)
+      111:  340:      _M_allocate(size_t __n)
         -:  341:      {
         -:  342:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-      56*:  343:	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
-       56:  343-block  0
-       56:  343-block  1
+     111*:  343:	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+      111:  343-block  0
+      111:  343-block  1
     %%%%%:  343-block  2
-       56:  343-block  3
+      111:  343-block  3
         -:  344:      }
 ------------------
 _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE11_M_allocateEj:
@@ -556,42 +556,42 @@ _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE11_M_allocateEj:
 ------------------
         -:  345:
         -:  346:      void
-      601:  347:      _M_deallocate(pointer __p, size_t __n)
+     4424:  347:      _M_deallocate(pointer __p, size_t __n)
         -:  348:      {
         -:  349:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-      601:  350:	if (__p)
-      464:  351:	  _Tr::deallocate(_M_impl, __p, __n);
-      601:  352:      }
+     4424:  350:	if (__p)
+     2986:  351:	  _Tr::deallocate(_M_impl, __p, __n);
+     4424:  352:      }
 ------------------
 _ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPij:
-       42:  347:      _M_deallocate(pointer __p, size_t __n)
+       48:  347:      _M_deallocate(pointer __p, size_t __n)
         -:  348:      {
         -:  349:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-       42:  350:	if (__p)
-       42:  350-block  0
-       28:  351:	  _Tr::deallocate(_M_impl, __p, __n);
-       28:  351-block  0
-       42:  352:      }
+       48:  350:	if (__p)
+       48:  350-block  0
+       33:  351:	  _Tr::deallocate(_M_impl, __p, __n);
+       33:  351-block  0
+       48:  352:      }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EE13_M_deallocateEPS4_j:
-       84:  347:      _M_deallocate(pointer __p, size_t __n)
+      146:  347:      _M_deallocate(pointer __p, size_t __n)
         -:  348:      {
         -:  349:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-       84:  350:	if (__p)
-       84:  350-block  0
-       56:  351:	  _Tr::deallocate(_M_impl, __p, __n);
-       56:  351-block  0
-       84:  352:      }
+      146:  350:	if (__p)
+      146:  350-block  0
+      111:  351:	  _Tr::deallocate(_M_impl, __p, __n);
+      111:  351-block  0
+      146:  352:      }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE13_M_deallocateEPS2_j:
-      454:  347:      _M_deallocate(pointer __p, size_t __n)
+     4209:  347:      _M_deallocate(pointer __p, size_t __n)
         -:  348:      {
         -:  349:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-      454:  350:	if (__p)
-      454:  350-block  0
-      365:  351:	  _Tr::deallocate(_M_impl, __p, __n);
-      365:  351-block  0
-      454:  352:      }
+     4209:  350:	if (__p)
+     4209:  350-block  0
+     2827:  351:	  _Tr::deallocate(_M_impl, __p, __n);
+     2827:  351-block  0
+     4209:  352:      }
 ------------------
 _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE13_M_deallocateEPS1_j:
        21:  347:      _M_deallocate(pointer __p, size_t __n)
@@ -606,30 +606,30 @@ _ZNSt12_Vector_baseISt4pairIiiESaIS1_EE13_M_deallocateEPS1_j:
         -:  353:
         -:  354:    protected:
         -:  355:      void
-      313:  356:      _M_create_storage(size_t __n)
+     2771:  356:      _M_create_storage(size_t __n)
         -:  357:      {
-      313:  358:	this->_M_impl._M_start = this->_M_allocate(__n);
-      313:  359:	this->_M_impl._M_finish = this->_M_impl._M_start;
-      313:  360:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
-      313:  361:      }
+     2771:  358:	this->_M_impl._M_start = this->_M_allocate(__n);
+     2771:  359:	this->_M_impl._M_finish = this->_M_impl._M_start;
+     2771:  360:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+     2771:  361:      }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIS0_IbSaIbEESaIS2_EESaIS4_EE17_M_create_storageEj:
-        2:  356:      _M_create_storage(size_t __n)
+        4:  356:      _M_create_storage(size_t __n)
         -:  357:      {
-        2:  358:	this->_M_impl._M_start = this->_M_allocate(__n);
-        2:  358-block  0
-        2:  359:	this->_M_impl._M_finish = this->_M_impl._M_start;
-        2:  360:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
-        2:  361:      }
+        4:  358:	this->_M_impl._M_start = this->_M_allocate(__n);
+        4:  358-block  0
+        4:  359:	this->_M_impl._M_finish = this->_M_impl._M_start;
+        4:  360:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+        4:  361:      }
 ------------------
 _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE17_M_create_storageEj:
-      311:  356:      _M_create_storage(size_t __n)
+     2767:  356:      _M_create_storage(size_t __n)
         -:  357:      {
-      311:  358:	this->_M_impl._M_start = this->_M_allocate(__n);
-      311:  358-block  0
-      311:  359:	this->_M_impl._M_finish = this->_M_impl._M_start;
-      311:  360:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
-      311:  361:      }
+     2767:  358:	this->_M_impl._M_start = this->_M_allocate(__n);
+     2767:  358-block  0
+     2767:  359:	this->_M_impl._M_finish = this->_M_impl._M_start;
+     2767:  360:	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+     2767:  361:      }
 ------------------
         -:  362:    };
         -:  363:
@@ -697,32 +697,32 @@ _ZNSt12_Vector_baseISt6vectorIbSaIbEESaIS2_EE17_M_create_storageEj:
         -:  425:    private:
         -:  426:#if __cplusplus >= 201103L
         -:  427:      static constexpr bool
-      208:  428:      _S_nothrow_relocate(true_type)
+      324:  428:      _S_nothrow_relocate(true_type)
         -:  429:      {
         -:  430:	return noexcept(std::__relocate_a(std::declval<pointer>(),
         -:  431:					  std::declval<pointer>(),
         -:  432:					  std::declval<pointer>(),
-      208:  433:					  std::declval<_Tp_alloc_type&>()));
+      324:  433:					  std::declval<_Tp_alloc_type&>()));
         -:  434:      }
 ------------------
 _ZNSt6vectorIiSaIiEE19_S_nothrow_relocateESt17integral_constantIbLb1EE:
-       82:  428:      _S_nothrow_relocate(true_type)
+       92:  428:      _S_nothrow_relocate(true_type)
         -:  429:      {
         -:  430:	return noexcept(std::__relocate_a(std::declval<pointer>(),
         -:  431:					  std::declval<pointer>(),
         -:  432:					  std::declval<pointer>(),
-       82:  433:					  std::declval<_Tp_alloc_type&>()));
-       82:  433-block  0
+       92:  433:					  std::declval<_Tp_alloc_type&>()));
+       92:  433-block  0
         -:  434:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE19_S_nothrow_relocateESt17integral_constantIbLb1EE:
-      108:  428:      _S_nothrow_relocate(true_type)
+      214:  428:      _S_nothrow_relocate(true_type)
         -:  429:      {
         -:  430:	return noexcept(std::__relocate_a(std::declval<pointer>(),
         -:  431:					  std::declval<pointer>(),
         -:  432:					  std::declval<pointer>(),
-      108:  433:					  std::declval<_Tp_alloc_type&>()));
-      108:  433-block  0
+      214:  433:					  std::declval<_Tp_alloc_type&>()));
+      214:  433-block  0
         -:  434:      }
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EE19_S_nothrow_relocateESt17integral_constantIbLb1EE:
@@ -741,32 +741,32 @@ _ZNSt6vectorISt4pairIiiESaIS1_EE19_S_nothrow_relocateESt17integral_constantIbLb1
         -:  438:      { return false; }
         -:  439:
         -:  440:      static constexpr bool
-      208:  441:      _S_use_relocate()
+      324:  441:      _S_use_relocate()
         -:  442:      {
         -:  443:	// Instantiating std::__relocate_a might cause an error outside the
         -:  444:	// immediate context (in __relocate_object_a's noexcept-specifier),
         -:  445:	// so only do it if we know the type can be move-inserted into *this.
-      208:  446:	return _S_nothrow_relocate(__is_move_insertable<_Tp_alloc_type>{});
+      324:  446:	return _S_nothrow_relocate(__is_move_insertable<_Tp_alloc_type>{});
         -:  447:      }
 ------------------
 _ZNSt6vectorIiSaIiEE15_S_use_relocateEv:
-       82:  441:      _S_use_relocate()
+       92:  441:      _S_use_relocate()
         -:  442:      {
         -:  443:	// Instantiating std::__relocate_a might cause an error outside the
         -:  444:	// immediate context (in __relocate_object_a's noexcept-specifier),
         -:  445:	// so only do it if we know the type can be move-inserted into *this.
-       82:  446:	return _S_nothrow_relocate(__is_move_insertable<_Tp_alloc_type>{});
-       82:  446-block  0
+       92:  446:	return _S_nothrow_relocate(__is_move_insertable<_Tp_alloc_type>{});
+       92:  446-block  0
         -:  447:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE15_S_use_relocateEv:
-      108:  441:      _S_use_relocate()
+      214:  441:      _S_use_relocate()
         -:  442:      {
         -:  443:	// Instantiating std::__relocate_a might cause an error outside the
         -:  444:	// immediate context (in __relocate_object_a's noexcept-specifier),
         -:  445:	// so only do it if we know the type can be move-inserted into *this.
-      108:  446:	return _S_nothrow_relocate(__is_move_insertable<_Tp_alloc_type>{});
-      108:  446-block  0
+      214:  446:	return _S_nothrow_relocate(__is_move_insertable<_Tp_alloc_type>{});
+      214:  446-block  0
         -:  447:      }
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EE15_S_use_relocateEv:
@@ -781,26 +781,26 @@ _ZNSt6vectorISt4pairIiiESaIS1_EE15_S_use_relocateEv:
 ------------------
         -:  448:
         -:  449:      static pointer
-      208:  450:      _S_do_relocate(pointer __first, pointer __last, pointer __result,
+      324:  450:      _S_do_relocate(pointer __first, pointer __last, pointer __result,
         -:  451:		     _Tp_alloc_type& __alloc, true_type) noexcept
         -:  452:      {
-      208:  453:	return std::__relocate_a(__first, __last, __result, __alloc);
+      324:  453:	return std::__relocate_a(__first, __last, __result, __alloc);
         -:  454:      }
 ------------------
 _ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE:
-       82:  450:      _S_do_relocate(pointer __first, pointer __last, pointer __result,
+       92:  450:      _S_do_relocate(pointer __first, pointer __last, pointer __result,
         -:  451:		     _Tp_alloc_type& __alloc, true_type) noexcept
         -:  452:      {
-       82:  453:	return std::__relocate_a(__first, __last, __result, __alloc);
-       82:  453-block  0
+       92:  453:	return std::__relocate_a(__first, __last, __result, __alloc);
+       92:  453-block  0
         -:  454:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE14_S_do_relocateEPS3_S6_S6_RS4_St17integral_constantIbLb1EE:
-      108:  450:      _S_do_relocate(pointer __first, pointer __last, pointer __result,
+      214:  450:      _S_do_relocate(pointer __first, pointer __last, pointer __result,
         -:  451:		     _Tp_alloc_type& __alloc, true_type) noexcept
         -:  452:      {
-      108:  453:	return std::__relocate_a(__first, __last, __result, __alloc);
-      108:  453-block  0
+      214:  453:	return std::__relocate_a(__first, __last, __result, __alloc);
+      214:  453-block  0
         -:  454:      }
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EE14_S_do_relocateEPS1_S4_S4_RS2_St17integral_constantIbLb1EE:
@@ -818,29 +818,29 @@ _ZNSt6vectorISt4pairIiiESaIS1_EE14_S_do_relocateEPS1_S4_S4_RS2_St17integral_cons
         -:  459:      { return __result; }
         -:  460:
         -:  461:      static pointer
-      208:  462:      _S_relocate(pointer __first, pointer __last, pointer __result,
+      324:  462:      _S_relocate(pointer __first, pointer __last, pointer __result,
         -:  463:		  _Tp_alloc_type& __alloc) noexcept
         -:  464:      {
         -:  465:	using __do_it = __bool_constant<_S_use_relocate()>;
-      208:  466:	return _S_do_relocate(__first, __last, __result, __alloc, __do_it{});
+      324:  466:	return _S_do_relocate(__first, __last, __result, __alloc, __do_it{});
         -:  467:      }
 ------------------
 _ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_:
-       82:  462:      _S_relocate(pointer __first, pointer __last, pointer __result,
+       92:  462:      _S_relocate(pointer __first, pointer __last, pointer __result,
         -:  463:		  _Tp_alloc_type& __alloc) noexcept
         -:  464:      {
         -:  465:	using __do_it = __bool_constant<_S_use_relocate()>;
-       82:  466:	return _S_do_relocate(__first, __last, __result, __alloc, __do_it{});
-       82:  466-block  0
+       92:  466:	return _S_do_relocate(__first, __last, __result, __alloc, __do_it{});
+       92:  466-block  0
         -:  467:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE11_S_relocateEPS3_S6_S6_RS4_:
-      108:  462:      _S_relocate(pointer __first, pointer __last, pointer __result,
+      214:  462:      _S_relocate(pointer __first, pointer __last, pointer __result,
         -:  463:		  _Tp_alloc_type& __alloc) noexcept
         -:  464:      {
         -:  465:	using __do_it = __bool_constant<_S_use_relocate()>;
-      108:  466:	return _S_do_relocate(__first, __last, __result, __alloc, __do_it{});
-      108:  466-block  0
+      214:  466:	return _S_do_relocate(__first, __last, __result, __alloc, __do_it{});
+      214:  466-block  0
         -:  467:      }
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EE11_S_relocateEPS1_S4_S4_RS2_:
@@ -868,15 +868,15 @@ _ZNSt6vectorISt4pairIiiESaIS1_EE11_S_relocateEPS1_S4_S4_RS2_:
         -:  481:       *  @brief  Creates a %vector with no elements.
         -:  482:       */
         -:  483:#if __cplusplus >= 201103L
-       46:  484:      vector() = default;
+       54:  484:      vector() = default;
 ------------------
 _ZNSt6vectorIiSaIiEEC1Ev:
-       14:  484:      vector() = default;
-       14:  484-block  0
+       15:  484:      vector() = default;
+       15:  484-block  0
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EEC1Ev:
-       28:  484:      vector() = default;
-       28:  484-block  0
+       35:  484:      vector() = default;
+       35:  484-block  0
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EEC1Ev:
         4:  484:      vector() = default;
@@ -947,49 +947,49 @@ _ZNSt6vectorISt4pairIiiESaIS1_EEC1Ev:
         -:  547:       *  The newly-created %vector uses a copy of the allocator object used
         -:  548:       *  by @a __x (unless the allocator traits dictate a different object).
         -:  549:       */
-      313:  550:      vector(const vector& __x)
+     2771:  550:      vector(const vector& __x)
         -:  551:      : _Base(__x.size(),
-      313:  552:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
+     2771:  552:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
         -:  553:      {
-      313:  554:	this->_M_impl._M_finish =
-      313:  555:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
+     2771:  554:	this->_M_impl._M_finish =
+     2771:  555:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
         -:  556:				      this->_M_impl._M_start,
-      313:  557:				      _M_get_Tp_allocator());
-      313:  558:      }
+     2771:  557:				      _M_get_Tp_allocator());
+     2771:  558:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EEC1ERKS5_:
-        2:  550:      vector(const vector& __x)
+        4:  550:      vector(const vector& __x)
         -:  551:      : _Base(__x.size(),
-        2:  552:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
-        2:  552-block  0
-        2:  552-block  1
+        4:  552:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
+        4:  552-block  0
+        4:  552-block  1
     $$$$$:  552-block  2
     $$$$$:  552-block  3
     $$$$$:  552-block  4
         -:  553:      {
-        2:  554:	this->_M_impl._M_finish =
-        2:  555:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
+        4:  554:	this->_M_impl._M_finish =
+        4:  555:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
         -:  556:				      this->_M_impl._M_start,
-        2:  557:				      _M_get_Tp_allocator());
-        2:  558:      }
-        2:  558-block  0
+        4:  557:				      _M_get_Tp_allocator());
+        4:  558:      }
+        4:  558-block  0
 ------------------
 _ZNSt6vectorIS_IbSaIbEESaIS1_EEC1ERKS3_:
-      311:  550:      vector(const vector& __x)
+     2767:  550:      vector(const vector& __x)
         -:  551:      : _Base(__x.size(),
-      311:  552:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
-      311:  552-block  0
-      311:  552-block  1
+     2767:  552:	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
+     2767:  552-block  0
+     2767:  552-block  1
     $$$$$:  552-block  2
     $$$$$:  552-block  3
     $$$$$:  552-block  4
         -:  553:      {
-      311:  554:	this->_M_impl._M_finish =
-      311:  555:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
+     2767:  554:	this->_M_impl._M_finish =
+     2767:  555:	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
         -:  556:				      this->_M_impl._M_start,
-      311:  557:				      _M_get_Tp_allocator());
-      311:  558:      }
-      311:  558-block  0
+     2767:  557:				      _M_get_Tp_allocator());
+     2767:  558:      }
+     2767:  558-block  0
 ------------------
         -:  559:
         -:  560:#if __cplusplus >= 201103L
@@ -1001,8 +1001,8 @@ _ZNSt6vectorIS_IbSaIbEESaIS1_EEC1ERKS3_:
         -:  566:       *  The contents of the moved instance are a valid, but unspecified
         -:  567:       *  %vector.
         -:  568:       */
-       89:  569:      vector(vector&&) noexcept = default;
-       89:  569-block  0
+     1382:  569:      vector(vector&&) noexcept = default;
+     1382:  569-block  0
         -:  570:
         -:  571:      /// Copy constructor with alternative allocator
         -:  572:      vector(const vector& __x, const allocator_type& __a)
@@ -1108,39 +1108,39 @@ _ZNSt6vectorIS_IbSaIbEESaIS1_EEC1ERKS3_:
         -:  672:       *  not touched in any way.  Managing the pointer is the user's
         -:  673:       *  responsibility.
         -:  674:       */
-      497:  675:      ~vector() _GLIBCXX_NOEXCEPT
+     4262:  675:      ~vector() _GLIBCXX_NOEXCEPT
         -:  676:      {
-      497:  677:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-      497:  678:		      _M_get_Tp_allocator());
+     4262:  677:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+     4262:  678:		      _M_get_Tp_allocator());
         -:  679:	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
-      497:  680:      }
+     4262:  680:      }
 ------------------
 _ZNSt6vectorIiSaIiEED1Ev:
-        1:  675:      ~vector() _GLIBCXX_NOEXCEPT
+        2:  675:      ~vector() _GLIBCXX_NOEXCEPT
         -:  676:      {
-        1:  677:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-        1:  678:		      _M_get_Tp_allocator());
-        1:  678-block  0
+        2:  677:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+        2:  678:		      _M_get_Tp_allocator());
+        2:  678-block  0
         -:  679:	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
-        1:  680:      }
+        2:  680:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EED1Ev:
-       30:  675:      ~vector() _GLIBCXX_NOEXCEPT
+       39:  675:      ~vector() _GLIBCXX_NOEXCEPT
         -:  676:      {
-       30:  677:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-       30:  678:		      _M_get_Tp_allocator());
-       30:  678-block  0
+       39:  677:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+       39:  678:		      _M_get_Tp_allocator());
+       39:  678-block  0
         -:  679:	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
-       30:  680:      }
+       39:  680:      }
 ------------------
 _ZNSt6vectorIS_IbSaIbEESaIS1_EED1Ev:
-      454:  675:      ~vector() _GLIBCXX_NOEXCEPT
+     4209:  675:      ~vector() _GLIBCXX_NOEXCEPT
         -:  676:      {
-      454:  677:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-      454:  678:		      _M_get_Tp_allocator());
-      454:  678-block  0
+     4209:  677:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+     4209:  678:		      _M_get_Tp_allocator());
+     4209:  678-block  0
         -:  679:	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
-      454:  680:      }
+     4209:  680:      }
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EED1Ev:
        12:  675:      ~vector() _GLIBCXX_NOEXCEPT
@@ -1278,13 +1278,13 @@ _ZNSt6vectorISt4pairIiiESaIS1_EED1Ev:
         -:  805:       *  element order.
         -:  806:       */
         -:  807:      iterator
-      147:  808:      begin() _GLIBCXX_NOEXCEPT
-      147:  809:      { return iterator(this->_M_impl._M_start); }
+     1401:  808:      begin() _GLIBCXX_NOEXCEPT
+     1401:  809:      { return iterator(this->_M_impl._M_start); }
 ------------------
 _ZNSt6vectorIiSaIiEE5beginEv:
-       41:  808:      begin() _GLIBCXX_NOEXCEPT
-       41:  809:      { return iterator(this->_M_impl._M_start); }
-       41:  809-block  0
+       46:  808:      begin() _GLIBCXX_NOEXCEPT
+       46:  809:      { return iterator(this->_M_impl._M_start); }
+       46:  809-block  0
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EE5beginEv:
        15:  808:      begin() _GLIBCXX_NOEXCEPT
@@ -1292,9 +1292,9 @@ _ZNSt6vectorISt4pairIiiESaIS1_EE5beginEv:
        15:  809-block  0
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE5beginEv:
-       91:  808:      begin() _GLIBCXX_NOEXCEPT
-       91:  809:      { return iterator(this->_M_impl._M_start); }
-       91:  809-block  0
+     1340:  808:      begin() _GLIBCXX_NOEXCEPT
+     1340:  809:      { return iterator(this->_M_impl._M_start); }
+     1340:  809-block  0
 ------------------
         -:  810:
         -:  811:      /**
@@ -1303,18 +1303,18 @@ _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE5beginEv:
         -:  814:       *  element order.
         -:  815:       */
         -:  816:      const_iterator
-      705:  817:      begin() const _GLIBCXX_NOEXCEPT
-      705:  818:      { return const_iterator(this->_M_impl._M_start); }
+   292371:  817:      begin() const _GLIBCXX_NOEXCEPT
+   292371:  818:      { return const_iterator(this->_M_impl._M_start); }
 ------------------
 _ZNKSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE5beginEv:
-        2:  817:      begin() const _GLIBCXX_NOEXCEPT
-        2:  818:      { return const_iterator(this->_M_impl._M_start); }
-        2:  818-block  0
+        4:  817:      begin() const _GLIBCXX_NOEXCEPT
+        4:  818:      { return const_iterator(this->_M_impl._M_start); }
+        4:  818-block  0
 ------------------
 _ZNKSt6vectorIS_IbSaIbEESaIS1_EE5beginEv:
-      703:  817:      begin() const _GLIBCXX_NOEXCEPT
-      703:  818:      { return const_iterator(this->_M_impl._M_start); }
-      703:  818-block  0
+   292367:  817:      begin() const _GLIBCXX_NOEXCEPT
+   292367:  818:      { return const_iterator(this->_M_impl._M_start); }
+   292367:  818-block  0
 ------------------
         -:  819:
         -:  820:      /**
@@ -1323,13 +1323,13 @@ _ZNKSt6vectorIS_IbSaIbEESaIS1_EE5beginEv:
         -:  823:       *  element order.
         -:  824:       */
         -:  825:      iterator
-      182:  826:      end() _GLIBCXX_NOEXCEPT
-      182:  827:      { return iterator(this->_M_impl._M_finish); }
+     2631:  826:      end() _GLIBCXX_NOEXCEPT
+     2631:  827:      { return iterator(this->_M_impl._M_finish); }
 ------------------
 _ZNSt6vectorIiSaIiEE3endEv:
-       41:  826:      end() _GLIBCXX_NOEXCEPT
-       41:  827:      { return iterator(this->_M_impl._M_finish); }
-       41:  827-block  0
+       46:  826:      end() _GLIBCXX_NOEXCEPT
+       46:  827:      { return iterator(this->_M_impl._M_finish); }
+       46:  827-block  0
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EE3endEv:
        15:  826:      end() _GLIBCXX_NOEXCEPT
@@ -1337,9 +1337,9 @@ _ZNSt6vectorISt4pairIiiESaIS1_EE3endEv:
        15:  827-block  0
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE3endEv:
-      126:  826:      end() _GLIBCXX_NOEXCEPT
-      126:  827:      { return iterator(this->_M_impl._M_finish); }
-      126:  827-block  0
+     2570:  826:      end() _GLIBCXX_NOEXCEPT
+     2570:  827:      { return iterator(this->_M_impl._M_finish); }
+     2570:  827-block  0
 ------------------
         -:  828:
         -:  829:      /**
@@ -1348,18 +1348,18 @@ _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE3endEv:
         -:  832:       *  ordinary element order.
         -:  833:       */
         -:  834:      const_iterator
-      509:  835:      end() const _GLIBCXX_NOEXCEPT
-      509:  836:      { return const_iterator(this->_M_impl._M_finish); }
+   147571:  835:      end() const _GLIBCXX_NOEXCEPT
+   147571:  836:      { return const_iterator(this->_M_impl._M_finish); }
 ------------------
 _ZNKSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE3endEv:
-        2:  835:      end() const _GLIBCXX_NOEXCEPT
-        2:  836:      { return const_iterator(this->_M_impl._M_finish); }
-        2:  836-block  0
+        4:  835:      end() const _GLIBCXX_NOEXCEPT
+        4:  836:      { return const_iterator(this->_M_impl._M_finish); }
+        4:  836-block  0
 ------------------
 _ZNKSt6vectorIS_IbSaIbEESaIS1_EE3endEv:
-      507:  835:      end() const _GLIBCXX_NOEXCEPT
-      507:  836:      { return const_iterator(this->_M_impl._M_finish); }
-      507:  836-block  0
+   147567:  835:      end() const _GLIBCXX_NOEXCEPT
+   147567:  836:      { return const_iterator(this->_M_impl._M_finish); }
+   147567:  836-block  0
 ------------------
         -:  837:
         -:  838:      /**
@@ -1439,13 +1439,13 @@ _ZNKSt6vectorIS_IbSaIbEESaIS1_EE3endEv:
         -:  912:      // [23.2.4.2] capacity
         -:  913:      /**  Returns the number of elements in the %vector.  */
         -:  914:      size_type
-    19876:  915:      size() const _GLIBCXX_NOEXCEPT
-    19876:  916:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+   664831:  915:      size() const _GLIBCXX_NOEXCEPT
+   664831:  916:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
 ------------------
 _ZNKSt6vectorIiSaIiEE4sizeEv:
-      309:  915:      size() const _GLIBCXX_NOEXCEPT
-      309:  916:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-      309:  916-block  0
+      355:  915:      size() const _GLIBCXX_NOEXCEPT
+      355:  916:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+      355:  916-block  0
 ------------------
 _ZNKSt6vectorISt4pairIiiESaIS1_EE4sizeEv:
        48:  915:      size() const _GLIBCXX_NOEXCEPT
@@ -1453,30 +1453,30 @@ _ZNKSt6vectorISt4pairIiiESaIS1_EE4sizeEv:
        48:  916-block  0
 ------------------
 _ZNKSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE4sizeEv:
-      222:  915:      size() const _GLIBCXX_NOEXCEPT
-      222:  916:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-      222:  916-block  0
+      440:  915:      size() const _GLIBCXX_NOEXCEPT
+      440:  916:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+      440:  916-block  0
 ------------------
 _ZNKSt6vectorIS_IbSaIbEESaIS1_EE4sizeEv:
-    19297:  915:      size() const _GLIBCXX_NOEXCEPT
-    19297:  916:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-    19297:  916-block  0
+   663988:  915:      size() const _GLIBCXX_NOEXCEPT
+   663988:  916:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+   663988:  916-block  0
 ------------------
         -:  917:
         -:  918:      /**  Returns the size() of the largest possible %vector.  */
         -:  919:      size_type
-      208:  920:      max_size() const _GLIBCXX_NOEXCEPT
-      208:  921:      { return _S_max_size(_M_get_Tp_allocator()); }
+      324:  920:      max_size() const _GLIBCXX_NOEXCEPT
+      324:  921:      { return _S_max_size(_M_get_Tp_allocator()); }
 ------------------
 _ZNKSt6vectorIiSaIiEE8max_sizeEv:
-       82:  920:      max_size() const _GLIBCXX_NOEXCEPT
-       82:  921:      { return _S_max_size(_M_get_Tp_allocator()); }
-       82:  921-block  0
+       92:  920:      max_size() const _GLIBCXX_NOEXCEPT
+       92:  921:      { return _S_max_size(_M_get_Tp_allocator()); }
+       92:  921-block  0
 ------------------
 _ZNKSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE8max_sizeEv:
-      108:  920:      max_size() const _GLIBCXX_NOEXCEPT
-      108:  921:      { return _S_max_size(_M_get_Tp_allocator()); }
-      108:  921-block  0
+      214:  920:      max_size() const _GLIBCXX_NOEXCEPT
+      214:  921:      { return _S_max_size(_M_get_Tp_allocator()); }
+      214:  921-block  0
 ------------------
 _ZNKSt6vectorISt4pairIiiESaIS1_EE8max_sizeEv:
        18:  920:      max_size() const _GLIBCXX_NOEXCEPT
@@ -1601,26 +1601,26 @@ _ZNKSt6vectorISt4pairIiiESaIS1_EE8max_sizeEv:
         -: 1037:       *  see at().)
         -: 1038:       */
         -: 1039:      reference
-    10022: 1040:      operator[](size_type __n) _GLIBCXX_NOEXCEPT
+   730022: 1040:      operator[](size_type __n) _GLIBCXX_NOEXCEPT
         -: 1041:      {
         -: 1042:	__glibcxx_requires_subscript(__n);
-    10022: 1043:	return *(this->_M_impl._M_start + __n);
+   730022: 1043:	return *(this->_M_impl._M_start + __n);
         -: 1044:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EEixEj:
-       11: 1040:      operator[](size_type __n) _GLIBCXX_NOEXCEPT
+       18: 1040:      operator[](size_type __n) _GLIBCXX_NOEXCEPT
         -: 1041:      {
         -: 1042:	__glibcxx_requires_subscript(__n);
-       11: 1043:	return *(this->_M_impl._M_start + __n);
-       11: 1043-block  0
+       18: 1043:	return *(this->_M_impl._M_start + __n);
+       18: 1043-block  0
         -: 1044:      }
 ------------------
 _ZNSt6vectorIS_IbSaIbEESaIS1_EEixEj:
-    10011: 1040:      operator[](size_type __n) _GLIBCXX_NOEXCEPT
+   730004: 1040:      operator[](size_type __n) _GLIBCXX_NOEXCEPT
         -: 1041:      {
         -: 1042:	__glibcxx_requires_subscript(__n);
-    10011: 1043:	return *(this->_M_impl._M_start + __n);
-    10011: 1043-block  0
+   730004: 1043:	return *(this->_M_impl._M_start + __n);
+   730004: 1043-block  0
         -: 1044:      }
 ------------------
         -: 1045:
@@ -1636,11 +1636,11 @@ _ZNSt6vectorIS_IbSaIbEESaIS1_EEixEj:
         -: 1055:       *  see at().)
         -: 1056:       */
         -: 1057:      const_reference
-    40321: 1058:      operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+  3833692: 1058:      operator[](size_type __n) const _GLIBCXX_NOEXCEPT
         -: 1059:      {
         -: 1060:	__glibcxx_requires_subscript(__n);
-    40321: 1061:	return *(this->_M_impl._M_start + __n);
-    40321: 1061-block  0
+  3833692: 1061:	return *(this->_M_impl._M_start + __n);
+  3833692: 1061-block  0
         -: 1062:      }
         -: 1063:
         -: 1064:    protected:
@@ -1763,25 +1763,25 @@ _ZNSt6vectorIS_IbSaIbEESaIS1_EEixEj:
         -: 1181:       *  available.
         -: 1182:       */
         -: 1183:      void
-       89: 1184:      push_back(const value_type& __x)
+     1311: 1184:      push_back(const value_type& __x)
         -: 1185:      {
-       89: 1186:	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+     1311: 1186:	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
         -: 1187:	  {
         -: 1188:	    _GLIBCXX_ASAN_ANNOTATE_GROW(1);
-      32*: 1189:	    _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+    1198*: 1189:	    _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
         -: 1190:				     __x);
-      32*: 1191:	    ++this->_M_impl._M_finish;
+    1198*: 1191:	    ++this->_M_impl._M_finish;
         -: 1192:	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
         -: 1193:	  }
         -: 1194:	else
-       57: 1195:	  _M_realloc_insert(end(), __x);
-       89: 1196:      }
+      113: 1195:	  _M_realloc_insert(end(), __x);
+     1311: 1196:      }
 ------------------
 _ZNSt6vectorIiSaIiEE9push_backERKi:
-        3: 1184:      push_back(const value_type& __x)
+        6: 1184:      push_back(const value_type& __x)
         -: 1185:      {
-        3: 1186:	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
-        3: 1186-block  0
+        6: 1186:	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+        6: 1186-block  0
         -: 1187:	  {
         -: 1188:	    _GLIBCXX_ASAN_ANNOTATE_GROW(1);
     #####: 1189:	    _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
@@ -1791,27 +1791,27 @@ _ZNSt6vectorIiSaIiEE9push_backERKi:
         -: 1192:	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
         -: 1193:	  }
         -: 1194:	else
-        3: 1195:	  _M_realloc_insert(end(), __x);
-        3: 1195-block  0
-        3: 1196:      }
+        6: 1195:	  _M_realloc_insert(end(), __x);
+        6: 1195-block  0
+        6: 1196:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE9push_backERKS3_:
-       86: 1184:      push_back(const value_type& __x)
+     1305: 1184:      push_back(const value_type& __x)
         -: 1185:      {
-       86: 1186:	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
-       86: 1186-block  0
+     1305: 1186:	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+     1305: 1186-block  0
         -: 1187:	  {
         -: 1188:	    _GLIBCXX_ASAN_ANNOTATE_GROW(1);
-       32: 1189:	    _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
-       32: 1189-block  0
+     1198: 1189:	    _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+     1198: 1189-block  0
         -: 1190:				     __x);
-       32: 1191:	    ++this->_M_impl._M_finish;
+     1198: 1191:	    ++this->_M_impl._M_finish;
         -: 1192:	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
         -: 1193:	  }
         -: 1194:	else
-       54: 1195:	  _M_realloc_insert(end(), __x);
-       54: 1195-block  0
-       86: 1196:      }
+      107: 1195:	  _M_realloc_insert(end(), __x);
+      107: 1195-block  0
+     1305: 1196:      }
 ------------------
         -: 1197:
         -: 1198:#if __cplusplus >= 201103L
@@ -2369,47 +2369,47 @@ _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE9push_backERKS3_:
         -: 1750:
         -: 1751:      // Called by _M_fill_insert, _M_insert_aux etc.
         -: 1752:      size_type
-      104: 1753:      _M_check_len(size_type __n, const char* __s) const
+      162: 1753:      _M_check_len(size_type __n, const char* __s) const
         -: 1754:      {
-      104: 1755:	if (max_size() - size() < __n)
+      162: 1755:	if (max_size() - size() < __n)
     #####: 1756:	  __throw_length_error(__N(__s));
         -: 1757:
-      104: 1758:	const size_type __len = size() + (std::max)(size(), __n);
-     104*: 1759:	return (__len < size() || __len > max_size()) ? max_size() : __len;
+      162: 1758:	const size_type __len = size() + (std::max)(size(), __n);
+     162*: 1759:	return (__len < size() || __len > max_size()) ? max_size() : __len;
         -: 1760:      }
 ------------------
 _ZNKSt6vectorIiSaIiEE12_M_check_lenEjPKc:
-       41: 1753:      _M_check_len(size_type __n, const char* __s) const
+       46: 1753:      _M_check_len(size_type __n, const char* __s) const
         -: 1754:      {
-       41: 1755:	if (max_size() - size() < __n)
-       41: 1755-block  0
+       46: 1755:	if (max_size() - size() < __n)
+       46: 1755-block  0
     #####: 1756:	  __throw_length_error(__N(__s));
     %%%%%: 1756-block  0
         -: 1757:
-       41: 1758:	const size_type __len = size() + (std::max)(size(), __n);
-       41: 1758-block  0
-      41*: 1759:	return (__len < size() || __len > max_size()) ? max_size() : __len;
-       41: 1759-block  0
+       46: 1758:	const size_type __len = size() + (std::max)(size(), __n);
+       46: 1758-block  0
+      46*: 1759:	return (__len < size() || __len > max_size()) ? max_size() : __len;
+       46: 1759-block  0
     %%%%%: 1759-block  1
-       41: 1759-block  2
-       41: 1759-block  3
+       46: 1759-block  2
+       46: 1759-block  3
         -: 1760:      }
 ------------------
 _ZNKSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE12_M_check_lenEjPKc:
-       54: 1753:      _M_check_len(size_type __n, const char* __s) const
+      107: 1753:      _M_check_len(size_type __n, const char* __s) const
         -: 1754:      {
-       54: 1755:	if (max_size() - size() < __n)
-       54: 1755-block  0
+      107: 1755:	if (max_size() - size() < __n)
+      107: 1755-block  0
     #####: 1756:	  __throw_length_error(__N(__s));
     %%%%%: 1756-block  0
         -: 1757:
-       54: 1758:	const size_type __len = size() + (std::max)(size(), __n);
-       54: 1758-block  0
-      54*: 1759:	return (__len < size() || __len > max_size()) ? max_size() : __len;
-       54: 1759-block  0
+      107: 1758:	const size_type __len = size() + (std::max)(size(), __n);
+      107: 1758-block  0
+     107*: 1759:	return (__len < size() || __len > max_size()) ? max_size() : __len;
+      107: 1759-block  0
     %%%%%: 1759-block  1
-       54: 1759-block  2
-       54: 1759-block  3
+      107: 1759-block  2
+      107: 1759-block  3
         -: 1760:      }
 ------------------
 _ZNKSt6vectorISt4pairIiiESaIS1_EE12_M_check_lenEjPKc:
@@ -2441,41 +2441,41 @@ _ZNKSt6vectorISt4pairIiiESaIS1_EE12_M_check_lenEjPKc:
         -: 1770:      }
         -: 1771:
         -: 1772:      static size_type
-      210: 1773:      _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
+      326: 1773:      _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
         -: 1774:      {
         -: 1775:	// std::distance(begin(), end()) cannot be greater than PTRDIFF_MAX,
         -: 1776:	// and realistically we can't store more than PTRDIFF_MAX/sizeof(T)
         -: 1777:	// (even if std::allocator_traits::max_size says we can).
-      210: 1778:	const size_t __diffmax
+      326: 1778:	const size_t __diffmax
         -: 1779:	  = __gnu_cxx::__numeric_traits<ptrdiff_t>::__max / sizeof(_Tp);
-      210: 1780:	const size_t __allocmax = _Alloc_traits::max_size(__a);
-      210: 1781:	return (std::min)(__diffmax, __allocmax);
+      326: 1780:	const size_t __allocmax = _Alloc_traits::max_size(__a);
+      326: 1781:	return (std::min)(__diffmax, __allocmax);
         -: 1782:      }
 ------------------
 _ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_:
-       82: 1773:      _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
+       92: 1773:      _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
         -: 1774:      {
         -: 1775:	// std::distance(begin(), end()) cannot be greater than PTRDIFF_MAX,
         -: 1776:	// and realistically we can't store more than PTRDIFF_MAX/sizeof(T)
         -: 1777:	// (even if std::allocator_traits::max_size says we can).
-       82: 1778:	const size_t __diffmax
+       92: 1778:	const size_t __diffmax
         -: 1779:	  = __gnu_cxx::__numeric_traits<ptrdiff_t>::__max / sizeof(_Tp);
-       82: 1780:	const size_t __allocmax = _Alloc_traits::max_size(__a);
-       82: 1780-block  0
-       82: 1781:	return (std::min)(__diffmax, __allocmax);
+       92: 1780:	const size_t __allocmax = _Alloc_traits::max_size(__a);
+       92: 1780-block  0
+       92: 1781:	return (std::min)(__diffmax, __allocmax);
         -: 1782:      }
 ------------------
 _ZNSt6vectorIS_IS_IbSaIbEESaIS1_EESaIS3_EE11_S_max_sizeERKS4_:
-      108: 1773:      _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
+      214: 1773:      _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
         -: 1774:      {
         -: 1775:	// std::distance(begin(), end()) cannot be greater than PTRDIFF_MAX,
         -: 1776:	// and realistically we can't store more than PTRDIFF_MAX/sizeof(T)
         -: 1777:	// (even if std::allocator_traits::max_size says we can).
-      108: 1778:	const size_t __diffmax
+      214: 1778:	const size_t __diffmax
         -: 1779:	  = __gnu_cxx::__numeric_traits<ptrdiff_t>::__max / sizeof(_Tp);
-      108: 1780:	const size_t __allocmax = _Alloc_traits::max_size(__a);
-      108: 1780-block  0
-      108: 1781:	return (std::min)(__diffmax, __allocmax);
+      214: 1780:	const size_t __allocmax = _Alloc_traits::max_size(__a);
+      214: 1780-block  0
+      214: 1781:	return (std::min)(__diffmax, __allocmax);
         -: 1782:      }
 ------------------
 _ZNSt6vectorISt4pairIiiESaIS1_EE11_S_max_sizeERKS2_:
@@ -2596,29 +2596,29 @@ _ZNSt6vectorISt4pairIiiESaIS1_EE11_S_max_sizeERKS2_:
         -: 1885:  */
         -: 1886:  template<typename _Tp, typename _Alloc>
         -: 1887:    inline bool
-      498: 1888:    operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
-      498: 1889:    { return (__x.size() == __y.size()
-      498: 1890:	      && std::equal(__x.begin(), __x.end(), __y.begin())); }
+   932407: 1888:    operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+   932407: 1889:    { return (__x.size() == __y.size()
+   932407: 1890:	      && std::equal(__x.begin(), __x.end(), __y.begin())); }
 ------------------
 _ZSteqIbSaIbEEbRKSt6vectorIT_T0_ES6_:
-      302: 1888:    operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
-      302: 1889:    { return (__x.size() == __y.size()
-      302: 1889-block  0
-      302: 1890:	      && std::equal(__x.begin(), __x.end(), __y.begin())); }
-      302: 1890-block  0
-      128: 1890-block  1
-      174: 1890-block  2
-      302: 1890-block  3
+   787607: 1888:    operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+   787607: 1889:    { return (__x.size() == __y.size()
+   787607: 1889-block  0
+   787607: 1890:	      && std::equal(__x.begin(), __x.end(), __y.begin())); }
+   787607: 1890-block  0
+   642834: 1890-block  1
+   144773: 1890-block  2
+   787607: 1890-block  3
 ------------------
 _ZSteqISt6vectorIbSaIbEESaIS2_EEbRKS0_IT_T0_ES8_:
-      196: 1888:    operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
-      196: 1889:    { return (__x.size() == __y.size()
-      196: 1889-block  0
-      196: 1890:	      && std::equal(__x.begin(), __x.end(), __y.begin())); }
-      196: 1890-block  0
-       22: 1890-block  1
-      174: 1890-block  2
-      196: 1890-block  3
+   144800: 1888:    operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+   144800: 1889:    { return (__x.size() == __y.size()
+   144800: 1889-block  0
+   144800: 1890:	      && std::equal(__x.begin(), __x.end(), __y.begin())); }
+   144800: 1890-block  0
+       27: 1890-block  1
+   144773: 1890-block  2
+   144800: 1890-block  3
 ------------------
         -: 1891:
         -: 1892:  /**

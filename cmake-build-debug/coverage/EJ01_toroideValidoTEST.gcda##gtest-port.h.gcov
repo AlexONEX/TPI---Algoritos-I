@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
         -:    0:Runs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -1185,16 +1185,16 @@
         -: 1181: public:
         -: 1182:  typedef T element_type;
         -: 1183:
-       41: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
-      155: 1185:  ~scoped_ptr() { reset(); }
+       47: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
+      176: 1185:  ~scoped_ptr() { reset(); }
 ------------------
 _ZN7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED1Ev:
-       41: 1185:  ~scoped_ptr() { reset(); }
-       41: 1185-block  0
+       47: 1185:  ~scoped_ptr() { reset(); }
+       47: 1185-block  0
 ------------------
 _ZN7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEED1Ev:
-      114: 1185:  ~scoped_ptr() { reset(); }
-      114: 1185-block  0
+      129: 1185:  ~scoped_ptr() { reset(); }
+      129: 1185-block  0
 ------------------
         -: 1186:
         -: 1187:  T& operator*() const { return *ptr_; }
@@ -1207,34 +1207,34 @@ _ZN7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_trait
         -: 1194:    return ptr;
         -: 1195:  }
         -: 1196:
-      155: 1197:  void reset(T* p = NULL) {
-      155: 1198:    if (p != ptr_) {
-     114*: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
-     114*: 1200:        delete ptr_;
+      176: 1197:  void reset(T* p = NULL) {
+      176: 1198:    if (p != ptr_) {
+     129*: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
+     129*: 1200:        delete ptr_;
         -: 1201:      }
-     114*: 1202:      ptr_ = p;
+     129*: 1202:      ptr_ = p;
         -: 1203:    }
-      155: 1204:  }
+      176: 1204:  }
 ------------------
 _ZN7testing8internal10scoped_ptrINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEEE5resetEPS7_:
-      114: 1197:  void reset(T* p = NULL) {
-      114: 1198:    if (p != ptr_) {
-      114: 1198-block  0
-      114: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
-      114: 1199-block  0
-      114: 1200:        delete ptr_;
-      114: 1200-block  0
-      114: 1200-block  1
+      129: 1197:  void reset(T* p = NULL) {
+      129: 1198:    if (p != ptr_) {
+      129: 1198-block  0
+      129: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
+      129: 1199-block  0
+      129: 1200:        delete ptr_;
+      129: 1200-block  0
+      129: 1200-block  1
         -: 1201:      }
-      114: 1202:      ptr_ = p;
-      114: 1202-block  0
+      129: 1202:      ptr_ = p;
+      129: 1202-block  0
         -: 1203:    }
-      114: 1204:  }
+      129: 1204:  }
 ------------------
 _ZN7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE5resetEPS7_:
-       41: 1197:  void reset(T* p = NULL) {
-       41: 1198:    if (p != ptr_) {
-       41: 1198-block  0
+       47: 1197:  void reset(T* p = NULL) {
+       47: 1198:    if (p != ptr_) {
+       47: 1198-block  0
     #####: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
     %%%%%: 1199-block  0
     #####: 1200:        delete ptr_;
@@ -1244,7 +1244,7 @@ _ZN7testing8internal10scoped_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESa
     #####: 1202:      ptr_ = p;
     %%%%%: 1202-block  0
         -: 1203:    }
-       41: 1204:  }
+       47: 1204:  }
 ------------------
         -: 1205:
         -: 1206:  friend void swap(scoped_ptr& a, scoped_ptr& b) {

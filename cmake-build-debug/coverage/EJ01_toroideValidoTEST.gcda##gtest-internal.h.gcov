@@ -1,6 +1,6 @@
-        -:    0:Source:C:/Users/aschw/Downloads/tpi-template-alumnos/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
-        -:    0:Graph:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
-        -:    0:Data:C:\Users\aschw\Downloads\tpi-template-alumnos\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
+        -:    0:Source:C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+        -:    0:Graph:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
+        -:    0:Data:C:\Users\Usuario\CLionProjects\TPI---Algoritos-I\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
         -:    0:Runs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -456,7 +456,7 @@
         -:  452:  virtual Test* CreateTest() = 0;
         -:  453:
         -:  454: protected:
-       35:  455:  TestFactoryBase() {}
+       39:  455:  TestFactoryBase() {}
         -:  456:
         -:  457: private:
         -:  458:  GTEST_DISALLOW_COPY_AND_ASSIGN_(TestFactoryBase);
@@ -524,9 +524,9 @@ _ZN7testing8internal15TestFactoryImplI35toroideValidoTEST_toroide2por2_TestE10Cr
         -:  484:typedef void (*TearDownTestCaseFunc)();
         -:  485:
         -:  486:struct CodeLocation {
-       35:  487:  CodeLocation(const std::string& a_file, int a_line)
-       35:  488:      : file(a_file), line(a_line) {}
-       35:  488-block  0
+       39:  487:  CodeLocation(const std::string& a_file, int a_line)
+       39:  488:      : file(a_file), line(a_line) {}
+       39:  488-block  0
         -:  489:
         -:  490:  std::string file;
         -:  491:  int line;
