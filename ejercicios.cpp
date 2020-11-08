@@ -72,10 +72,7 @@ toroide evolucionMultiple(toroide const &t, int K) {
     return out;
 }
 
-
 // EJERCICIO 7
-
-
 bool esPeriodico(toroide const &t, int &p){ // No hara falta copiar p? Mantenerlo por la referencia y devolvero cuando sea false?
     p = 0;
     toroide out = t;
@@ -105,7 +102,18 @@ bool primosLejanos(toroide const &t, toroide const &u) {
         if(u == t1){
             return true;
         }
-        if(esPeriodico(t1,p)){
+        if(t == t1){
+            break;
+        }
+        if(!(esPeriodico(t,p)) && esPeriodico(t1,p)){
+            toroide t2 = t1;
+            evolucionToroide(t1);
+            while (t2 != t1){
+                if (t1 == u){
+                    return true;
+                }
+                evolucionToroide(t1);
+            }
             break;
         }
     }
@@ -115,7 +123,19 @@ bool primosLejanos(toroide const &t, toroide const &u) {
         if(t == u1){
             return true;
         }
-        if (esPeriodico(u1,p)){
+        if(u == u1){
+            break;
+        }
+        if(!(esPeriodico(u,p)) && esPeriodico(u1,p)){
+            toroide u2 = u1;
+            evolucionToroide(u1);
+            while (u2 != u1){
+                if (u1 == t){
+                    return true;
+                }
+                evolucionToroide(u1);
+
+            }
             break;
         }
     }

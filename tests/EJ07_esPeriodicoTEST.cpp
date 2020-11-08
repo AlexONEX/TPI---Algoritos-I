@@ -43,6 +43,31 @@ TEST(esPeriodicoTEST, noPeriodico){
     EXPECT_EQ(p, 0);
 }
 
+TEST(esPeriodicoTEST, muerto){
+    toroide t = {
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false} };
+    int p;
+    bool res = esPeriodico(t, p);
+    EXPECT_FALSE(res);
+    EXPECT_EQ(p, 0);
+}
+
+TEST(esPeriodicoTEST, noPeriodicoQueNoMuere){
+    toroide t = {
+            {false, false, false, false, false},
+            {true, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, true, true, true},
+            {false, false, false, false, false} };
+    int p;
+    bool res = esPeriodico(t, p);
+    EXPECT_FALSE(res);
+    EXPECT_EQ(p, 0);
+}
 
 TEST(esPeriodicoTEST, periodicoGlider){
     toroide t = {

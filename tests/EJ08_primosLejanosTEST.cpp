@@ -114,3 +114,98 @@ TEST(primosLejanosTEST, glider){
     res = primosLejanos(t2, t1);
     EXPECT_TRUE(res);
 }
+
+TEST(primosLejanosTEST, toroideNormal){
+    toroide t1 = {
+            {false, false, true, false, false},
+            {false, true, false, true, false},
+            {false, true, false, true, false},
+            {false, false, true, false, false},
+            {false, false,false, false, false} };
+    toroide t2 = {
+            {false, true, false, false, false},
+            {false, false, true, false, false},
+            {false, false, true, false, false},
+            {false, false, false, true, false},
+            {false, false,false, false, false} };
+    bool res = primosLejanos(t1, t2);
+    EXPECT_TRUE(res);
+    res = primosLejanos(t2, t1);
+    EXPECT_TRUE(res);
+}
+
+TEST(primosLejanosTEST, pocaVidaPeriodico){
+    toroide t1 = {
+            {true, true, false, false,false, false},
+            {true, true, false, false,false, false},
+            {false, false,false, false, false, false},
+            {false,false, false, true, false, false},
+            {false,false, false,false, false, false} };
+
+    toroide t2 = {
+            {true, true,false, false, false, false},
+            {true, true,false, false, false, false},
+            {false, false,false, false, false, false},
+            {false, false,false, false, false, false},
+            {false, false,false,false, false, false}};
+    bool res = primosLejanos(t1, t2);
+    EXPECT_TRUE(res);
+    res = primosLejanos(t2, t1);
+    EXPECT_TRUE(res);
+
+
+}
+
+TEST(primosLejanosTEST, trioPeriodico) {
+    toroide t1 = {
+            {false, false, false, false, false, false},
+            {false, false, true,  false, false,  false},
+            {false, false, true,  false, false, false},
+            {false, false, true,  false, false, true},
+            {false, false, false, false, false, false}};
+
+    toroide t2 = {
+            {false, false, false, false, false, false},
+            {false, false, true,  false, false, false},
+            {false, false, true,  false, false, false},
+            {false, false, true,  false, false, false},
+            {false, false, false, false, false, false}};
+
+    bool res = primosLejanos(t1, t2);
+    EXPECT_TRUE(res);
+    res = primosLejanos(t2, t1);
+    EXPECT_TRUE(res);
+}
+
+TEST(primosLejanosTEST, toroideRaro){
+    toroide t1 = {
+            {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,true, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,true, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, true,false, true, false, false, false, false,false,false,false},
+            {false, false, false, false, false, true,false, true, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,true, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false}};
+
+    toroide t2 = {
+            {false, false, false, false, false, false,true, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, true,false, true, false, false, false, false,false,false,false},
+            {false, false, false, false, false, true,false, true, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,true, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,true, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, true,false, true, false, false, false, false,false,false,false},
+            {false, false, false, false, false, true,false, true, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,true, false, false, false, false, false,false,false,false},
+            {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false}};
+
+
+
+    bool res = primosLejanos(t1, t2);
+    EXPECT_TRUE(res);
+    res = primosLejanos(t2, t1);
+    EXPECT_TRUE(res);
+}
