@@ -72,3 +72,33 @@ TEST(vistaTrasladadaTEST, noCuadrado){
     bool res = vistaTrasladada(t1, t2);
     EXPECT_TRUE(res);
 }
+TEST(vistaTrasladadaTEST, noCuadradoYNoVista){
+    toroide t1 = {
+            {true, false, false},
+            {false, false, false},
+            {false, true, false},
+            {false, false, false}};
+    toroide t2 = {
+            {false, false, true},
+            {false, false, false},
+            {false, false, true},
+            {false, false, false}};
+
+    bool res = vistaTrasladada(t1, t2);
+    EXPECT_FALSE(res);
+}
+TEST(vistaTrasladadaTEST, esVista){
+    toroide t1 = {
+            {true, false, false},
+            {false, false, false},
+            {false, true, false},
+            {false, false, false}};
+    toroide t2 = {
+            {false, false, true},
+            {false, false, false},
+            {true, false, false},
+            {false, false, false}};
+
+    bool res = vistaTrasladada(t1, t2);
+    EXPECT_TRUE(res);
+}
