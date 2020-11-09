@@ -84,4 +84,33 @@ TEST(menorSuperficieVivaTEST, CuatroPorCuatro5){
     EXPECT_EQ(res, 8);
 }
 
+TEST(primosLejanosTEST, gliderTraladadoMenor){
+
+
+    toroide t1 = {
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {true, false, false, false, false,false,false,false,false,false,false,false,false,true,true}
+    };
+    int res = menorSuperficieViva(t1);
+    EXPECT_EQ(res, 8);
+}
+
 

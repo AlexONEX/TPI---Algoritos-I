@@ -26,26 +26,26 @@ TEST(primosLejanosTEST, toroideHorizontalPeriodico2){
 
 TEST(primosLejanosTEST, random){
     toroide t1 = {
-            {false, false, true, false, false},
+            {true, false, false, false, false},
+            {true, false, false, false, false},
             {true, false, false, false, false},
             {false, false, false, false, false},
-            {false, false, false, false, false},
-            {false, true,false, false, false} };
+            {false, false,false, false, false} };
     toroide t2 = {
             {false, false, false, false, false},
-            {false, false, false, true, false},
-            {false, false, true, false, true},
-            {false, false, true, true, true},
+            {true, true, false, false, true},
+            {false, false, false, false, false},
+            {false, false, false, false, false},
             {false, false,false, false, false} };
     bool res = primosLejanos(t1, t2);
-    EXPECT_FALSE(res);
+    EXPECT_TRUE(res);
     res = primosLejanos(t2, t1);
-    EXPECT_FALSE(res);
+    EXPECT_TRUE(res);
 }
 
-TEST(primosLejanosTEST, NingunoPrimoDe){
+TEST(primosLejanosTEST, dosPeriodicos){
     toroide t1 = {
-            {false, false, true, false, false},
+            {false, false, false, false, false},
             {true, true, true, false, false},
             {false, false, false, false, false},
             {false, false, false, false, false},
@@ -53,9 +53,9 @@ TEST(primosLejanosTEST, NingunoPrimoDe){
 
     toroide t2 = {
             {false, false, false, false, false},
-            {false, true, true, true, false},
+            {false, false, true, true, false},
+            {false, false, true, true, false},
             {false, false, false, false, false},
-            {false, false, true, true, true},
             {false, false,false, false, false}};
     bool res = primosLejanos(t1, t2);
     EXPECT_FALSE(res);
@@ -63,58 +63,7 @@ TEST(primosLejanosTEST, NingunoPrimoDe){
     EXPECT_FALSE(res);
 }
 
-/*TEST(primosLejanosTEST, glider){
-    toroide t1 = {
-            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
-            {true, true, true, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
-            };
 
-    toroide t2 = {
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,true,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,true,false,false,false,false,false,false,false},
-            {false, false, false, false, false,true,true,true,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
-            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
-    };
-    bool res = primosLejanos(t1, t2);
-    EXPECT_TRUE(res);
-    res = primosLejanos(t2, t1);
-    EXPECT_TRUE(res);
-}
-*/
 TEST(primosLejanosTEST, toroideNormal){
     toroide t1 = {
             {false, false, true, false, false},

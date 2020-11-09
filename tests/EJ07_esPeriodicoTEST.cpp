@@ -56,12 +56,12 @@ TEST(esPeriodicoTEST, muerto){
     EXPECT_EQ(p, 0);
 }
 
-TEST(esPeriodicoTEST, noPeriodicoQueNoMuere){
+TEST(esPeriodicoTEST, noPeriodicoDos){
     toroide t = {
             {false, false, false, false, false},
-            {true, false, false, false, false},
+            {true, false, true, false, false},
             {false, false, false, false, false},
-            {false, false, true, true, true},
+            {false, false, false, true, true},
             {false, false, false, false, false} };
     int p;
     bool res = esPeriodico(t, p);

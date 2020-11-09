@@ -75,20 +75,18 @@ toroide evolucionMultiple(toroide const &t, int K) {
 // EJERCICIO 7
 bool esPeriodico(toroide const &t, int &p){ // No hara falta copiar p? Mantenerlo por la referencia y devolvero cuando sea false?
     p = 0;
-    toroide out = t;
-    vector<toroide> listaDeEvoluciones;
-    while (!(toroideMuerto(out))) {
-        listaDeEvoluciones.push_back(out);
-        evolucionToroide(out);
+    int p0 = p;
+    toroide t1 = t;
+
+    while (!(toroideMuerto(t1))) {
+        evolucionToroide(t1);
         p++;
-        if (out == t) {
+
+        if (t1 == t) {
             return true;
         }
-        if(find(listaDeEvoluciones.begin(), listaDeEvoluciones.end(), out)!= listaDeEvoluciones.end()){
-            break;
-        }
     }
-    p = 0;
+    p = p0;
     return false;
 }
 
@@ -96,7 +94,7 @@ bool esPeriodico(toroide const &t, int &p){ // No hara falta copiar p? Mantenerl
 bool primosLejanos(toroide const &t, toroide const &u) {
     toroide t1 = t;
     toroide u1 = u;
-    int p = 0;
+
     while(!(toroideMuerto(t1))){
         evolucionToroide(t1);
         if(u == t1){
@@ -105,37 +103,14 @@ bool primosLejanos(toroide const &t, toroide const &u) {
         if(t == t1){
             break;
         }
-        if(!(esPeriodico(t,p)) && esPeriodico(t1,p)){
-            toroide t2 = t1;
-            evolucionToroide(t1);
-            while (t2 != t1){
-                if (t1 == u){
-                    return true;
-                }
-                evolucionToroide(t1);
-            }
-            break;
-        }
     }
-    p = 0;
+
     while(!(toroideMuerto(u1))){
         evolucionToroide(u1);
         if(t == u1){
             return true;
         }
         if(u == u1){
-            break;
-        }
-        if(!(esPeriodico(u,p)) && esPeriodico(u1,p)){
-            toroide u2 = u1;
-            evolucionToroide(u1);
-            while (u2 != u1){
-                if (u1 == t){
-                    return true;
-                }
-                evolucionToroide(u1);
-
-            }
             break;
         }
     }
