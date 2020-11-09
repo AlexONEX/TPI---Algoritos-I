@@ -22,3 +22,54 @@ TEST(evolucionMultipleTEST, toroideDiagonalTresPorTresUnPaso){
     toroide res = evolucionMultiple(t, 1);
     EXPECT_EQ(res, evo_t);
 }
+
+TEST(primosLejanosTEST, gliderKevo){
+    toroide t = {
+            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
+            {true, true, true, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+    };
+
+    toroide evo_t = {
+            {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
+            {true, true, true, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+    };
+
+    toroide res = evolucionMultiple(t, 240);
+    EXPECT_EQ(res, evo_t);
+}
