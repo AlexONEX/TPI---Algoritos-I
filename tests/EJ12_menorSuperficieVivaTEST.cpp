@@ -113,4 +113,54 @@ TEST(primosLejanosTEST, gliderTraladadoMenor){
     EXPECT_EQ(res, 8);
 }
 
+TEST(primosLejanosTEST, toroideRaroDos){
+    toroide t1 = {
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {true, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, true, false, false, false,false,false,false,false,false,false,true,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
+            {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false}
+    };
+    int res = menorSuperficieViva(t1);
+    EXPECT_EQ(res, 48);
+}
+
+TEST(primosLejanosTEST, todosVivosdos){
+
+
+    toroide t1 = {
+            {true, true, true, true},
+            {true, true, true, true},
+            {true, true, true, true}};
+    int res = menorSuperficieViva(t1);
+    EXPECT_EQ(res, 12);
+}
+
+TEST(primosLejanosTEST, unoSoloVivo){
+
+
+    toroide t1 = {
+            {true, false, false, false},
+            {false, false, false, false},
+            {false, false, false, false}};
+    int res = menorSuperficieViva(t1);
+    EXPECT_EQ(res, 1);
+}
+
+
 
