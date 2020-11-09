@@ -63,7 +63,7 @@ TEST(primosLejanosTEST, NingunoPrimoDe){
     EXPECT_FALSE(res);
 }
 
-TEST(primosLejanosTEST, glider){
+/*TEST(primosLejanosTEST, glider){
     toroide t1 = {
             {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
             {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
@@ -114,7 +114,7 @@ TEST(primosLejanosTEST, glider){
     res = primosLejanos(t2, t1);
     EXPECT_TRUE(res);
 }
-
+*/
 TEST(primosLejanosTEST, toroideNormal){
     toroide t1 = {
             {false, false, true, false, false},
@@ -201,9 +201,6 @@ TEST(primosLejanosTEST, toroideRaro){
             {false, false, false, false, false, true,false, true, false, false, false, false,false,false,false},
             {false, false, false, false, false, false,true, false, false, false, false, false,false,false,false},
             {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false}};
-
-
-
     bool res = primosLejanos(t1, t2);
     EXPECT_TRUE(res);
     res = primosLejanos(t2, t1);

@@ -24,24 +24,23 @@ TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
     EXPECT_EQ(res, 0);
 }
 
-//TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
-//    toroide t1 = {
-//                  {false, false, false, false, false},
-//                  {false, false, false, false, false},
-//                  {false, true, true, true, false},
-//                  {false, false, false, false, false},
-//                  {false, false,false, false, false} };
-//    toroide t2 = {
-//                  {true, false, false},
-//                  {false, true, false},
-//                  {false, false, true}};
-//    vector<toroide> ts;
-//    ts.push_back(t2);
-//    ts.push_back(t1);
-//    ts.push_back(t2);
-//    int res = seleccionNatural(ts);
-//    EXPECT_EQ(res, 1);
-//}
+TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
+    toroide t1 = {
+                  {false, false, false},
+                  {false, false, false},
+                  {true, true, true},
+                  {false, false, false},
+                  {false, false,false} };
+    toroide t2 = {
+                  {true, false, false},
+                  {false, true, false},
+                  {false, false, true}};
+    vector<toroide> ts;
+    ts.push_back(t2);
+    ts.push_back(t1);
+    int res = seleccionNatural(ts);
+    EXPECT_EQ(res, 1);
+}
 
 TEST(seleccionNaturalTEST, unoMuerto){
     toroide t1 = {

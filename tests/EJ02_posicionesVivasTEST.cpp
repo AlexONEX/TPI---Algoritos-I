@@ -45,5 +45,3 @@ TEST(posicionesVivasTEST, todasVivas){
     EXPECT_EQ(ordenar(vivas), ordenar(res));
 }
 
-
-

@@ -37,3 +37,14 @@ TEST(toroideValidoTEST, toroide2por2){
     };
     EXPECT_FALSE(toroideValido(t));
 }
+TEST(toroideValidoTEST, toroide0x0){
+    toroide t ={{}};
+    EXPECT_FALSE(toroideValido(t));
+}
+TEST(toroideValidoTEST, unosYCeros){
+    toroide t = { {1, 0, 0},
+                  {0, 0, 0},
+                  {1, 0,1}
+    };
+    EXPECT_TRUE(toroideValido(t));
+}
