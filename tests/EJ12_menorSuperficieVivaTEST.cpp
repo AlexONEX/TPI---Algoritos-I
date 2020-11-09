@@ -63,3 +63,25 @@ TEST(menorSuperficieVivaTEST, CuatroPorCuatro3){
     EXPECT_EQ(res, 12);
 }
 
+TEST(menorSuperficieVivaTEST, CuatroPorCuatro4){
+    toroide t ={
+            {true, false, false},
+            {false, true, false},
+            {false, false, true},
+            {false, false, false},
+            {false, false, false}};
+    int res = menorSuperficieViva(t);
+    EXPECT_EQ(res, 9);
+}
+TEST(menorSuperficieVivaTEST, CuatroPorCuatro5){
+    toroide t ={
+            {true, false, true},
+            {false, false, false},
+            {false, false, true},
+            {false, false, false},
+            {true, false, false}};
+    int res = menorSuperficieViva(t);
+    EXPECT_EQ(res, 8);
+}
+
+
