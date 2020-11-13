@@ -3,18 +3,18 @@
 
 using namespace std;
 
-TEST(toroideValidoTEST, toroideVacio){
+TEST(Ejercicio1TEST, toroideVacio){
     toroide t = { vector<bool> () };
     EXPECT_FALSE(toroideValido(t));
 }
 
-TEST(toroideValidoTEST, toroideVacio5Filas){
+TEST(Ejercicio1TEST, toroideVacio5Filas){
     vector<bool> vacio;
     toroide t = { vacio, vacio, vacio, vacio, vacio };
     EXPECT_FALSE(toroideValido(t));
 }
 
-TEST(toroideValidoTEST, diagonalTresPorTres) {
+TEST(Ejercicio1TEST, diagonalTresPorTres) {
     toroide t = { {true, false, false},
                   {false, true, false},
                   {false, false, true}
@@ -22,7 +22,7 @@ TEST(toroideValidoTEST, diagonalTresPorTres) {
     EXPECT_TRUE(toroideValido(t));
 }
 
-TEST(toroideValidoTEST, toroideRaro){
+TEST(Ejercicio1TEST, toroideRaro){
     toroide t = { {true,true,false},
                   {false,true,true,true,true},
                   {true},
@@ -31,17 +31,17 @@ TEST(toroideValidoTEST, toroideRaro){
     EXPECT_FALSE(toroideValido(t));
 }
 
-TEST(toroideValidoTEST, toroide2por2){
+TEST(Ejercicio1TEST, toroide2por2){
     toroide t = { {true,true},
                   {false,false},
     };
     EXPECT_FALSE(toroideValido(t));
 }
-TEST(toroideValidoTEST, toroide0x0){
+TEST(Ejercicio1TEST, toroide0x0){
     toroide t ={{}};
     EXPECT_FALSE(toroideValido(t));
 }
-TEST(toroideValidoTEST, unosYCeros){
+TEST(Ejercicio1TEST, unosYCeros){
     toroide t = { {1, 0, 0},
                   {0, 0, 0},
                   {1, 0,1}

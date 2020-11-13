@@ -4,7 +4,7 @@
 
 using namespace std;
 
-TEST(evolucionMultipleTEST, toroideDiagonalTresPorTresUnPaso){
+TEST(Ejercicio6TEST, toroideDiagonalTresPorTresUnPaso){
     toroide t = { {true, false, false},
                   {false, true, false},
                   {false, false, true} };
@@ -15,7 +15,7 @@ TEST(evolucionMultipleTEST, toroideDiagonalTresPorTresUnPaso){
     //0*1 0 0*1
     toroide evo_t = { {true, true, true},
                       {true, true, true},
-                      {true, true, true} };
+                      {true, true, true}};
     //  1 1 1
     //  1 1 1
     //  1 1 1
@@ -23,7 +23,7 @@ TEST(evolucionMultipleTEST, toroideDiagonalTresPorTresUnPaso){
     EXPECT_EQ(res, evo_t);
 }
 
-TEST(primosLejanosTEST, gliderKevo){
+TEST(Ejercicio6TEST, gliderKevo){
     toroide t = {
             {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
             {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},
@@ -71,5 +71,16 @@ TEST(primosLejanosTEST, gliderKevo){
     };
 
     toroide res = evolucionMultiple(t, 240);
+    EXPECT_EQ(res, evo_t);
+}
+TEST(Ejercicio6TEST, seMuereEnDosTicks){
+    toroide t = { {true, false, false},
+                  {false, true, false},
+                  {false, false, true} };
+
+    toroide evo_t = { {false, false, false},
+                      {false, false, false},
+                      {false, false, false} };
+    toroide res = evolucionMultiple(t, 2);
     EXPECT_EQ(res, evo_t);
 }

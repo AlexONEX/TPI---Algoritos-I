@@ -4,7 +4,7 @@
 
 using namespace std;
 
-TEST(esPeriodicoTEST, toroideHorizontalPeriodico2){
+TEST(Ejercicio7TEST, toroideHorizontalPeriodico2){
     toroide t = { 
                   {false, false, false, false, false}, 
                   {false, false, false, false, false}, 
@@ -17,7 +17,7 @@ TEST(esPeriodicoTEST, toroideHorizontalPeriodico2){
     EXPECT_EQ(p, 2);
 }
 
-TEST(esPeriodicoTEST, periodicoCuadrado){
+TEST(Ejercicio7TEST, periodicoCuadrado){
     toroide t = {
             {false, false, false, false, false},
             {false, false, false, false, false},
@@ -30,7 +30,7 @@ TEST(esPeriodicoTEST, periodicoCuadrado){
     EXPECT_EQ(p, 1);
 }
 
-TEST(esPeriodicoTEST, noPeriodico){
+TEST(Ejercicio7TEST, noPeriodico){
     toroide t = {
             {true, false, false, false, false},
             {false, false, false, false, false},
@@ -43,7 +43,7 @@ TEST(esPeriodicoTEST, noPeriodico){
     EXPECT_EQ(p, 0);
 }
 
-TEST(esPeriodicoTEST, muerto){
+TEST(Ejercicio7TEST, muerto){
     toroide t = {
             {false, false, false, false, false},
             {false, false, false, false, false},
@@ -56,7 +56,7 @@ TEST(esPeriodicoTEST, muerto){
     EXPECT_EQ(p, 0);
 }
 
-TEST(esPeriodicoTEST, noPeriodicoDos){
+TEST(Ejercicio7TEST, noPeriodicoDos){
     toroide t = {
             {false, false, false, false, false},
             {true, false, true, false, false},
@@ -69,7 +69,7 @@ TEST(esPeriodicoTEST, noPeriodicoDos){
     EXPECT_EQ(p, 0);
 }
 
-TEST(esPeriodicoTEST, periodicoGlider){
+TEST(Ejercicio7TEST, periodicoGlider){
     toroide t = {
             {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
             {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},

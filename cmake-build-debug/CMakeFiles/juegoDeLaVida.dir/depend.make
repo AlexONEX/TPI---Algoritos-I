@@ -109,6 +109,7 @@ CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../lib/google
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../auxiliares.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../definiciones.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../ejercicios.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.obj: ../tests/EJ03_densidadPoblacionTEST.cpp
@@ -161,6 +162,7 @@ CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../lib/googlet
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../auxiliares.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../definiciones.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../ejercicios.h
 CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.obj: ../tests/EJ05_evolucionToroideTEST.cpp

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-TEST(fusionarTEST, sinInterseccion){
+TEST(Ejercicio10TEST, sinInterseccion){
     toroide t1 = { 
                   {true, false, false},
                   {false, true, false},
@@ -23,7 +23,7 @@ TEST(fusionarTEST, sinInterseccion){
     EXPECT_EQ(res, tout);
 }
 
-TEST(fusionarTEST, todosMuertos){
+TEST(Ejercicio10TEST, todosMuertos){
     toroide t1 = {
             {false, false, false},
             {false, false, false},
@@ -42,7 +42,7 @@ TEST(fusionarTEST, todosMuertos){
     EXPECT_EQ(res, tout);
 }
 
-TEST(fusionarTEST, todosVivos){
+TEST(Ejercicio10TEST, todosVivos){
     toroide t1 = {
             {true, true, true},
             {true, true, true},
@@ -60,7 +60,7 @@ TEST(fusionarTEST, todosVivos){
     toroide res = fusionar(t1, t2);
     EXPECT_EQ(res, tout);
 }
-TEST(fusionarTEST, solo3Vivos){
+TEST(Ejercicio10TEST, solo3Vivos){
     toroide t1 = {
             {true, false, true},
             {false, true, false},
@@ -78,7 +78,7 @@ TEST(fusionarTEST, solo3Vivos){
     toroide res = fusionar(t1, t2);
     EXPECT_EQ(res, tout);
 }
-TEST(fusionarTEST, hayInterseccion){
+TEST(Ejercicio10TEST, hayInterseccion){
     toroide t1 = {
             {true, true, true},
             {true, true, true},

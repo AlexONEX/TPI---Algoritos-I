@@ -3,7 +3,7 @@
 
 using namespace std;
 
-TEST(menorSuperficieVivaTEST, enunciado){
+TEST(Ejercicio12TEST, enunciado){
     toroide t = {
             {true, false, false, true},   // 1
             {false, false, false, false}, // 2
@@ -14,7 +14,7 @@ TEST(menorSuperficieVivaTEST, enunciado){
     EXPECT_EQ(res, 6);
 }
 
-TEST(menorSuperficieVivaTEST, DosporDos){
+TEST(Ejercicio12TEST, DosporDos){
     toroide t = {
             {true, false, false, true},   // 1
             {false, false, false, true}, // 2
@@ -25,7 +25,7 @@ TEST(menorSuperficieVivaTEST, DosporDos){
     EXPECT_EQ(res, 4);
 }
 
-TEST(menorSuperficieVivaTEST, noCuadrado){
+TEST(Ejercicio12TEST, noCuadrado){
     toroide t = {
             {true, false, false, true},   // 1
             {false, false, true, true}, // 2
@@ -35,7 +35,7 @@ TEST(menorSuperficieVivaTEST, noCuadrado){
     EXPECT_EQ(res, 6);
 }
 
-TEST(menorSuperficieVivaTEST, CuatroPorCuatro){
+TEST(Ejercicio12TEST, CuatroPorCuatro){
     toroide t ={
             {false, true, true, true},   // 1
             {false, false, false, false}, // 2
@@ -44,7 +44,7 @@ TEST(menorSuperficieVivaTEST, CuatroPorCuatro){
     int res = menorSuperficieViva(t);
     EXPECT_EQ(res, 6);
 }
-TEST(menorSuperficieVivaTEST, CuatroPorCuatro2){
+TEST(Ejercicio12TEST, CuatroPorCuatro2){
     toroide t ={
             {false, true, true, false},   // 1
             {false, false, false, false}, // 2
@@ -53,7 +53,7 @@ TEST(menorSuperficieVivaTEST, CuatroPorCuatro2){
     int res = menorSuperficieViva(t);
     EXPECT_EQ(res, 4);
 }
-TEST(menorSuperficieVivaTEST, CuatroPorCuatro3){
+TEST(Ejercicio12TEST, CuatroPorCuatro3){
     toroide t ={
             {true, true, false, false},   // 1
             {false, false, false, false}, // 2
@@ -63,7 +63,7 @@ TEST(menorSuperficieVivaTEST, CuatroPorCuatro3){
     EXPECT_EQ(res, 12);
 }
 
-TEST(menorSuperficieVivaTEST, CuatroPorCuatro4){
+TEST(Ejercicio12TEST, CuatroPorCuatro4){
     toroide t ={
             {true, false, false},
             {false, true, false},
@@ -73,7 +73,7 @@ TEST(menorSuperficieVivaTEST, CuatroPorCuatro4){
     int res = menorSuperficieViva(t);
     EXPECT_EQ(res, 9);
 }
-TEST(menorSuperficieVivaTEST, CuatroPorCuatro5){
+TEST(Ejercicio12TEST, CuatroPorCuatro5){
     toroide t ={
             {true, false, true},
             {false, false, false},
@@ -84,7 +84,7 @@ TEST(menorSuperficieVivaTEST, CuatroPorCuatro5){
     EXPECT_EQ(res, 8);
 }
 
-TEST(primosLejanosTEST, gliderTraladadoMenor){
+TEST(Ejercicio12TEST, gliderTraladadoMenor){
 
 
     toroide t1 = {
@@ -113,7 +113,7 @@ TEST(primosLejanosTEST, gliderTraladadoMenor){
     EXPECT_EQ(res, 8);
 }
 
-TEST(primosLejanosTEST, toroideRaroDos){
+TEST(Ejercicio12TEST, toroideRaroDos){
     toroide t1 = {
             {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
             {false, false, false, false, false,false,false,false,false,false,false,false,false,false,false},
@@ -140,7 +140,7 @@ TEST(primosLejanosTEST, toroideRaroDos){
     EXPECT_EQ(res, 48);
 }
 
-TEST(primosLejanosTEST, todosVivosdos){
+TEST(Ejercicio12TEST, todosVivosdos){
 
 
     toroide t1 = {
@@ -151,7 +151,7 @@ TEST(primosLejanosTEST, todosVivosdos){
     EXPECT_EQ(res, 12);
 }
 
-TEST(primosLejanosTEST, unoSoloVivo){
+TEST(Ejercicio12TEST, unoSoloVivo){
 
 
     toroide t1 = {

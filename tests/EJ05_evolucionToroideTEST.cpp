@@ -5,7 +5,7 @@
 
 using namespace std;
 
-TEST(evolucionToroideTEST, toroideDiagonalTresPorTresUnPaso){
+TEST(Ejercicio5TEST, toroideDiagonalTresPorTresUnPaso){
     toroide t = { {true, false, false}, {false, true, false}, {false, false, true} };
     //1*0 0 1*0
     //0 1 0 0 1
@@ -20,7 +20,7 @@ TEST(evolucionToroideTEST, toroideDiagonalTresPorTresUnPaso){
     EXPECT_EQ(t, evo_t);
 }
 
-TEST(evolucionToroideTEST, igual){
+TEST(Ejercicio5TEST, igual){
     toroide t = { {true, true, false}, {true, true, false}, {false, false, false} };
 
     toroide evo_t = { {true, true, false}, {true, true, false}, {false, false, false} };
@@ -29,7 +29,7 @@ TEST(evolucionToroideTEST, igual){
     EXPECT_EQ(t, evo_t);
 }
 
-TEST(evolucionToroideTEST, seMuere){
+TEST(Ejercicio5TEST, seMuere){
     toroide t = { {true, false, false},
                   {false, true, false},
                   {false, false, false} };
@@ -42,7 +42,7 @@ TEST(evolucionToroideTEST, seMuere){
     EXPECT_EQ(t, evo_t);
 }
 
-TEST(evolucionToroideTEST, sePonenTodosVivos){
+TEST(Ejercicio5TEST, sePonenTodosVivos){
     toroide t = { {true, true, false},
                   {false, true, false},
                   {false, false, false} };
@@ -54,7 +54,7 @@ TEST(evolucionToroideTEST, sePonenTodosVivos){
     evolucionToroide(t);
     EXPECT_EQ(t, evo_t);
 }
-TEST(evolucionToroideTEST, seMuerenTodos){
+TEST(Ejercicio5TEST, seMuerenTodos){
        toroide t = { {true, true, true},
                       {true, true, true},
                       {true, true, true} };
@@ -65,7 +65,7 @@ TEST(evolucionToroideTEST, seMuerenTodos){
     evolucionToroide(t);
     EXPECT_EQ(t, evo_t);
 }
-TEST(evolucionToroideTEST, evolucionesYMuertes){
+TEST(Ejercicio5TEST, evolucionesYMuertes){
     toroide t1 = {
                   {false, false, true, false, false},
                   {false, true, false,true, true},
@@ -79,4 +79,14 @@ TEST(evolucionToroideTEST, evolucionesYMuertes){
                   { true, false, true, false, true },
                   { false, false, true, false, false }};
     EXPECT_EQ(t1, t2);
+}
+TEST(Ejercicio5TEST, todoVivoMorira) {
+    toroide t = {{true, true, true},
+                 {true, true, true},
+                 {true, true, true}};
+    evolucionToroide(t);
+    toroide t2 = {{false, false, false},
+                 {false, false, false},
+                 {false, false, false}};
+    EXPECT_EQ(t,t2);
 }

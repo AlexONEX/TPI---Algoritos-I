@@ -5,7 +5,7 @@
 
 using namespace std;
 
-TEST(posicionesVivasTEST, toroideDiagonalVivas){
+TEST(Ejercicio2TEST, toroideDiagonalVivas){
     toroide t = { 
 	{true, false, false},
 	{false, true, false},
@@ -19,7 +19,7 @@ TEST(posicionesVivasTEST, toroideDiagonalVivas){
     EXPECT_EQ(ordenar(vivas), ordenar(res));
 }
 
-TEST(posicionesVivasTEST, toroideMuerto){
+TEST(Ejercicio2TEST, toroideMuerto){
     toroide t = {
             {false, false, false},
             {false, false, false},
@@ -33,7 +33,7 @@ TEST(posicionesVivasTEST, toroideMuerto){
     EXPECT_EQ(ordenar(vivas), ordenar(res));
 }
 
-TEST(posicionesVivasTEST, todasVivas){
+TEST(Ejercicio2TEST, todasVivas){
     toroide t = {
             {true, true, true},
             {true, true, true},

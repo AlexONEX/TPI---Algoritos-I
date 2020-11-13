@@ -4,7 +4,7 @@
 
 using namespace std;
 
-TEST(vistaTrasladadaTEST, muevoTerceraFilaParaArriba){
+TEST(Ejercicio11TEST, muevoTerceraFilaParaArriba){
     toroide t1 = { 
                   {true, false, false}, // 1
                   {false, true, false}, // 2
@@ -18,7 +18,7 @@ TEST(vistaTrasladadaTEST, muevoTerceraFilaParaArriba){
     EXPECT_TRUE(res);
 }
 
-TEST(vistaTrasladadaTEST, DiagonalVsTodoTrue){
+TEST(Ejercicio11TEST, DiagonalVsTodoTrue){
     toroide t1 = { 
                   {true, false, false},
                   {false, true, false},
@@ -31,7 +31,7 @@ TEST(vistaTrasladadaTEST, DiagonalVsTodoTrue){
     EXPECT_FALSE(res);
 }
 
-TEST(vistaTrasladadaTEST, palito){
+TEST(Ejercicio11TEST, palito){
     toroide t1 = {
             {false, true, false},
             {false, false, false},
@@ -44,7 +44,7 @@ TEST(vistaTrasladadaTEST, palito){
     EXPECT_TRUE(res);
 }
 
-TEST(vistaTrasladadaTEST, miniDiagonal){
+TEST(Ejercicio11TEST, miniDiagonal){
     toroide t1 = {
             {false, false, true},
             {true, false, false},
@@ -57,7 +57,7 @@ TEST(vistaTrasladadaTEST, miniDiagonal){
     EXPECT_FALSE(res);
 }
 
-TEST(vistaTrasladadaTEST, noCuadrado){
+TEST(Ejercicio11TEST, noCuadrado){
     toroide t1 = {
             {true, false, false},
             {false, false, false},
@@ -72,7 +72,7 @@ TEST(vistaTrasladadaTEST, noCuadrado){
     bool res = vistaTrasladada(t1, t2);
     EXPECT_TRUE(res);
 }
-TEST(vistaTrasladadaTEST, noCuadradoYNoVista){
+TEST(Ejercicio11TEST, noCuadradoYNoVista){
     toroide t1 = {
             {true, false, false},
             {false, false, false},
@@ -87,7 +87,7 @@ TEST(vistaTrasladadaTEST, noCuadradoYNoVista){
     bool res = vistaTrasladada(t1, t2);
     EXPECT_FALSE(res);
 }
-TEST(vistaTrasladadaTEST, esVista){
+TEST(Ejercicio11TEST, esVista){
     toroide t1 = {
             {true, false, false},
             {false, false, false},
@@ -103,7 +103,7 @@ TEST(vistaTrasladadaTEST, esVista){
     EXPECT_TRUE(res);
 }
 
-TEST(primosLejanosTEST, glider_trasladado){
+TEST(Ejercicio11TEST, glider_trasladado){
     toroide t1 = {
             {false, true, false, false, false,false,false,false,false,false,false,false,false,false,false},
             {false, false, true, false, false,false,false,false,false,false,false,false,false,false,false},

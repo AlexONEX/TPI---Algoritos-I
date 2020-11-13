@@ -4,24 +4,24 @@
 
 using namespace std;
 
-TEST(densidadPoblacionTEST, toroideDiagonal){
+TEST(Ejercicio3TEST, toroideDiagonal){
     vector<bool> a = { true, true, true, true };
     toroide t = { a, a, a, a, a };
     EXPECT_NEAR(densidadPoblacion(t), 1.0, 0.01);
 }
 
-TEST(densidadPoblacionTEST, toroideMuerto){
+TEST(Ejercicio3TEST, toroideMuerto){
     vector<bool> a = { false, false, false, false };
     toroide t = { a, a, a, a, a };
     EXPECT_NEAR(densidadPoblacion(t), 0.0, 0.01);
 }
 
-TEST(densidadPoblacionTEST, toroideMitad){
+TEST(Ejercicio3TEST, toroideMitad){
     vector<bool> a = { true, false, true, false };
     toroide t = { a, a, a, a, a };
     EXPECT_NEAR(densidadPoblacion(t), 0.5, 0.01);
 }
-TEST(densidadPoblacionTEST, todoVivo){
+TEST(Ejercicio3TEST, todoVivo){
     toroide t = {
             {true, true, true},
             {true, true, true},
@@ -29,7 +29,7 @@ TEST(densidadPoblacionTEST, todoVivo){
     };
     EXPECT_NEAR(densidadPoblacion(t), 1,0.01);
 }
-TEST(densidadPoblacionTEST, UnoVivoen25){
+TEST(Ejercicio3TEST, UnoVivoen25){
     toroide t = {
             {false, false, false, false, false},
             {false, false, false, false, false},

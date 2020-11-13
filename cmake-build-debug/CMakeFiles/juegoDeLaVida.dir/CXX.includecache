@@ -284,11 +284,17 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/auxiliares.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/auxiliares.cpp
 definiciones.h
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/definiciones.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/definiciones.h
+auxiliares.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/auxiliares.h
 
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/definiciones.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/auxiliares.h
+definiciones.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/definiciones.h
+
+C:/Users/aschw/Downloads/TPI---Algoritos-I/definiciones.h
 vector
 -
 cmath
@@ -296,23 +302,25 @@ cmath
 algorithm
 -
 
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/ejercicios.cpp
+C:/Users/aschw/Downloads/TPI---Algoritos-I/ejercicios.cpp
 algorithm
 -
 ejercicios.h
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/ejercicios.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/ejercicios.h
 auxiliares.h
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/auxiliares.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/auxiliares.h
 
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/ejercicios.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/ejercicios.h
 definiciones.h
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/definiciones.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/definiciones.h
 
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/EJ08_primosLejanosTEST.cpp
+C:/Users/aschw/Downloads/TPI---Algoritos-I/tests/EJ05_evolucionToroideTEST.cpp
 ../ejercicios.h
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/ejercicios.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/ejercicios.h
+../auxiliares.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/auxiliares.h
 gtest/gtest.h
-C:/Users/Usuario/CLionProjects/TPI---Algoritos-I/tests/gtest/gtest.h
+C:/Users/aschw/Downloads/TPI---Algoritos-I/tests/gtest/gtest.h
 algorithm
 -
 

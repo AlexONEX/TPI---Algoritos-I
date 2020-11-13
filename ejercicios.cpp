@@ -49,12 +49,12 @@ void evolucionToroide(toroide &t){
     vector<vector<bool>> t0 = t;
     int filas = t0.size();
     int columnas = t0[0].size();
-
     for(int i = 0; i < filas; i++ ){
         for(int j = 0; j < columnas; j++){
             if(t0[i][j]){
                 t[i][j] = sigueViva(t0,make_pair(i, j));
-            }else{
+            }
+            else{
                 t[i][j] = reproduccion(t0, make_pair(i,j));
             }
         }

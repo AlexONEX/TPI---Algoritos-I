@@ -5,7 +5,7 @@
 using namespace std;
 
 
-TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
+TEST(Ejercicio9TEST, toroideDiagonalVsUnoVivo){
     toroide t1 = { 
                   {true, false, false},
                   {false, true, false},
@@ -24,7 +24,7 @@ TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
     EXPECT_EQ(res, 0);
 }
 
-TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
+TEST(Ejercicio9TEST, DiagonalVsHorizontal){
     toroide t1 = {
                   {false, false, false},
                   {false, false, false},
@@ -42,7 +42,7 @@ TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
     EXPECT_EQ(res, 1);
 }
 
-TEST(seleccionNaturalTEST, unoMuerto){
+TEST(Ejercicio9TEST, unoMuerto){
     toroide t1 = {
             {true, false, false},
             {false, true, false},

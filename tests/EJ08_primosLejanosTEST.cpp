@@ -4,7 +4,7 @@
 
 using namespace std;
 
-TEST(primosLejanosTEST, toroideHorizontalPeriodico2){
+TEST(Ejercicio8TEST, toroideHorizontalPeriodico2){
     toroide t1 = {
                   {false, false, false, false, false},
                   {false, false, false, false, false},
@@ -24,7 +24,7 @@ TEST(primosLejanosTEST, toroideHorizontalPeriodico2){
 }
 
 
-TEST(primosLejanosTEST, random){
+TEST(Ejercicio8TEST, random){
     toroide t1 = {
             {true, false, false, false, false},
             {true, false, false, false, false},
@@ -43,7 +43,7 @@ TEST(primosLejanosTEST, random){
     EXPECT_TRUE(res);
 }
 
-TEST(primosLejanosTEST, dosPeriodicos){
+TEST(Ejercicio8TEST, dosPeriodicos){
     toroide t1 = {
             {false, false, false, false, false},
             {true, true, true, false, false},
@@ -64,7 +64,7 @@ TEST(primosLejanosTEST, dosPeriodicos){
 }
 
 
-TEST(primosLejanosTEST, toroideNormal){
+TEST(Ejercicio8TEST, toroideNormal){
     toroide t1 = {
             {false, false, true, false, false},
             {false, true, false, true, false},
@@ -83,7 +83,7 @@ TEST(primosLejanosTEST, toroideNormal){
     EXPECT_TRUE(res);
 }
 
-TEST(primosLejanosTEST, pocaVidaPeriodico){
+TEST(Ejercicio8TEST, pocaVidaPeriodico){
     toroide t1 = {
             {true, true, false, false,false, false},
             {true, true, false, false,false, false},
@@ -105,7 +105,7 @@ TEST(primosLejanosTEST, pocaVidaPeriodico){
 
 }
 
-TEST(primosLejanosTEST, trioPeriodico) {
+TEST(Ejercicio8TEST, trioPeriodico) {
     toroide t1 = {
             {false, false, false, false, false, false},
             {false, false, true,  false, false,  false},
@@ -126,7 +126,7 @@ TEST(primosLejanosTEST, trioPeriodico) {
     EXPECT_TRUE(res);
 }
 
-TEST(primosLejanosTEST, toroideRaro){
+TEST(Ejercicio8TEST, toroideRaro){
     toroide t1 = {
             {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false},
             {false, false, false, false, false, false,false, false, false, false, false, false,false,false,false},
