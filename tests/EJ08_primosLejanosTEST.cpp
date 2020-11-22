@@ -155,3 +155,19 @@ TEST(Ejercicio8TEST, toroideRaro){
     res = primosLejanos(t2, t1);
     EXPECT_TRUE(res);
 }
+TEST(Ejercicio8TEST, ambosMuertos){
+    toroide t1 = {
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false} };
+    toroide t2 = {
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, false, false, false, false} };
+    bool res = primosLejanos(t1, t2);
+    EXPECT_TRUE(res);
+}

@@ -4,22 +4,11 @@
 
 // EJERCICIO 1
 bool toroideValido(vector<vector<bool>> const &t) {
-    // este valor puede ser cambiado de acuerdo a la propia implementacion
-    // Implementacion
-
     if(t.size() == 0){
         return false;
     }
-
-    for(int i; i < t.size();i++){
-        if (t[i].size() == 0){
-            return false;
-        }
-    }
-
     int filas = t.size();
     int columnas = t[0].size();
-
 
     return esRectangulo(t) && filas >= 3 && columnas >= 3 ;
 }
@@ -107,7 +96,6 @@ bool primosLejanos(toroide const &t, toroide const &u) {
     if(toroideMuerto(t) && toroideMuerto(u)){
         return true;
     }
-
     toroide t1 = t;
     toroide u1 = u;
 
