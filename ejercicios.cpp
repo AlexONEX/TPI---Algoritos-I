@@ -104,6 +104,10 @@ bool esPeriodico(toroide const &t, int &p){ // No hara falta copiar p? Mantenerl
 
 // EJERCICIO 8
 bool primosLejanos(toroide const &t, toroide const &u) {
+    if(toroideMuerto(t) && toroideMuerto(u)){
+        return true;
+    }
+
     toroide t1 = t;
     toroide u1 = u;
 
