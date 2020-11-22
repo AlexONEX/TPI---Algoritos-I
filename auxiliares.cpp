@@ -58,7 +58,7 @@ int cantidadVivas(toroide const &t){
 }
 
 bool sigueViva(toroide const &t, posicion x){
-    if(t[x.first][x.second] && ((cantidadVecinos(t, x)<=3 && cantidadVecinos(t, x)>=2)){
+    if(t[x.first][x.second] && ((cantidadVecinos(t, x)<=3 && cantidadVecinos(t, x)>=2))){
         return true;
     }
     return false;
