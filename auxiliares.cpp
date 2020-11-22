@@ -132,7 +132,7 @@ int indiceDelMaximo(vector<int> const &t){
     int comparador = 0;
     int filas = t.size();
     for(int i=0; i < filas; i++){
-        if(comparador<=t[i]){
+        if(comparador<t[i]){                       
             comparador = t[i];
             indice = i;
         }
