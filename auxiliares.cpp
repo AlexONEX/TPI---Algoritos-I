@@ -139,7 +139,6 @@ int indiceDelMaximo(vector<int> const &t){
     }
     return indice;
 }
-
 vector<toroide> generarVistas(toroide const &t){
     vector<toroide> vistas;
     toroide copiaT = t;
