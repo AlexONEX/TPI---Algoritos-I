@@ -9,6 +9,9 @@ bool toroideValido(vector<vector<bool>> const &t) {
     int filas = t.size();
     int columnas = t[0].size();
 
+    if(filas == 0 || columnas == 0){
+        return false;
+    }
     return esRectangulo(t) && filas >= 3 && columnas >= 3 ;
 }
 
@@ -74,7 +77,6 @@ toroide evolucionMultiple(toroide const &t, int K) {
 
 // EJERCICIO 7
 bool esPeriodico(toroide const &t, int &p){ // No hara falta copiar p? Mantenerlo por la referencia y devolvero cuando sea false?
-    p = 0;
     int p0 = p;
     toroide t1 = t;
 
