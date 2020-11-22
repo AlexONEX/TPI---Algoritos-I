@@ -97,3 +97,19 @@ TEST(Ejercicio7TEST, periodicoGlider){
     EXPECT_TRUE(res);
     EXPECT_EQ(p, 240);
 }
+TEST(Ejercicio7TEST, patronNoPeriodico){
+
+    toroide t = {{false, false, false, false,false, false, false, false},
+                 {true, false, false, false,false, false, false, false},
+                 {false, true, true, false,false, false, false, false},
+                 {true, false, false, true,false, false, false, false},
+                 {false, true, true, false,false, false, false, false},
+                 {false, false, false, false,false, false, false, false},
+                 {false, false, false, false,false, false, true, true},
+                 {false, false, false, false,false, false, true, true}};
+    int p;
+    int p0 = p;
+    bool res = esPeriodico(t, p);
+    EXPECT_FALSE(res);
+    EXPECT_EQ(p, p0);
+}

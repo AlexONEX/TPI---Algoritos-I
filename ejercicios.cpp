@@ -86,8 +86,8 @@ toroide evolucionMultiple(toroide const &t, int K) {
 
 // EJERCICIO 7
 bool esPeriodico(toroide const &t, int &p){ // No hara falta copiar p? Mantenerlo por la referencia y devolvero cuando sea false?
-    p=0;
     int p0 = p;
+    p=0;
     toroide t1 = t;
 
     while (!(toroideMuerto(t1))) {
