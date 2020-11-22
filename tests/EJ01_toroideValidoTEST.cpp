@@ -48,3 +48,15 @@ TEST(Ejercicio1TEST, unosYCeros){
     };
     EXPECT_TRUE(toroideValido(t));
 }
+
+TEST(Ejercicio1TEST, muerto){
+    toroide t = {};
+
+    EXPECT_FALSE(toroideValido(t));
+}
+
+TEST(Ejercicio1TEST, muerto2){
+    toroide t = {{true,true,true},{}};
+
+    EXPECT_FALSE(toroideValido(t));
+}
