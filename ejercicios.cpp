@@ -6,12 +6,21 @@
 bool toroideValido(vector<vector<bool>> const &t) {
     // este valor puede ser cambiado de acuerdo a la propia implementacion
     // Implementacion
+
+    if(t.size() == 0){
+        return false;
+    }
+
+    for(int i; i < t.size();i++){
+        if (t[i].size() == 0){
+            return false;
+        }
+    }
+
     int filas = t.size();
     int columnas = t[0].size();
 
-    if(filas == 0 || columnas == 0){
-        return false;
-    }
+
     return esRectangulo(t) && filas >= 3 && columnas >= 3 ;
 }
 
